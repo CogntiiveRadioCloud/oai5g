@@ -1,6 +1,22 @@
 # oai5g
 Open Air Interface (OAI) Startup: (Installation and Configuration of Radio Access Network based on USRPx300)
 
+
+*   [OAI Roadmap](#OAI)
+
+	*	[S.W. Installation](#S.W.)
+	*	[Kernal Setup and Intel Driver Configuration](#kernal)
+    *   [H.W Requirements](#H.W.)
+*   [OAI Gitlab](#REF)
+
+
+<h2 id="OAI">OAI Roadmap</h2>
+<h3 id="S.W.">S.W. Installation</h3>
+<h3 id="kernal">Kernal and OS Requirements</h3>
+<h3 id="H.W.">H.W Requirements</h3>
+
+<h3 id="REF">OAI Gitlab</h3>
+
 OpenAirInterface is under OpenAirInterface Software Alliance license.
 Refere to the main source code at GitLab
 
@@ -35,3 +51,4 @@ openairinterface5g
    - realtime eNB and UE and RRH GW.
 
 #### Refere to https://gitlab.eurecom.fr/oai/openairinterface5g/tree/master for the full source code
+
