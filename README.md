@@ -107,6 +107,11 @@ source oaienv
 ./build_oai -w USRP --eNB --UE --noS1 -x
 ```
 
+<p align="center">
+  <img src="https://github.com/astro7x/oai5g/blob/master/img/RAN_noS1.png?raw=true"/>
+</p>
+
+
 
 <h3 id="REF">OAI Gitlab</h3>
 
