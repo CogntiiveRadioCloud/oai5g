@@ -112,6 +112,75 @@ source oaienv
 </p>
 
 
+### Running eNB
+
+1st: Setup eNB IP
+```bash
+cd ~/openairinterface5g/
+source oaienv
+source ./cmake_targets/tools/init_nas_nos1 eNB
+```
+2nd: Check eNB IP
+
+```bash
+ifconfig 
+```
+
+```
+oai0      Link encap:AMPR NET/ROM  HWaddr C2-C6-7B-07-22-08 
+          inet addr:10.0.1.1  Bcast:10.0.1.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:100 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+```
+
+
+```bash
+cd cmake_targets
+sudo -E ./lte_noS1_build_oai/build/lte-softmodem-nos1 -d -O $OPENAIR_TARGETS/PROJECTS/GENERIC-LTE-EPC/CONF/enb.band7.tm1.usrpb210.conf 2>&1 | tee ENB.log
+```
+<p align="center">
+  <img src="https://github.com/astro7x/oai5g/blob/master/img/eNB0.png?raw=true"/>
+</p>
+
+
+
+### Running UE
+
+1st: Setup UE IP
+```bash
+cd ~/openairinterface5g/
+source ./targets/bin/init_nas_nos1 UE
+```
+
+2nd: Check UE IP
+
+```bash
+ifconfig 
+```
+
+```
+oai0      Link encap:AMPR NET/ROM  HWaddr 71-7C-CA-24-25-0B
+          inet addr:10.0.1.9  Bcast:10.0.1.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:100 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+```
+
+```bash
+cd cmake_targets
+sudo -E ./lte_noS1_build_oai/build/lte-softmodem-nos1  -U -C2660000000 -r25 --ue-scan-carrier --ue-txgain 90 --ue-rxgain 115 -d >&1 | tee UE.log
+```
+
+<p align="center">
+  <img src="https://github.com/astro7x/oai5g/blob/master/img/UE0.png?raw=true"/>
+</p>
+
 
 <h3 id="REF">OAI Gitlab</h3>
 
