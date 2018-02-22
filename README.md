@@ -11,9 +11,102 @@ Open Air Interface (OAI) Startup: (Installation and Configuration of Radio Acces
 
 
 <h2 id="OAI">OAI Roadmap</h2>
-<h3 id="S.W.">S.W. Installation</h3>
-<h3 id="kernal">Kernal and OS Requirements</h3>
+
 <h3 id="H.W.">H.W Requirements</h3>
+
+- Regarding the Host: Current OpenAirInterface software requires Intel architecture based PCs for the eNB or UE targets. This requirement is due to optimized DSP functions which make heavy use of integer SIMD instructions.
+
+- Regarding the Radio Head: OAI supports a variety of Software Defined Radios including (Exmimo, USRP B200, USRP x300, LimeSDR)
+
+<h3 id="kernal">Kernal and OS Requirements</h3>
+
+First, we need to get a low latency kernal
+- for Ubuntu 14.04
+```bash
+sudo apt-get install linux-image-3.19.0-61-lowlatency linux-headers-3.19.0-61-lowlatency
+```
+- for Ubuntu 16.04
+```
+sudo apt-get install linux-image-4.8.0-36-lowlatency linux-headers-4.8.0-36-lowlatency
+```
+- After Reboot You can check the installed kernal by typing
+```bash
+uname -a
+``` 
+If you still see the generic kernal, you have to select the kernal manually while rebooting from Advanced Option
+or to set it to be the default accross system rebooting.
+1. to know the exact installed kernal name ID.
+```bash 
+grep menuentry /boot/grub/grub.cfg
+```
+2. Add that name to grub-set-default to set the grub to load the new kernal by default while rebooting
+```bash 
+sudo grub-set-default "Ubuntu, with Linux 4.8.0-36-lowlatency"
+sudo grub-reboot "Ubuntu, with Linux 4.8.0-36-lowlatency"
+sudo update-grub
+``` 
+#### OAI Power Management
+OAI requires to Remove all power management features in the BIOS (sleep states, in particular C-states) and CPU frequency scaling (Intel SpeedStep) so OAI can run with the maximum CPU clock 100% in performance mode and avoid  any scaling, also make sure to disable the p-state driver 
+
+Add GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_pstate=disable" to /etc/default/grub
+```bash
+nano /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_pstate=disable"
+```
+Next we update the Governor to performance, Hence the all options are mentioned below.
+
+| GOVERNOR      | Description.  |
+| ------------- | ------------- |
+| Performance   | Run the CPU at the maximum frequency 		 |
+| powersave     | Run the CPU at the minimum frequency  	 |
+| userspace 	| Run the CPU at user specified frequencies 	 |
+| ondemand 	| Scales the frequency dynamically according to current load. Jumps to the highest frequency and then possibly back off as the idle time increases | 
+| conservative  | Scales the frequency dynamically according to current load. Scales the frequency more gradually than ondemand |
+| schedutil	|Scheduler-driven CPU frequency selection|
+
+
+
+```bash
+sudo apt-get install cpufrequtils
+sudo echo GOVERNOR="performance"  >  /etc/default/cpufrequtils
+sudo update-rc.d ondemand disable //to maintain the setting across system reboot
+sudo /etc/init.d/cpufrequtils restart 
+```
+###### Checking the CPU cores
+```bash
+sudo cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+```
+
+<h3 id="S.W.">S.W. Installation</h3>
+
+Checkout RAN repository (eNB RAN + UE RAN):
+- for Ubuntu 16.04 Get the develop branch (up to date features)
+```bash
+git clone -r develop https://gitlab.eurecom.fr/oai/openairinterface5g.git
+```
+- for Ubuntu 14.04 Get the master branch (Stable)
+```bash
+git clone https://gitlab.eurecom.fr/oai/openairinterface5g.git
+```
+
+```bash
+cd openairinterface5g
+```
+
+###### Very important. It sets the correct environment variables. 
+```bash
+source oaienv
+```
+###### package installation + USRP Driver installation :
+```bash
+./build_oai -I
+./build_oai -w USRP
+```
+###### Build OpenAirInterface eNB and UE without the EPC (without S1, nos1) 
+```bash
+./build_oai -w USRP --eNB --UE --noS1 -x
+```
+
 
 <h3 id="REF">OAI Gitlab</h3>
 
