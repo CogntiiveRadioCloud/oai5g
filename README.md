@@ -4,9 +4,11 @@ Open Air Interface (OAI) Startup: (Installation and Configuration of Radio Acces
 
 *   [OAI Roadmap](#OAI)
 
-	*	[S.W. Installation](#S.W.)
+	*	[H.W Requirements](#H.W.)
 	*	[Kernal Setup and Intel Driver Configuration](#kernal)
-    *   [H.W Requirements](#H.W.)
+	*	[E-UTRAN S.W. Installation](#S.W.)
+	*	[Testing Radio Access Network Connection](#RAN)
+	
 *   [OAI Gitlab](#REF)
 
 
@@ -77,7 +79,7 @@ sudo /etc/init.d/cpufrequtils restart
 sudo cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 ```
 
-<h3 id="S.W.">S.W. Installation</h3>
+<h3 id="S.W.">E-UTRAN S.W. Installation</h3>
 
 Checkout RAN repository (eNB RAN + UE RAN):
 - for Ubuntu 16.04 Get the develop branch (up to date features)
@@ -111,6 +113,7 @@ source oaienv
   <img src="https://github.com/astro7x/oai5g/blob/master/img/RAN_noS1.png?raw=true"/>
 </p>
 
+<h3 id="RAN">Testing Radio Access Network Connection</h3>
 
 ### Running eNB
 
