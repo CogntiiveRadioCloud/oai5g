@@ -84,6 +84,7 @@ from /usr/local/share/uhd/images
     
     uhd_usrp_probe
     
+    uhd_image_loader --args="type=x300,addr=192.168.10.2" --fpga-path="usr/local/share/usrp_x300_fpga_HG.bit"
     
 ## Procedures to Flash the USRP
 https://kb.ettus.com/X300/X310_Device_Recovery
