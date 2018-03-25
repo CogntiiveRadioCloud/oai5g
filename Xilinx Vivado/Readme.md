@@ -30,5 +30,22 @@ You can't log again from another location/proxy/ip
 ## Download 
 https://mega.nz/#!dTR11RKK!RI_NxkXA8CpvsnSt7ho5XyFvdgab4VKjDiJ2-2-IPNs
 
+1st: Make Sure That USRP x300 Images are already existed
+```
+   ls -alh /usr/local/share/uhd/images/usrp_x3*
+```
+2nd: Navigate to Xilinx Vivado Location & Launch the installer
+```
+   cd Xilinx_Vivado_Lab_Lin_2015.4_1118_2
+   sudo ./xsetup
+```
+You will be prompted that a newer version is available, ## ignore this popup and click Continue to install Xilinx Vivado Lab 2015.4. and Complete the Installation
+
+3rd: Connect the USRP x300 via JTAG and Start the Xilinx
+```
+   /opt/Xilinx/Vivado_Lab/2015.4/bin/vivado_lab
+```
+
+
 ## Procedures to Flash the USRP
 https://kb.ettus.com/X300/X310_Device_Recovery
