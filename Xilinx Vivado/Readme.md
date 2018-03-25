@@ -45,7 +45,45 @@ You will be prompted that a newer version is available, ## ignore this popup and
 ```
    /opt/Xilinx/Vivado_Lab/2015.4/bin/vivado_lab
 ```
+4th:  Open the Hardware Manager 
+<p align="center">
+  <img src="https://github.com/astro7x/oai5g/blob/master/Xilinx Vivado/imgs/xilinx1.png?raw=true"/>
+</p>
 
+Next, within the menu the of the Hardware Manager select Tools -> Auto Connect
+<p align="center">
+  <img src="https://github.com/astro7x/oai5g/blob/master/Xilinx Vivado/imgs/xilinx2.png?raw=true"/>
+</p>
 
+###### you will nofice the details of the FPGA should populate the window on the left side of the Hardware Manager. 
+<p align="center">
+  <img src="https://github.com/astro7x/oai5g/blob/master/Xilinx Vivado/imgs/xilinx3.png?raw=true"/>
+</p>
+
+ Right click on the FPGA listed, and select Program Device. 
+
+<p align="center">
+  <img src="https://github.com/astro7x/oai5g/blob/master/Xilinx Vivado/imgs/xilinx4.png?raw=true"/>
+</p>
+
+from /usr/local/share/uhd/images
+ Select the correct FPGA image _x300
+<p align="center">
+  <img src="https://github.com/astro7x/oai5g/blob/master/Xilinx Vivado/imgs/xilinx5.png?raw=true"/>
+</p>
+<p align="center">
+  <img src="https://github.com/astro7x/oai5g/blob/master/Xilinx Vivado/imgs/xilinx6.png?raw=true"/>
+</p>
+<p align="center">
+  <img src="https://github.com/astro7x/oai5g/blob/master/Xilinx Vivado/imgs/xilinx7.png?raw=true"/>
+</p>
+
+ Once the programming is completed, close Vivado Lab. 
+ 
+    ping 192.168.10.2
+    
+    uhd_usrp_probe
+    
+    
 ## Procedures to Flash the USRP
 https://kb.ettus.com/X300/X310_Device_Recovery
