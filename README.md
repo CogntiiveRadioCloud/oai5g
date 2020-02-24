@@ -1,4 +1,7 @@
 
+|*** OAI Building & Executable architecture for recent versions was changed. As a result, updated and a recent instruction can be followed from the main gitlab repo [OAI5G](https://gitlab.eurecom.fr/oai/openairinterface5g/wikis/home)! - Just to be safe. Updated 24 Feb 2020  |
+| --- |
+
 # oai5g
 Open Air Interface (OAI) Startup: (Installation and Configuration of Radio Access Network based on USRPx300)
 
