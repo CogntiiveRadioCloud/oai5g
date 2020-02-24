@@ -1,3 +1,7 @@
+
+|*** OAI Building & Executable architecture for recent versions was changed. As a result, updated and a recent instruction can be followed from the main gitlab repo [OAI5G](https://gitlab.eurecom.fr/oai/openairinterface5g/wikis/home)! - Just to be safe. Updated 24 Feb 2020  |
+| --- |
+
 # oai5g
 Open Air Interface (OAI) Startup: (Installation and Configuration of Radio Access Network based on USRPx300)
 
@@ -102,13 +106,16 @@ source oaienv
 ###### package installation + USRP Driver installation :
 ```bash
 ./build_oai -I
-./build_oai -w USRP
+./build_oai -I -w USRP
 ```
 ###### Build OpenAirInterface eNB and UE without the EPC (without S1, nos1) 
 ```bash
 ./build_oai -w USRP --eNB --UE --noS1 -x
 ```
-
+This command works only with master branch, it will not work with the develop branch because of the seperation of eNB and UE, so to compile only pass one argument at a time, UE either eNB.
+```bash
+./build_oai -w USRP --eNB --noS1 -x
+```
 <p align="center">
   <img src="https://github.com/astro7x/oai5g/blob/master/img/RAN_noS1.png?raw=true"/>
 </p>
