@@ -1,0 +1,367 @@
+Fw = Firmware
+
+oai@oai-OptiPlex-9020:~/git-repositories/openairinterface5g/cmake_targets$ sudo -E ./lte_build_oai/build/lte-softmodem -O
+~/Desktop/enb.band7.tm1.25PRB.usrpX300.conf --nokrnmod 1 --noS1 --eNBs.[0].rrc_inactivity_threshold 0 2>&1
+[CONFIG] get parameters from libconfig /home/oai/Desktop/enb.band7.tm1.25PRB.usrpX300.conf , debug flags: 0x00000000
+[CONFIG] function config_libconfig_init returned 0
+[CONFIG] config module libconfig loaded
+[LIBCONFIG] config: 1/1 parameters successfully set, (1 to default value)
+# /dev/cpu_dma_latency set to 0us
+[LIBCONFIG] log_config: 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] log_config: 42/42 parameters successfully set, (36 to default value)
+[LIBCONFIG] log_config: 42/42 parameters successfully set, (42 to default value)
+[LIBCONFIG] log_config: 15/15 parameters successfully set, (15 to default value)
+[LIBCONFIG] log_config: 15/15 parameters successfully set, (15 to default value)
+log init done
+Reading in command-line options
+[LIBCONFIG] (root): 22/22 parameters successfully set, (19 to default value)
+[LIBCONFIG] (root): 5/5 parameters successfully set, (4 to default value)
+Getting ENBSParams
+[LIBCONFIG] (root): 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
+Configuration: nb_rrc_inst 1, nb_L1_inst 1, nb_ru 1
+[LIBCONFIG] loader: 2/2 parameters successfully set, (2 to default value)
+[LIBCONFIG] loader.NB_IoT: 2/2 parameters successfully set, (1 to default value)
+[LOADER] library libNB_IoT.so is not loaded: libNB_IoT.so: cannot open shared object file: No such file or directory
+nb_nbiot_rrc_inst 0, nb_nbiot_L1_inst 0, nb_nbiot_macrlc_inst 0
+[LIBCONFIG] TTracer: 4/4 parameters successfully set, (4 to default value)
+configuring for RAU/RRU
+CPU Freq is 3.392299
+ITTI init, useMME: 0
+[TMR] Starting itti queue: TASK_UNKNOWN as task 0
+[TMR] Starting itti queue: TASK_TIMER as task 1
+[TMR] Starting itti queue: TASK_L2L1 as task 2
+[TMR] Starting itti queue: TASK_BM as task 3
+[TMR] Starting itti queue: TASK_PHY_ENB as task 4
+[TMR] Starting itti queue: TASK_MAC_ENB as task 5
+[TMR] Starting itti queue: TASK_RLC_ENB as task 6
+[TMR] Starting itti queue: TASK_RRC_ENB_NB_IoT as task 7
+[TMR] Starting itti queue: TASK_PDCP_ENB as task 8
+[TMR] Starting itti queue: TASK_DATA_FORWARDING as task 9
+[TMR] Starting itti queue: TASK_END_MARKER as task 10
+[TMR] Starting itti queue: TASK_RRC_ENB as task 11
+[TMR] Starting itti queue: TASK_RAL_ENB as task 12
+[TMR] Starting itti queue: TASK_S1AP as task 13
+[TMR] Starting itti queue: TASK_X2AP as task 14
+[TMR] Starting itti queue: TASK_SCTP as task 15
+[TMR] Starting itti queue: TASK_ENB_APP as task 16
+[TMR] Starting itti queue: TASK_FLEXRAN_AGENT as task 17
+[TMR] Starting itti queue: TASK_PHY_UE as task 18
+[TMR] Starting itti queue: TASK_MAC_UE as task 19
+[TMR] Starting itti queue: TASK_RLC_UE as task 20
+[TMR] Starting itti queue: TASK_PDCP_UE as task 21
+[TMR] Starting itti queue: TASK_RRC_UE as task 22
+[TMR] Starting itti queue: TASK_NAS_UE as task 23
+[TMR] Starting itti queue: TASK_RAL_UE as task 24
+[TMR] Starting itti queue: TASK_MSC as task 25
+[TMR] Starting itti queue: TASK_GTPV1_U as task 26
+[TMR] Starting itti queue: TASK_UDP as task 27
+[TMR] Starting itti queue: TASK_CU_F1 as task 28
+[TMR] Starting itti queue: TASK_DU_F1 as task 29
+[LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)
+[OPT] OPT disabled
+reported resolution = 1 ns
+[HW] Version: Branch: heads/v1.1.0 Abrev. Hash: 7af841272 Date: Thu Jul 25 21:04:14 2019 +0200
+Runtime table
+[PHY] RC.eNB = 0x5589abd880e0
+[LIBCONFIG] L1s.[0]: 24/24 parameters successfully set, (22 to default value)
+[PHY] RC.eNB[0] = 0x5589abd88190
+[PHY] RC.eNB[0][0] = 0x7fa30ba91010
+[ENB_APP] Initializing northbound interface for L1
+[PHY] l1_north_init_eNB() RC.nb_L1_inst:1
+[PHY] l1_north_init_eNB() RC.nb_L1_CC[0]:1
+[PHY] l1_north_init_eNB() RC.eNB[0][0] installing callbacks
+[PHY] read_config_and_init() RC.nb_L1_inst: 1
+[LIBCONFIG] MACRLCs.[0]: 21/21 parameters successfully set, (15 to default value)
+[LIBCONFIG] MACRLCs.[0]: 21/21 parameters successfully set, (15 to default value)
+[MAC] [MAIN] Init function start:nb_macrlc_inst=1
+[PDCP] PDCP layer has been initialized
+Configuring local RRC for MACRLC
+[ENB_APP] sched mode = default 0 [default]
+[MAC] read_config_and_init() RC.nb_macrlc_inst: 1
+[PHY] l1_north_init_eNB() RC.nb_L1_inst:1
+
+[PHY] l1_north_init_eNB() RC.nb_L1_CC[0]:1
+[PHY] l1_north_init_eNB() RC.eNB[0][0] installing callbacks
+[LIBCONFIG] (root): 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] eNBs.[0]: 18/18 parameters successfully set, (8 to default value)
+[RRC] Instance 0: Southbound Transport local_mac
+[RRC] Setting node_type to ngran_eNB
+[LIBCONFIG] eNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)
+[RRC] num component carriers 1
+[RRC] enb_config::RCconfig_RRC() parameter number: 0, total number of parameters: 78, ccspath: eNBs.[0].component_carriers.[0]
+[LIBCONFIG] eNBs.[0].component_carriers.[0]: 78/78 parameters successfully set, (17 to default value)
+phich.resource 0 (ONESIXTH), phich.duration 0 (NORMAL)
+No eMBMS configuration, skipping it
+[LIBCONFIG] eNBs.[0].component_carriers.[0].emtc_parameters: 87/87 parameters successfully set, (87 to default value)
+No eMTC configuration, skipping it
+[LIBCONFIG] eNBs.[0].component_carriers.[0].SLparameters: 39/39 parameters successfully set, (39 to default value)
+No SL configuration skipping it
+[LIBCONFIG] eNBs.[0].srb1_parameters: 6/6 parameters successfully set, (0 to default value)
+[RRC] Node type 0
+[LIBCONFIG] (root): 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] NETWORK_CONTROLLER: 6/6 parameters successfully set, (0 to default value)
+[FLEXRAN_AGENT] FlexRAN Agent for eNB 0 is DISABLED
+[PDCP] PDCP layer has been initialized
+[PDCP] pdcp init, usenetlink
+[LIBCONFIG] nas.noS1: 3/3 parameters successfully set, (3 to default value)
+[NETLINK]Opened socket oaitun_enb1 with fd 66
+[OIP] Interface oaitun_enb1 successfuly configured, ip address 10.0.1.1, mask 255.255.255.0 broadcast address 10.0.1.255
+[PDCP] ENB pdcp will use tun interface
+[ENB_APP] Creating ENB_APP eNB Task
+[TMR] Created Posix thread TASK_ENB_APP
+[RRC] Creating RRC eNB Task
+[LIBCONFIG] eNBs.[0]: 1/1 parameters successfully set, (0 to default value)
+[RRC] Entering main loop of RRC message task
+[TMR] Created Posix thread TASK_RRC_ENB
+[RRC] [eNB 0] Received RRC_CONFIGURATION_REQ : 0x5589abdb908c
+[RRC] [FRAME 00000][eNB][MOD 00][RNTI 0] Init...
+[RRC] [FRAME 00000][eNB][MOD 00][RNTI 0] Checking release
+[RRC] [FRAME 00000][eNB][MOD 00][RNTI 0] Rel14 RRC detected, MBMS flag 0
+[RRC] [eNB 0] Node type 0
+[RRC] configuration->schedulingInfoSIB1_BR_r13[CC_id] 0
+[RRC] Configuring MIB (N_RB_DL 25,phich_Resource 0,phich_Duration 0)
+[RRC] [MIB] systemBandwidth 2, phich_duration 0, phich_resource 0, sfn 0
+[RRC] [MIB] schedulingInfoSIB1 0
+[RRC] [eNB 0] Configuration SIB2/3, eMBMS = 0
+[RRC] do_SIB23, size 38
+[MAC] Configuring MIB for instance 0, CCid 0 : (band 7,N_RB_DL 25,Nid_cell 0,p 1,DL freq 2680000000,phich_config.resource 0, phich_config.duration
+0)
+[MAC] config_mib() NFAPI_CONFIG_REQUEST(num_tlv:16) DL_BW:25 UL_BW:25 Ncp 0,p_eNB 1,earfcn 3350,band 7,phich_resource 0
+phich_duration 0 phich_power_offset 6000 PSS 6000 SSS 6000 PCI 0 PBCH repetition 0
+[MAC] [CONFIG]SIB2/3 Contents (partial)
+[MAC] [CONFIG]pusch_config_common.n_SB = 1
+[MAC] [CONFIG]pusch_config_common.hoppingMode = 0
+[MAC] [CONFIG]pusch_config_common.pusch_HoppingOffset = 0
+[MAC] [CONFIG]pusch_config_common.enable64QAM = 0
+[MAC] [CONFIG]pusch_config_common.groupHoppingEnabled = 1
+[MAC] [CONFIG]pusch_config_common.groupAssignmentPUSCH = 0
+[MAC] [CONFIG]pusch_config_common.sequenceHoppingEnabled = 0
+[MAC] [CONFIG]pusch_config_common.cyclicShift = 1
+[PHY] Configuring MIB for instance 0, CCid 0 : (band 7,N_RB_DL 25, N_RB_UL 25, Nid_cell 0,eNB_tx_antenna_ports 1,Ncp 0,DL freq
+3350,phich_config.resource 0, phich_config.duration 0)
+[PHY] Initializing frame parms for N_RB_DL 25, Ncp 0, osf 1
+[PHY] lte_parms.c: Setting N_RB_DL to 25, ofdm_symbol_size 512
+[LIBCONFIG] loader.coding: 2/2 parameters successfully set, (1 to default value)
+[LOADER] library libcoding.so successfully loaded
+[PHY] prach_config_common.rootSequenceIndex = 0
+[PHY] prach_config_common.prach_ConfigInfo.prach_ConfigIndex = 0
+[PHY] prach_config_common.prach_ConfigInfo.highSpeedFlag = 1
+[PHY] prach_config_common.prach_ConfigInfo.zeroCorrelationZoneConfig = 14
+[PHY] prach_config_common.prach_ConfigInfo.prach_FreqOffset = 2
+[PHY] pusch_config_common.n_SB = 1
+[PHY] pusch_config_common.hoppingMode = 0
+[PHY] pusch_config_common.pusch_HoppingOffset = 0
+[PHY] pusch_config_common.enable64QAM = 0
+[PHY] pusch_config_common.ul_ReferenceSignalsPUSCH.groupHoppingEnabled = 1
+[PHY] pusch_config_common.ul_ReferenceSignalsPUSCH.groupAssignmentPUSCH = 0
+[PHY] pusch_config_common.ul_ReferenceSignalsPUSCH.sequenceHoppingEnabled = 0
+[PHY] pusch_config_common.ul_ReferenceSignalsPUSCH.cyclicShift = 2
+[PHY] eNB 0/0 configured
+[RRC] [eNB] handover active state is 0
+[RRC] [eNB] eMBMS active state is 0
+[RRC] [FRAME 00000][eNB][MOD 00][RNTI 0] ENB:OPENAIR RRC IN....
+[ENB_APP] START MAIN THREADS
+RC.nb_L1_inst:1
+Initializing eNB threads single_thread_flag:0 wait_for_sync:0
+[PHY] [lte-softmodem.c] eNB structure about to allocated RC.nb_L1_inst:1 RC.nb_L1_CC[0]:1
+
+[PHY] [lte-softmodem.c] eNB structure RC.eNB allocated
+[PHY] Initializing eNB 0 CC_id 0 single_thread_flag:0
+[PHY] Initializing eNB 0 CC_id 0
+[PHY] Registering with MAC interface module
+[PHY] Setting indication lists
+[PHY] [lte-softmodem.c] eNB structure allocated
+wait_eNBs()
+Waiting for eNB L1 instances to all get configured ... sleeping 50ms (nb_L1_inst 1)
+RC.nb_L1_CC[0]:1
+eNB L1 are configured
+About to Init RU threads RC.nb_RU:1
+Initializing RU threads
+configuring RU from file
+[LIBCONFIG] RUs.[0]: 24/24 parameters successfully set, (14 to default value)
+Set RU mask to 1
+Creating RC.ru[0]:0x5589abdba030
+Setting function for RU 0 to eNodeB_3GPP
+[PHY] number of L1 instances 1, number of RU 1, number of CPU cores 8
+[PHY] DJP - delete code above this /home/oai/git-repositories/openairinterface5g/targets/RT/USER/lte-ru.c:2658
+[PHY] Copying frame parms from eNB 0 to ru 0
+[PHY] Initializing RRU descriptor 0 : (local RF,synch_to_ext_device,0)
+configuring ru_id 0 (start_rf 0x5589aa3dd450)
+[PHY] Starting ru_thread 0, is_slave 0, send_dmrs 0
+[PHY] Initializing RU proc 0 (eNodeB_3GPP,synch_to_ext_device),
+[PHY] init_RU_proc() DJP - added creation of pthread_prach
+[HW] [SCHED][eNB] ru_thread started on CPU 5, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4
+CPU_5 CPU_6 CPU_7
+channel 0, Setting tx_gain offset 0.000000, rx_gain offset 80.000000, tx_freq 2680000000.000000, rx_freq 2560000000.000000
+[PHY] Initializing frame parms for N_RB_DL 25, Ncp 0, osf 1
+[PHY] lte_parms.c: Setting N_RB_DL to 25, ofdm_symbol_size 512
+[HW] [SCHED][eNB] ru_thread_prach started on CPU 4, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3
+CPU_4 CPU_5 CPU_6 CPU_7
+[PHY] Initializing RU signal buffers (if_south local RF) nb_tx 1
+[PHY] thread ru created id=8869
+[PHY] Starting RU 0 (eNodeB_3GPP,synch_to_ext_device),
+waiting for sync (ru_thread,-1/0x5589aad21248,0x5589ab438ae0,0x5589ab2ee6e0)
+[PHY] ru_thread_prach() RU configured - RACH processing thread running
+[PHY] [INIT] common.txdata[0] = 0x7fa30ec1f040 (307200 bytes)
+[PHY] nb_tx 1
+[PHY] rxdata_7_5kHz[0] 0x5589abe0c360 for RU 0
+[PHY] [INIT] common.txdata_BF= 0x5589abe2a3e0 (8 bytes)
+[PHY] txdataF_BF[0] 0x5589abe2a460 for RU 0
+[PHY] rxdataF[0] 0x5589abe31560 for RU 0
+[LIBCONFIG] loader.oai_device: 2/2 parameters successfully set, (1 to default value)
+[LOADER] library liboai_device.so successfully loaded
+[PHY] Checking for USRPs : UHD 3.14.1.1-release (3.14.1)
+[INFO] [UHD] linux; GNU C++ version 7.4.0; Boost_106501; UHD_3.14.1.1-release
+[HW] Found USRP x300
+Found USRP x300
+[INFO] [X300] X300 initialization sequence...
+[INFO] [X300] Maximum frame size: 1472 bytes.
+[INFO] [X300] Radio 1x clock: 184.32 MHz
+[INFO] [0/DmaFIFO_0] Initializing block control (NOC ID: 0xF1F0D00000000000)
+[INFO] [0/DmaFIFO_0] BIST passed (Throughput: 1301 MB/s)
+[INFO] [0/DmaFIFO_0] BIST passed (Throughput: 1304 MB/s)
+[INFO] [0/Radio_0] Initializing block control (NOC ID: 0x12AD100000000001)
+[INFO] [0/Radio_1] Initializing block control (NOC ID: 0x12AD100000000001)
+[INFO] [0/DDC_0] Initializing block control (NOC ID: 0xDDC0000000000000)
+[INFO] [0/DDC_1] Initializing block control (NOC ID: 0xDDC0000000000000)
+[INFO] [0/DUC_0] Initializing block control (NOC ID: 0xD0C0000000000000)
+[INFO] [0/DUC_1] Initializing block control (NOC ID: 0xD0C0000000000000)
+Setting clock source to internal
+[PHY] device_init() sample_rate:7680000
+[PHY] cal 0: freq 3500000000.000000, offset 77.000000, diff 940000000.000000
+[PHY] cal 1: freq 2660000000.000000, offset 81.000000, diff 100000000.000000
+[PHY] cal 2: freq 2300000000.000000, offset 81.000000, diff 260000000.000000
+[PHY] cal 3: freq 1880000000.000000, offset 82.000000, diff 680000000.000000
+[PHY] cal 4: freq 816000000.000000, offset 85.000000, diff 1744000000.000000
+[PHY] RX Gain 0 80.000000 (81.000000) => -1.000000 (max 37.500000)
+[PHY] USRP TX_GAIN:31.50 gain_range:31.50 tx_gain:0.00
+[PHY] Actual master clock: 184.320000MHz...
+[PHY] RF board max packet size 364, size for 100μs jitter 768
+[PHY] rx_max_num_samps 364
+[PHY] RX Channel 0
+[PHY] Actual RX sample rate: 7.680000MSps...
+[PHY] Actual RX frequency: 2.560000GHz...
+[PHY] Actual RX gain: 0.000000...
+[PHY] Actual RX bandwidth: 5.000000M...
+[PHY] Actual RX antenna: RX2...
+[PHY] TX Channel 0
+[PHY] Actual TX sample rate: 7.680000MSps...
+[PHY] Actual TX frequency: 2.680000GHz...
+[PHY] Actual TX gain: 31.500000...
+[PHY] Actual TX bandwidth: 5.000000M...
+[PHY] Actual TX antenna: TX/RX...
+
+[PHY] Device timestamp: 3.000994...
+[HW] [RAU] has loaded USRP X300 device.
+setup_RU_buffers: frame_parms = 0x5589abdba0e8
+[HW] [SCHED][eNB] fep_thread started on CPU 7, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4
+CPU_5 CPU_6 CPU_7
+[HW] [SCHED][eNB] feptx_thread started on CPU 0, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4
+CPU_5 CPU_6 CPU_7
+[PHY] thread fep created id=8893
+[PHY] Signaling main thread that RU 0 (is_slave 0,send_dmrs 0) is ready in state RU_RUN
+wait RUs
+[ENB_APP] Waiting for RUs to be configured ... RC.ru_mask:00
+[PHY] RUs configured
+[ENB_APP] RC.nb_RU:1
+ALL RUs ready - init eNBs
+[ENB_APP] Not NFAPI mode - call init_eNB_afterRU()
+[PHY] init_eNB_afterRU() RC.nb_inst:1
+[PHY] RC.nb_CC[inst]:1
+[PHY] RC.nb_CC[inst:0][CC_id:0]:0x7fa30ba91010
+[PHY] [eNB 0] phy_init_lte_eNB() About to wait for eNB to be configured[PHY] [eNB 0] Initializing DL_FRAME_PARMS : N_RB_DL 25, PHICH
+Resource 1, PHICH Duration 0 nb_antennas_tx:0 nb_antennas_rx:0 nb_antenna_ports_eNB:1 PRACH[rootSequenceIndex:0 prach_Config_enabled:1
+configIndex:0 highSpeed:1 zeroCorrelationZoneConfig:14 freqOffset:2]
+[PHY] [eNB 0] Initializing DL_FRAME_PARMS : N_RB_DL 25, PHICH Resource 1, PHICH Duration 0
+pcfich_reg : 0,12,25,37
+[PHY] [INIT] NB_ANTENNA_PORTS_ENB:6 fp->nb_antenna_ports_eNB:1
+[PHY] thread feptx created id=8894
+[PHY] [INIT] common_vars->txdataF[0] = 0x7fa300770040 (286720 bytes)
+[PHY] [INIT] common_vars->txdataF[5] = 0x7fa300729040 (286720 bytes)
+[PHY] Mapping RX ports from 1 RUs to eNB 0
+[PHY] Overwriting eNB->prach_vars.rxsigF[0]:0x5589acc3eb20
+[PHY] Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[PHY] Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[PHY] Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[PHY] Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[PHY] eNB->num_RU:1
+[PHY] Attaching RU 0 antenna 0 to eNB antenna 0
+[PHY] init_eNB_afterRU() ************* DJP ***** eNB->frame_parms.nb_antennas_tx:0 - GOING TO HARD CODE TO 1[PHY] inst 0, CC_id 0 :
+nb_antennas_rx 1
+[PHY] Initialise transport
+[PHY] init_eNB_proc(inst:0) RC.nb_CC[inst]:1
+[PHY] Initializing eNB processes instance:0 CC_id 0
+[PHY] Creating te_thread 0
+[PHY] Creating te_thread 1
+[HW] [SCHED][eNB] te_thread started on CPU 7, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4
+CPU_5 CPU_6 CPU_7
+[PHY] Creating te_thread 2
+[HW] [SCHED][eNB] te_thread started on CPU 0, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4
+CPU_5 CPU_6 CPU_7
+[PHY] thread te created id=8920
+[PHY] thread te created id=8921
+[HW] [SCHED][eNB] te_thread started on CPU 7, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4
+CPU_5 CPU_6 CPU_7
+[PHY] eNB->single_thread_flag:0
+[HW] [SCHED][eNB] td_thread started on CPU 0, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4
+CPU_5 CPU_6 CPU_7
+[PHY] thread te created id=8928
+[PHY] thread td created id=8929
+[HW] [SCHED][eNB] eNB_thread_prach started on CPU 7, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3
+CPU_4 CPU_5 CPU_6 CPU_7
+[ENB_APP] ALL RUs ready - ALL eNBs ready
+[HW] [SCHED][eNB] eNB_thread_prach_br started on CPU 0, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3
+CPU_4 CPU_5 CPU_6 CPU_7
+[ENB_APP] Sending sync to all threads
+[ENB_APP] TYPE <CTRL-C> TO TERMINATE
+got sync (ru_thread)
+[PHY] Time in secs now: 34554357
+[PHY] Time in secs last pps: 29105149
+[PHY] RU 0 rf device ready
+[MAC] SCHED_MODE = 0
+[PHY] prach_I0 = 0.0 dB
+[PHY] max_I0 15, min_I0 0
+[PHY] prach_I0 = 0.0 dB
+[PHY] max_I0 19, min_I0 0
+[PHY] prach_I0 = 0.0 dB
+[PHY] max_I0 15, min_I0 0
+[PHY] prach_I0 = 0.0 dB
+[PHY] max_I0 15, min_I0 0
+[PHY] prach_I0 = 0.0 dB
+[PHY] max_I0 17, min_I0 0
+ERROR:
+[ERROR] [X300] 192.168.10.3: x300 fw communication failure #1
+EnvironmentError: IOError: x300 fw poke32 - reply timed out
+[ERROR] [X300] 192.168.10.3: x300 fw communication failure #2
+
+EnvironmentError: IOError: x300 fw poke32 - reply timed out
+[ERROR] [X300] 192.168.10.3: x300 fw communication failure #3
+EnvironmentError: IOError: x300 fw poke32 - reply timed out
+[ERROR] [UHD] An unexpected exception was caught in a task loop.The task loop will now exit, things may not work.EnvironmentError: IOError:
+192.168.10.3: x300 fw communication failure #3
+EnvironmentError: IOError: x300 fw poke32 - reply timed out
+^CLinux signal Interrupt...
+/home/oai/git-repositories/openairinterface5g/targets/RT/USER/lte-softmodem.c:253 signal_handler() Exiting OAI softmodem: softmodem starting exit
+procedure
+ERROR:
+[PHY] rx_rf: Asked for 7680 samples, got 364 from SDR
+[PHY] rx_rf: rfdevice timing drift of -7316 samples (ts_off 20067549)
+[PHY] problem receiving
+samplesDLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL[PHY]
+[recv] received 0 samples out of 7680
+L[PHY] Time: 224.129 s
+ERROR_CODE_OVERFLOW (Out of sequence error)
+[PHY] rx_rf: Asked for 7680 samples, got 0 from SDR
+L[PHY] rx_rf: rfdevice timing drift of -7316 samples (ts_off 20060233)
+[PHY] problem receiving
+samplesLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+[recv] received 364 samples out of 7680
+[PHY] rx_rf: Asked for 7680 samples, got 364 from SDR
+[PHY] rx_rf: rfdevice timing drift of -7316 samples (ts_off 20052917)
+L[PHY] problem receiving
+samplesDLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL[PHY] [recv] received 0
+samples out of 7680
+[PHY] Time: 224.129 s
+ERROR_CODE_OVERFLOW (Out of sequence error)
