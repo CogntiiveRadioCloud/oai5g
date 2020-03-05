@@ -25,3 +25,14 @@
 
 - eNB is running fine without real-time issue, but UE side deosn't attach and possible fw corruption.
 
+> RUN
+
+```bash
+sudo -E ./lte_build_oai/build/lte-softmodem -O ~/openairinterface5g/ci-scripts/conf_files/ci-enb.band7.tm1.25PRB.NI-2944.conf --nokrnmod 0 --noS1 --eNBs.[0].rrc_inactivity_threshold 0 2>&1 | tee ENB.log
+
+```
+
+```bash
+sudo ./lte-uesoftmodem -C 2680000000 -r 25 --ue-rxgain 120 --ue-txgain 40 --ue-max-power 0 --ue-scan-carrier --nokrnmod 1 --noS1 2>&1 | tee UE.log
+
+```
