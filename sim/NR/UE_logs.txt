@@ -1,0 +1,446 @@
+[CONFIG] get parameters from cmdline , debug flags: 0x00400000
+[CONFIG] log_config: 2/3 parameters successfully set 
+[CONFIG] log_config: 43/43 parameters successfully set 
+[CONFIG] log_config: 43/43 parameters successfully set 
+[CONFIG] log_config: 14/14 parameters successfully set 
+[CONFIG] log_config: 14/14 parameters successfully set 
+log init done
+[CONFIG] TTracer: 4/4 parameters successfully set 
+create a thread for core -1
+create a thread for core -1
+create a thread for core -1
+create a thread for core -1
+CPU Freq is 2.397363 
+[0m[TMR]   Starting itti queue: TASK_UNKNOWN as task 0
+[0m[0m[TMR]   Starting itti queue: TASK_TIMER as task 1
+[0m[0m[TMR]   Starting itti queue: TASK_L2L1 as task 2
+[0m[0m[TMR]   Starting itti queue: TASK_BM as task 3
+[0m[0m[TMR]   Starting itti queue: TASK_PHY_ENB as task 4
+[0m[0m[TMR]   Starting itti queue: TASK_MAC_ENB as task 5
+[0m[0m[TMR]   Starting itti queue: TASK_RLC_ENB as task 6
+[0m[0m[TMR]   Starting itti queue: TASK_RRC_ENB_NB_IoT as task 7
+[0m[0m[TMR]   Starting itti queue: TASK_PDCP_ENB as task 8
+[0m[0m[TMR]   Starting itti queue: TASK_RRC_ENB as task 9
+[0m[0m[TMR]   Starting itti queue: TASK_RRC_GNB as task 10
+[0m[0m[TMR]   Starting itti queue: TASK_RAL_ENB as task 11
+[0m[0m[TMR]   Starting itti queue: TASK_S1AP as task 12
+[0m[0m[TMR]   Starting itti queue: TASK_X2AP as task 13
+[0m[0m[TMR]   Starting itti queue: TASK_SCTP as task 14
+[0m[0m[TMR]   Starting itti queue: TASK_ENB_APP as task 15
+[0m[0m[TMR]   Starting itti queue: TASK_GNB_APP as task 16
+[0m[0m[TMR]   Starting itti queue: TASK_FLEXRAN_AGENT as task 17
+[0m[0m[TMR]   Starting itti queue: TASK_PHY_UE as task 18
+[0m[0m[TMR]   Starting itti queue: TASK_MAC_UE as task 19
+[0m[0m[TMR]   Starting itti queue: TASK_RLC_UE as task 20
+[0m[0m[TMR]   Starting itti queue: TASK_PDCP_UE as task 21
+[0m[0m[TMR]   Starting itti queue: TASK_RRC_UE as task 22
+[0m[0m[TMR]   Starting itti queue: TASK_NAS_UE as task 23
+[0m[0m[TMR]   Starting itti queue: TASK_RAL_UE as task 24
+[0m[0m[TMR]   Starting itti queue: TASK_MSC as task 25
+[0m[0m[TMR]   Starting itti queue: TASK_GTPV1_U as task 26
+[0m[0m[TMR]   Starting itti queue: TASK_UDP as task 27
+[0m[0m[HW]   Version: Branch: develop-nr-working Abrev. Hash: b0cb281 Date: Wed Jun 19 11:45:59 2019 -0600
+[0m[0m[PHY]   Set nb_rx_antenna 1 , nb_tx_antenna 1 
+[0m[0m[PHY]   Scanning band 0, dl_min 2110000, ul_min 1920000
+[0m[0m[PHY]   Scanning band 1, dl_min 1930000, ul_min 1850000
+[0m[0m[PHY]   Scanning band 2, dl_min 1805000, ul_min 1710000
+[0m[0m[PHY]   Scanning band 3, dl_min 869000, ul_min 824000
+[0m[0m[PHY]   Scanning band 4, dl_min 2620000, ul_min 2500000
+[0m[0m[PHY]   Scanning band 5, dl_min 925000, ul_min 880000
+[0m[0m[PHY]   Scanning band 6, dl_min 728000, ul_min 698000
+[0m[0m[PHY]   Scanning band 7, dl_min 791000, ul_min 832000
+[0m[0m[PHY]   Scanning band 8, dl_min 1930000, ul_min 1850000
+[0m[0m[PHY]   Scanning band 9, dl_min 758000, ul_min 703000
+[0m[0m[PHY]   Scanning band 10, dl_min 2010000, ul_min 2010000
+[0m[0m[PHY]   Scanning band 11, dl_min 2570000, ul_min 2570000
+[0m[0m[PHY]   Scanning band 12, dl_min 1880000, ul_min 1880000
+[0m[0m[PHY]   Scanning band 13, dl_min 2300000, ul_min 2300000
+[0m[0m[PHY]   Scanning band 14, dl_min 2496000, ul_min 2496000
+[0m[0m[PHY]   Scanning band 15, dl_min 1432000, ul_min 1432000
+[0m[0m[PHY]   Scanning band 16, dl_min 1427000, ul_min 1427000
+[0m[0m[PHY]   Scanning band 17, dl_min 2110000, ul_min 1710000
+[0m[0m[PHY]   Scanning band 18, dl_min 1995000, ul_min 1695000
+[0m[0m[PHY]   Scanning band 19, dl_min 617000, ul_min 663000
+[0m[0m[PHY]   Scanning band 20, dl_min 1475000, ul_min 1427000
+[0m[0m[PHY]   Scanning band 21, dl_min 1432000, ul_min 0
+[0m[0m[PHY]   Scanning band 22, dl_min 1427000, ul_min 0
+[0m[0m[PHY]   Scanning band 23, dl_min 3300000, ul_min 3300000
+[0m[0m[PHY]   DL frequency 3510000000: band 77, frame_type 1, UL frequency 3510000000
+[0mframe_parms 0
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 106, Ncp 0
+[0mInitializing UE vars (abstraction 0) for eNB TXant 1, UE RXant 1
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 106, Ncp 0
+[0mUE[0]->mode = 0
+HW: Configuring card 0, nb_antennas_tx/rx 1/1
+Card 0, channel 0, Setting tx_gain 20.000000, rx_gain 110.000000, tx_freq 3510000000.000000, rx_freq 3510000000.000000
+Card 0, channel 1, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 0, channel 2, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 0, channel 3, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+[0m[PHY]   USRP clock source not specified. defaulting to internal
+[0mHW: Configuring card 1, nb_antennas_tx/rx 1/1
+Card 1, channel 0, Setting tx_gain 20.000000, rx_gain 110.000000, tx_freq 3510000000.000000, rx_freq 3510000000.000000
+Card 1, channel 1, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 1, channel 2, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 1, channel 3, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+[0m[PHY]   USRP clock source not specified. defaulting to internal
+[0mHW: Configuring card 2, nb_antennas_tx/rx 1/1
+Card 2, channel 0, Setting tx_gain 20.000000, rx_gain 110.000000, tx_freq 3510000000.000000, rx_freq 3510000000.000000
+Card 2, channel 1, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 2, channel 2, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 2, channel 3, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+[0m[PHY]   USRP clock source not specified. defaulting to internal
+[0mHW: Configuring card 3, nb_antennas_tx/rx 1/1
+Card 3, channel 0, Setting tx_gain 20.000000, rx_gain 110.000000, tx_freq 3510000000.000000, rx_freq 3510000000.000000
+Card 3, channel 1, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 3, channel 2, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 3, channel 3, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+[0m[PHY]   USRP clock source not specified. defaulting to internal
+[0mHW: Configuring card 4, nb_antennas_tx/rx 1/1
+Card 4, channel 0, Setting tx_gain 20.000000, rx_gain 110.000000, tx_freq 3510000000.000000, rx_freq 3510000000.000000
+Card 4, channel 1, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 4, channel 2, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 4, channel 3, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+[0m[PHY]   USRP clock source not specified. defaulting to internal
+[0mHW: Configuring card 5, nb_antennas_tx/rx 1/1
+Card 5, channel 0, Setting tx_gain 20.000000, rx_gain 110.000000, tx_freq 3510000000.000000, rx_freq 3510000000.000000
+Card 5, channel 1, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 5, channel 2, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 5, channel 3, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+[0m[PHY]   USRP clock source not specified. defaulting to internal
+[0mHW: Configuring card 6, nb_antennas_tx/rx 1/1
+Card 6, channel 0, Setting tx_gain 20.000000, rx_gain 110.000000, tx_freq 3510000000.000000, rx_freq 3510000000.000000
+Card 6, channel 1, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 6, channel 2, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 6, channel 3, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+[0m[PHY]   USRP clock source not specified. defaulting to internal
+[0mHW: Configuring card 7, nb_antennas_tx/rx 1/1
+Card 7, channel 0, Setting tx_gain 20.000000, rx_gain 110.000000, tx_freq 3510000000.000000, rx_freq 3510000000.000000
+Card 7, channel 1, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 7, channel 2, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+Card 7, channel 3, Setting tx_gain 0.000000, rx_gain 110.000000, tx_freq 0.000000, rx_freq 0.000000
+[0m[PHY]   USRP clock source not specified. defaulting to internal
+[0mTYPE <CTRL-C> TO TERMINATE
+[0m[PHY]   Intializing UE Threads for instance 0 (0x4c7e8d0,0x7fb0da6cf010)...
+[0mUE threads created by 27909
+[CONFIG] loader: 2/2 parameters successfully set 
+[CONFIG] loader.rfsimulator: 1/2 parameters successfully set 
+[LOADER] library librfsimulator.so successfully loaded
+[0m[HW]   rfsimulator: running as UE
+[0m[0m[HW]   [RRU] has loaded USRP B200 device.
+[0m[0m[HW]   rfsimulator: trying to connect to 10.10.1.1:4043
+[0m[0m[HW]   rfsimulator: connection established
+[0m[0m[93m[HW]   gap of: 2365440 in reception
+[0m[0m[PHY]   Scanning band 0, dl_min 2110000, ul_min 1920000
+[0m[0m[PHY]   Scanning band 1, dl_min 1930000, ul_min 1850000
+[0m[0m[PHY]   Scanning band 2, dl_min 1805000, ul_min 1710000
+[0m[0m[PHY]   Scanning band 3, dl_min 869000, ul_min 824000
+[0m[0m[PHY]   Scanning band 4, dl_min 2620000, ul_min 2500000
+[0m[0m[PHY]   Scanning band 5, dl_min 925000, ul_min 880000
+[0m[0m[PHY]   Scanning band 6, dl_min 728000, ul_min 698000
+[0m[0m[PHY]   Scanning band 7, dl_min 791000, ul_min 832000
+[0m[0m[PHY]   Scanning band 8, dl_min 1930000, ul_min 1850000
+[0m[0m[PHY]   Scanning band 9, dl_min 758000, ul_min 703000
+[0m[0m[PHY]   Scanning band 10, dl_min 2010000, ul_min 2010000
+[0m[0m[PHY]   Scanning band 11, dl_min 2570000, ul_min 2570000
+[0m[0m[PHY]   Scanning band 12, dl_min 1880000, ul_min 1880000
+[0m[0m[PHY]   Scanning band 13, dl_min 2300000, ul_min 2300000
+[0m[0m[PHY]   Scanning band 14, dl_min 2496000, ul_min 2496000
+[0m[0m[PHY]   Scanning band 15, dl_min 1432000, ul_min 1432000
+[0m[0m[PHY]   Scanning band 16, dl_min 1427000, ul_min 1427000
+[0m[0m[PHY]   Scanning band 17, dl_min 2110000, ul_min 1710000
+[0m[0m[PHY]   Scanning band 18, dl_min 1995000, ul_min 1695000
+[0m[0m[PHY]   Scanning band 19, dl_min 617000, ul_min 663000
+[0m[0m[PHY]   Scanning band 20, dl_min 1475000, ul_min 1427000
+[0m[0m[PHY]   Scanning band 21, dl_min 1432000, ul_min 0
+[0m[0m[PHY]   Scanning band 22, dl_min 1427000, ul_min 0
+[0m[0m[PHY]   Scanning band 23, dl_min 3300000, ul_min 3300000
+[0m[0m[PHY]   DL frequency 3510000000: band 77, frame_type 1, UL frequency 3510000000
+[0m[0m[PHY]   [SCHED][UE] Check absolute frequency DL 3510000000, UL 3510000000 (oai_exit 0, rx_num_channels 1)
+[0m[0m[93m[PHY]   Starting sync detection
+[0m[0m[PHY]   [UE thread Synch] Running Initial Synch (mode 0)
+[0m[0m[PHY]   Initializing frame parms for mu 1, N_RB 106, Ncp 0
+[0m[0m[PHY]   [UE] nr_synchro_time: Sync source = 0, Peak found at pos 0, val = 0 (0 dB) avg 0 dB, ffo 0.000000
+[0mPSS execution duration 969602 microseconds 
+[0m[PHY]   [UE0] Initial sync : Estimated PSS position 0, Nid2 0
+[0m[0m[PHY]   sync_pos 0 ssb_offset 614256 
+[0m[0m[PHY]   Calling sss detection (normal CP)
+[0m[0m[PHY]   [UE0] Initial sync: starting PBCH detection (rx_offset 0)
+[0m[0m[PHY]   TDD Normal prefix: CellId 0 metric 0, phase 0, pbch -1
+[0m[0m[PHY]   [UE0] Initial sync : Estimated power: 0 dB
+[0m[0m[PHY]   Scanning band 0, dl_min 2110000, ul_min 1920000
+[0m[0m[PHY]   Scanning band 1, dl_min 1930000, ul_min 1850000
+[0m[0m[PHY]   Scanning band 2, dl_min 1805000, ul_min 1710000
+[0m[0m[PHY]   Scanning band 3, dl_min 869000, ul_min 824000
+[0m[0m[PHY]   Scanning band 4, dl_min 2620000, ul_min 2500000
+[0m[0m[PHY]   Scanning band 5, dl_min 925000, ul_min 880000
+[0m[0m[PHY]   Scanning band 6, dl_min 728000, ul_min 698000
+[0m[0m[PHY]   Scanning band 7, dl_min 791000, ul_min 832000
+[0m[0m[PHY]   Scanning band 8, dl_min 1930000, ul_min 1850000
+[0m[0m[PHY]   Scanning band 9, dl_min 758000, ul_min 703000
+[0m[0m[PHY]   Scanning band 10, dl_min 2010000, ul_min 2010000
+[0m[0m[PHY]   Scanning band 11, dl_min 2570000, ul_min 2570000
+[0m[0m[PHY]   Scanning band 12, dl_min 1880000, ul_min 1880000
+[0m[0m[PHY]   Scanning band 13, dl_min 2300000, ul_min 2300000
+[0m[0m[PHY]   Scanning band 14, dl_min 2496000, ul_min 2496000
+[0m[0m[PHY]   Scanning band 15, dl_min 1432000, ul_min 1432000
+[0m[0m[PHY]   Scanning band 16, dl_min 1427000, ul_min 1427000
+[0m[0m[PHY]   Scanning band 17, dl_min 2110000, ul_min 1710000
+[0m[0m[PHY]   Scanning band 18, dl_min 1995000, ul_min 1695000
+[0m[0m[PHY]   Scanning band 19, dl_min 617000, ul_min 663000
+[0m[0m[PHY]   Scanning band 20, dl_min 1475000, ul_min 1427000
+[0m[0m[PHY]   Scanning band 21, dl_min 1432000, ul_min 0
+[0m[0m[PHY]   Scanning band 22, dl_min 1427000, ul_min 0
+[0m[0m[PHY]   Scanning band 23, dl_min 3300000, ul_min 3300000
+[0m[0m[PHY]   DL frequency 3510000000: band 77, frame_type 1, UL frequency 3510000000
+[0m[0m[PHY]   [SCHED][UE] Check absolute frequency DL 3510000000, UL 3510000000 (oai_exit 0, rx_num_channels 1)
+[0m[0m[93m[PHY]   Starting sync detection
+[0m[0m[PHY]   [UE thread Synch] Running Initial Synch (mode 0)
+[0m[0m[PHY]   Initializing frame parms for mu 1, N_RB 106, Ncp 0
+[0m[0m[PHY]   [UE] nr_synchro_time: Sync source = 0, Peak found at pos 4560, val = 33606323705 (104 dB) avg 68 dB, ffo 0.000000
+[0mPSS execution duration 787088 microseconds 
+[0m[PHY]   [UE0] Initial sync : Estimated PSS position 4560, Nid2 0
+[0m[0m[PHY]   sync_pos 4560 ssb_offset 4416 
+[0m[0m[PHY]   Calling sss detection (normal CP)
+[0mNid2 0 Nid1 0 tot_metric 98418, phase_max 3 
+[0m[PHY]   [UE0] Initial sync: starting PBCH detection (rx_offset 0)
+[0m[0m[MAC]   [L2][IF MODULE][DL INDICATION][RX_IND]
+[0m[0m[MAC]   [L2][MAC] decode mib
+[0m[RRC] MIB PDU : 11
+[RRC] MIB PDU : 0
+[RRC] MIB PDU : 6
+[0m[MAC]   [L1][IF module][PHY CONFIG]
+[0m[0m[MAC]   subcarrier spacing:          1
+[0m[0m[MAC]   ssb carrier offset:          0
+[0m[0m[MAC]   dmrs type A position:        0
+[0m[0m[MAC]   pdcch config sib1:           0
+[0m[0m[MAC]   cell barred:                 1
+[0m[0m[MAC]   intra frequency reselection: 1
+[0m[0m[MAC]   system frame number:         92
+[0m[0m[MAC]   ssb index:                   0
+[0m[0m[MAC]   half frame bit:              0
+[0m[0m[MAC]   -------------------------------
+[0m[0m[PHY]   [UE0] Initial sync: pbch decoded sucessfully
+[0m[0m[PHY]   TDD Normal prefix: CellId 0 metric 98418, phase 3, pbch 0
+[0m[0m[PHY]   [UE0] In synch, rx_offset 0 samples
+[0m[0m[PHY]   [UE 0] RRC Measurements => rssi -inf dBm (dig -inf dB, gain 110), N0 0 dBm,  rsrp -inf dBm/RE, rsrq -inf dB
+[0m[0m[PHY]   Got synch: hw_slot_offset 0, carrier off 0 Hz, rxgain 110 (DL 3510000000, UL 3510000000), UE_scan_carrier 0
+[0m[0m[PHY]   Resynchronizing RX by 0 samples (mode = 0)
+[0m[0m[MAC]   [L2][IF MODULE][DL INDICATION][RX_IND]
+[0m[0m[MAC]   [L2][MAC] decode mib
+[0m[RRC] MIB PDU : 29
+[RRC] MIB PDU : 0
+[RRC] MIB PDU : 6
+[0m[MAC]   [L1][IF module][PHY CONFIG]
+[0m[0m[MAC]   subcarrier spacing:          1
+[0m[0m[MAC]   ssb carrier offset:          0
+[0m[0m[MAC]   dmrs type A position:        0
+[0m[0m[MAC]   pdcch config sib1:           0
+[0m[0m[MAC]   cell barred:                 1
+[0m[0m[MAC]   intra frequency reselection: 1
+[0m[0m[MAC]   system frame number:         227
+[0m[0m[MAC]   ssb index:                   0
+[0m[0m[MAC]   half frame bit:              0
+[0m[0m[MAC]   -------------------------------
+[0m[0m[MAC]   >>>NR_IF_Module i=0, dl_info->dci_ind->number_of_dcis=1
+[0m[0m[MAC]   nr_ue_process_dci at MAC layer with dci_format=2 (DL BWP 106, UL BWP 106)
+[0m[0m[PHY]   [UE  0] Frame 227, nr_tti_rx 1: found 1 DCIs
+[0m[0m[PHY]   start adjust sync slot = 1 no timing 0
+[0m[0m[PHY]   [DLSCH] AbsSubframe 227.1 log2_maxh = 1 [log2_maxh0 0 log2_maxh1 0] (0,0)
+[0m[0m[PHY]   DLSCH Decoding, harq_pid 0 TBS 16896 G 30600 mcs 20 Nl 1 nb_symb_sch 9 nb_rb 50
+[0mSegment 0 CRC OK
+Segment 1 CRC OK
+Segment 2 CRC OK
+[0m[1;31m[PHY]   SET rx_offset 614382 
+[0m[0m[MAC]   [L2][IF MODULE][DL INDICATION][RX_IND]
+[0m[0m[MAC]   [L2][MAC] decode mib
+[0m[RRC] MIB PDU : 29
+[RRC] MIB PDU : 0
+[RRC] MIB PDU : 6
+[0m[MAC]   [L1][IF module][PHY CONFIG]
+[0m[0m[MAC]   subcarrier spacing:          1
+[0m[0m[MAC]   ssb carrier offset:          0
+[0m[0m[MAC]   dmrs type A position:        0
+[0m[0m[MAC]   pdcch config sib1:           0
+[0m[0m[MAC]   cell barred:                 1
+[0m[0m[MAC]   intra frequency reselection: 1
+[0m[0m[MAC]   system frame number:         228
+[0m[0m[MAC]   ssb index:                   0
+[0m[0m[MAC]   half frame bit:              0
+[0m[0m[MAC]   -------------------------------
+[0m[0m[MAC]   >>>NR_IF_Module i=0, dl_info->dci_ind->number_of_dcis=1
+[0m[0m[MAC]   nr_ue_process_dci at MAC layer with dci_format=2 (DL BWP 106, UL BWP 106)
+[0m[0m[PHY]   [UE  0] Frame 228, nr_tti_rx 1: found 1 DCIs
+[0m[0m[PHY]   start adjust sync slot = 1 no timing 0
+[0m[0m[PHY]   [DLSCH] AbsSubframe 228.1 log2_maxh = 10 [log2_maxh0 0 log2_maxh1 0] (516300,516300)
+[0m[0m[PHY]   DLSCH Decoding, harq_pid 0 TBS 16896 G 30600 mcs 20 Nl 1 nb_symb_sch 9 nb_rb 50
+[0mCRC NOK
+[0m[1;31m[PHY]   SET rx_offset 614382 
+[0m[0m[MAC]   [L2][IF MODULE][DL INDICATION][RX_IND]
+[0m[0m[MAC]   [L2][MAC] decode mib
+[0m[RRC] MIB PDU : 29
+[RRC] MIB PDU : 0
+[RRC] MIB PDU : 6
+[0m[MAC]   [L1][IF module][PHY CONFIG]
+[0m[0m[MAC]   subcarrier spacing:          1
+[0m[0m[MAC]   ssb carrier offset:          0
+[0m[0m[MAC]   dmrs type A position:        0
+[0m[0m[MAC]   pdcch config sib1:           0
+[0m[0m[MAC]   cell barred:                 1
+[0m[0m[MAC]   intra frequency reselection: 1
+[0m[0m[MAC]   system frame number:         229
+[0m[0m[MAC]   ssb index:                   0
+[0m[0m[MAC]   half frame bit:              0
+[0m[0m[MAC]   -------------------------------
+[0m[0m[MAC]   >>>NR_IF_Module i=0, dl_info->dci_ind->number_of_dcis=1
+[0m[0m[MAC]   nr_ue_process_dci at MAC layer with dci_format=2 (DL BWP 106, UL BWP 106)
+[0m[0m[PHY]   [UE  0] Frame 229, nr_tti_rx 1: found 1 DCIs
+[0m[0m[PHY]   start adjust sync slot = 1 no timing 0
+[0m[0m[PHY]   [DLSCH] AbsSubframe 229.1 log2_maxh = 10 [log2_maxh0 0 log2_maxh1 0] (516300,516300)
+[0m[0m[PHY]   DLSCH Decoding, harq_pid 0 TBS 16896 G 30600 mcs 20 Nl 1 nb_symb_sch 9 nb_rb 50
+[0mCRC NOK
+[0m[1;31m[PHY]   SET rx_offset 614382 
+[0m[0m[MAC]   [L2][IF MODULE][DL INDICATION][RX_IND]
+[0m[0m[MAC]   [L2][MAC] decode mib
+[0m[RRC] MIB PDU : 29
+[RRC] MIB PDU : 0
+[RRC] MIB PDU : 6
+[0m[MAC]   [L1][IF module][PHY CONFIG]
+[0m[0m[MAC]   subcarrier spacing:          1
+[0m[0m[MAC]   ssb carrier offset:          0
+[0m[0m[MAC]   dmrs type A position:        0
+[0m[0m[MAC]   pdcch config sib1:           0
+[0m[0m[MAC]   cell barred:                 1
+[0m[0m[MAC]   intra frequency reselection: 1
+[0m[0m[MAC]   system frame number:         230
+[0m[0m[MAC]   ssb index:                   0
+[0m[0m[MAC]   half frame bit:              0
+[0m[0m[MAC]   -------------------------------
+[0m[0m[MAC]   >>>NR_IF_Module i=0, dl_info->dci_ind->number_of_dcis=1
+[0m[0m[MAC]   nr_ue_process_dci at MAC layer with dci_format=2 (DL BWP 106, UL BWP 106)
+[0m[0m[PHY]   [UE  0] Frame 230, nr_tti_rx 1: found 1 DCIs
+[0m[0m[PHY]   start adjust sync slot = 1 no timing 0
+[0m[0m[PHY]   [DLSCH] AbsSubframe 230.1 log2_maxh = 10 [log2_maxh0 0 log2_maxh1 0] (516300,516300)
+[0m[0m[PHY]   DLSCH Decoding, harq_pid 0 TBS 16896 G 30600 mcs 20 Nl 1 nb_symb_sch 9 nb_rb 50
+[0mCRC NOK
+[0m[1;31m[PHY]   SET rx_offset 614382 
+[0m[0m[MAC]   [L2][IF MODULE][DL INDICATION][RX_IND]
+[0m[0m[MAC]   [L2][MAC] decode mib
+[0m[RRC] MIB PDU : 29
+[RRC] MIB PDU : 0
+[RRC] MIB PDU : 6
+[0m[MAC]   [L1][IF module][PHY CONFIG]
+[0m[0m[MAC]   subcarrier spacing:          1
+[0m[0m[MAC]   ssb carrier offset:          0
+[0m[0m[MAC]   dmrs type A position:        0
+[0m[0m[MAC]   pdcch config sib1:           0
+[0m[0m[MAC]   cell barred:                 1
+[0m[0m[MAC]   intra frequency reselection: 1
+[0m[0m[MAC]   system frame number:         231
+[0m[0m[MAC]   ssb index:                   0
+[0m[0m[MAC]   half frame bit:              0
+[0m[0m[MAC]   -------------------------------
+[0m[0m[MAC]   >>>NR_IF_Module i=0, dl_info->dci_ind->number_of_dcis=1
+[0m[0m[MAC]   nr_ue_process_dci at MAC layer with dci_format=2 (DL BWP 106, UL BWP 106)
+[0m[0m[PHY]   [UE  0] Frame 231, nr_tti_rx 1: found 1 DCIs
+[0m[0m[PHY]   start adjust sync slot = 1 no timing 0
+[0m[0m[PHY]   [DLSCH] AbsSubframe 231.1 log2_maxh = 10 [log2_maxh0 0 log2_maxh1 0] (516300,516300)
+[0m[0m[PHY]   DLSCH Decoding, harq_pid 0 TBS 16896 G 30600 mcs 20 Nl 1 nb_symb_sch 9 nb_rb 50
+[0mCRC NOK
+[0m[1;31m[PHY]   SET rx_offset 614382 
+[0m[0m[MAC]   [L2][IF MODULE][DL INDICATION][RX_IND]
+[0m[0m[MAC]   [L2][MAC] decode mib
+[0m[RRC] MIB PDU : 29
+[RRC] MIB PDU : 0
+[RRC] MIB PDU : 6
+[0m[MAC]   [L1][IF module][PHY CONFIG]
+[0m[0m[MAC]   subcarrier spacing:          1
+[0m[0m[MAC]   ssb carrier offset:          0
+[0m[0m[MAC]   dmrs type A position:        0
+[0m[0m[MAC]   pdcch config sib1:           0
+[0m[0m[MAC]   cell barred:                 1
+[0m[0m[MAC]   intra frequency reselection: 1
+[0m[0m[MAC]   system frame number:         232
+[0m[0m[MAC]   ssb index:                   0
+[0m[0m[MAC]   half frame bit:              0
+[0m[0m[MAC]   -------------------------------
+[0m[0m[MAC]   >>>NR_IF_Module i=0, dl_info->dci_ind->number_of_dcis=1
+[0m[0m[MAC]   nr_ue_process_dci at MAC layer with dci_format=2 (DL BWP 106, UL BWP 106)
+[0m[0m[PHY]   [UE  0] Frame 232, nr_tti_rx 1: found 1 DCIs
+[0m[0m[PHY]   start adjust sync slot = 1 no timing 0
+[0m[0m[PHY]   [DLSCH] AbsSubframe 232.1 log2_maxh = 10 [log2_maxh0 0 log2_maxh1 0] (516300,516300)
+[0m[0m[PHY]   DLSCH Decoding, harq_pid 0 TBS 16896 G 30600 mcs 20 Nl 1 nb_symb_sch 9 nb_rb 50
+[0mCRC NOK
+[0m[1;31m[PHY]   SET rx_offset 614382 
+[0m[0m[MAC]   [L2][IF MODULE][DL INDICATION][RX_IND]
+[0m[0m[MAC]   [L2][MAC] decode mib
+[0m[RRC] MIB PDU : 29
+[RRC] MIB PDU : 0
+[RRC] MIB PDU : 6
+[0m[MAC]   [L1][IF module][PHY CONFIG]
+[0m[0m[MAC]   subcarrier spacing:          1
+[0m[0m[MAC]   ssb carrier offset:          0
+[0m[0m[MAC]   dmrs type A position:        0
+[0m[0m[MAC]   pdcch config sib1:           0
+[0m[0m[MAC]   cell barred:                 1
+[0m[0m[MAC]   intra frequency reselection: 1
+[0m[0m[MAC]   system frame number:         233
+[0m[0m[MAC]   ssb index:                   0
+[0m[0m[MAC]   half frame bit:              0
+[0m[0m[MAC]   -------------------------------
+[0m[0m[MAC]   >>>NR_IF_Module i=0, dl_info->dci_ind->number_of_dcis=1
+[0m[0m[MAC]   nr_ue_process_dci at MAC layer with dci_format=2 (DL BWP 106, UL BWP 106)
+[0m[0m[PHY]   [UE  0] Frame 233, nr_tti_rx 1: found 1 DCIs
+[0m[0m[PHY]   start adjust sync slot = 1 no timing 0
+[0m[0m[PHY]   [DLSCH] AbsSubframe 233.1 log2_maxh = 10 [log2_maxh0 0 log2_maxh1 0] (516300,516300)
+[0m[0m[PHY]   DLSCH Decoding, harq_pid 0 TBS 16896 G 30600 mcs 20 Nl 1 nb_symb_sch 9 nb_rb 50
+[0mCRC NOK
+[0m[1;31m[PHY]   SET rx_offset 614382 
+[0m[0m[MAC]   [L2][IF MODULE][DL INDICATION][RX_IND]
+[0m[0m[MAC]   [L2][MAC] decode mib
+[0m[RRC] MIB PDU : 29
+[RRC] MIB PDU : 0
+[RRC] MIB PDU : 6
+[0m[MAC]   [L1][IF module][PHY CONFIG]
+[0m[0m[MAC]   subcarrier spacing:          1
+[0m[0m[MAC]   ssb carrier offset:          0
+[0m[0m[MAC]   dmrs type A position:        0
+[0m[0m[MAC]   pdcch config sib1:           0
+[0m[0m[MAC]   cell barred:                 1
+[0m[0m[MAC]   intra frequency reselection: 1
+[0m[0m[MAC]   system frame number:         234
+[0m[0m[MAC]   ssb index:                   0
+[0m[0m[MAC]   half frame bit:              0
+[0m[0m[MAC]   -------------------------------
+[0m[0m[MAC]   >>>NR_IF_Module i=0, dl_info->dci_ind->number_of_dcis=1
+[0m[0m[MAC]   nr_ue_process_dci at MAC layer with dci_format=2 (DL BWP 106, UL BWP 106)
+[0m[0m[PHY]   [UE  0] Frame 234, nr_tti_rx 1: found 1 DCIs
+[0m[0m[PHY]   start adjust sync slot = 1 no timing 0
+[0m[0m[PHY]   [DLSCH] AbsSubframe 234.1 log2_maxh = 10 [log2_maxh0 0 log2_maxh1 0] (516300,516300)
+[0m[0m[PHY]   DLSCH Decoding, harq_pid 0 TBS 16896 G 30600 mcs 20 Nl 1 nb_symb_sch 9 nb_rb 50
+[0mCRC NOK
+[0m[1;31m[PHY]   SET rx_offset 614382 
+[0m[0m[MAC]   [L2][IF MODULE][DL INDICATION][RX_IND]
+[0m[0m[MAC]   [L2][MAC] decode mib
+[0m[RRC] MIB PDU : 29
+[RRC] MIB PDU : 0
+[RRC] MIB PDU : 6
+[0m[MAC]   [L1][IF module][PHY CONFIG]
+[0m[0m[MAC]   subcarrier spacing:          1
+[0m[0m[MAC]   ssb carrier offset:          0
+[0m[0m[MAC]   dmrs type A position:        0
+[0m[0m[MAC]   pdcch config sib1:           0
+[0m[0m[MAC]   cell barred:                 1
+[0m[0m[MAC]   intra frequency reselection: 1
+[0m[0m[MAC]   system frame number:         235
+[0m[0m[MAC]   ssb index:                   0
+[0m[0m[MAC]   half frame bit:              0
+[0m[0m[MAC]   -------------------------------
+[0m[0m[MAC]   >>>NR_IF_Module i=0, dl_info->dci_ind->number_of_dcis=1
+[0m[0m[MAC]   nr_ue_process_dci at MAC layer with dci_format=2 (DL BWP 106, UL BWP 106)
+[0m[0m[PHY]   [UE  0] Frame 235, nr_tti_rx 1: found 1 DCIs
+[0m[0m[PHY]   start adjust sync slot = 1 no timing 0
+[0m[0m[PHY]   [DLSCH] AbsSubframe 235.1 log2_maxh = 10 [log2_maxh0 0 log2_maxh1 0] (516300,516300)
+[0m[0m[PHY]   DLSCH Decoding, harq_pid 0 TBS 16896 G 30600 mcs 20 Nl 1 nb_symb_sch 9 nb_rb 50
+[0mCRC NOK
+[0m[93m[HW]   Lost socket 
+[0m

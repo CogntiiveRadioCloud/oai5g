@@ -1,0 +1,379 @@
+[LOADER] library libNB_IoT.so is not loaded: libNB_IoT.so: cannot open shared object file: No such file or directory
+[CONFIG] get parameters from libconfig /home/oai/Desktop/enb.band7.tm1.25PRB.usrpX300.conf , debug flags: 0x00000000
+[CONFIG] function config_libconfig_init returned 0
+[CONFIG] config module libconfig loaded
+[LIBCONFIG] config: 1/1 parameters successfully set, (1 to default value)
+# /dev/cpu_dma_latency set to 0us
+[LIBCONFIG] log_config: 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] log_config: 42/42 parameters successfully set, (36 to default value)
+[LIBCONFIG] log_config: 42/42 parameters successfully set, (42 to default value)
+[LIBCONFIG] log_config: 15/15 parameters successfully set, (15 to default value)
+[LIBCONFIG] log_config: 15/15 parameters successfully set, (15 to default value)
+log init done
+Reading in command-line options
+[LIBCONFIG] (root): 22/22 parameters successfully set, (19 to default value)
+[LIBCONFIG] (root): 5/5 parameters successfully set, (4 to default value)
+Getting ENBSParams
+[LIBCONFIG] (root): 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
+Configuration: nb_rrc_inst 1, nb_L1_inst 1, nb_ru 1
+[LIBCONFIG] loader: 2/2 parameters successfully set, (2 to default value)
+[LIBCONFIG] loader.NB_IoT: 2/2 parameters successfully set, (1 to default value)
+               nb_nbiot_rrc_inst 0, nb_nbiot_L1_inst 0, nb_nbiot_macrlc_inst 0
+[LIBCONFIG] TTracer: 4/4 parameters successfully set, (4 to default value)
+configuring for RAU/RRU
+CPU Freq is 3.392388 
+ITTI init, useMME: 0
+[0m[TMR]   Starting itti queue: TASK_UNKNOWN as task 0
+[0m[0m[TMR]   Starting itti queue: TASK_TIMER as task 1
+[0m[0m[TMR]   Starting itti queue: TASK_L2L1 as task 2
+[0m[0m[TMR]   Starting itti queue: TASK_BM as task 3
+[0m[0m[TMR]   Starting itti queue: TASK_PHY_ENB as task 4
+[0m[0m[TMR]   Starting itti queue: TASK_MAC_ENB as task 5
+[0m[0m[TMR]   Starting itti queue: TASK_RLC_ENB as task 6
+[0m[0m[TMR]   Starting itti queue: TASK_RRC_ENB_NB_IoT as task 7
+[0m[0m[TMR]   Starting itti queue: TASK_PDCP_ENB as task 8
+[0m[0m[TMR]   Starting itti queue: TASK_DATA_FORWARDING as task 9
+[0m[0m[TMR]   Starting itti queue: TASK_END_MARKER as task 10
+[0m[0m[TMR]   Starting itti queue: TASK_RRC_ENB as task 11
+[0m[0m[TMR]   Starting itti queue: TASK_RAL_ENB as task 12
+[0m[0m[TMR]   Starting itti queue: TASK_S1AP as task 13
+[0m[0m[TMR]   Starting itti queue: TASK_X2AP as task 14
+[0m[0m[TMR]   Starting itti queue: TASK_SCTP as task 15
+[0m[0m[TMR]   Starting itti queue: TASK_ENB_APP as task 16
+[0m[0m[TMR]   Starting itti queue: TASK_FLEXRAN_AGENT as task 17
+[0m[0m[TMR]   Starting itti queue: TASK_PHY_UE as task 18
+[0m[0m[TMR]   Starting itti queue: TASK_MAC_UE as task 19
+[0m[0m[TMR]   Starting itti queue: TASK_RLC_UE as task 20
+[0m[0m[TMR]   Starting itti queue: TASK_PDCP_UE as task 21
+[0m[0m[TMR]   Starting itti queue: TASK_RRC_UE as task 22
+[0m[0m[TMR]   Starting itti queue: TASK_NAS_UE as task 23
+[0m[0m[TMR]   Starting itti queue: TASK_RAL_UE as task 24
+[0m[0m[TMR]   Starting itti queue: TASK_MSC as task 25
+[0m[0m[TMR]   Starting itti queue: TASK_GTPV1_U as task 26
+[0m[0m[TMR]   Starting itti queue: TASK_UDP as task 27
+[0m[0m[TMR]   Starting itti queue: TASK_CU_F1 as task 28
+[0m[0m[TMR]   Starting itti queue: TASK_DU_F1 as task 29
+[0m[LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)
+[0m[OPT]   OPT disabled
+[0mreported resolution = 1 ns
+[0m[HW]   Version: Branch: heads/v1.1.0 Abrev. Hash: 7af841272 Date: Thu Jul 25 21:04:14 2019 +0200
+[0mRuntime table
+[0m[PHY]   RC.eNB = 0x555aa407ece0
+[0m[LIBCONFIG] L1s.[0]: 24/24 parameters successfully set, (22 to default value)
+[0m[PHY]   RC.eNB[0] = 0x555aa407ed90
+[0m[0m[PHY]   RC.eNB[0][0] = 0x7fc000ec1010
+[0m[0m[ENB_APP]   Initializing northbound interface for L1
+[0m[0m[PHY]   l1_north_init_eNB() RC.nb_L1_inst:1
+[0m[0m[PHY]   l1_north_init_eNB() RC.nb_L1_CC[0]:1
+[0m[0m[PHY]   l1_north_init_eNB() RC.eNB[0][0] installing callbacks
+[0m[0m[PHY]   read_config_and_init() RC.nb_L1_inst: 1
+[0m[LIBCONFIG] MACRLCs.[0]: 21/21 parameters successfully set, (15 to default value)
+[LIBCONFIG] MACRLCs.[0]: 21/21 parameters successfully set, (15 to default value)
+[0m[MAC]   [MAIN] Init function start:nb_macrlc_inst=1
+[0m[0m[PDCP]   PDCP layer has been initialized
+[0mConfiguring local RRC for MACRLC
+[0m[ENB_APP]   sched mode = default 0 [default]
+[0m[0m[MAC]   read_config_and_init() RC.nb_macrlc_inst: 1
+[0m[0m[PHY]   l1_north_init_eNB() RC.nb_L1_inst:1
+[0m[0m[PHY]   l1_north_init_eNB() RC.nb_L1_CC[0]:1
+[0m[0m[PHY]   l1_north_init_eNB() RC.eNB[0][0] installing callbacks
+[0m[LIBCONFIG] (root): 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] eNBs.[0]: 18/18 parameters successfully set, (8 to default value)
+[0m[RRC]   Instance 0: Southbound Transport local_mac
+[0m[0m[RRC]   Setting node_type to ngran_eNB
+[0m[LIBCONFIG] eNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)
+[0m[RRC]   num component carriers 1 
+[0m[0m[RRC]   enb_config::RCconfig_RRC() parameter number: 0, total number of parameters: 78, ccspath: eNBs.[0].component_carriers.[0] 
+ 
+[0m[LIBCONFIG] eNBs.[0].component_carriers.[0]: 78/78 parameters successfully set, (17 to default value)
+phich.resource 0 (ONESIXTH), phich.duration 0 (NORMAL)
+No eMBMS configuration, skipping it
+[LIBCONFIG] eNBs.[0].component_carriers.[0].emtc_parameters: 87/87 parameters successfully set, (87 to default value)
+No eMTC configuration, skipping it
+[LIBCONFIG] eNBs.[0].component_carriers.[0].SLparameters: 39/39 parameters successfully set, (39 to default value)
+No SL configuration skipping it
+[LIBCONFIG] eNBs.[0].srb1_parameters: 6/6 parameters successfully set, (0 to default value)
+[0m[RRC]   Node type 0 
+ [0m[LIBCONFIG] (root): 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] NETWORK_CONTROLLER: 6/6 parameters successfully set, (0 to default value)
+[0m[FLEXRAN_AGENT]   FlexRAN Agent for eNB 0 is DISABLED
+[0m[0m[PDCP]   PDCP layer has been initialized
+[0m[0m[PDCP]   pdcp init, usenetlink
+[0m[LIBCONFIG] nas.noS1: 3/3 parameters successfully set, (3 to default value)
+[NETLINK]Opened socket oaitun_enb1 with fd 66
+[0m[OIP]   Interface oaitun_enb1 successfuly configured, ip address 10.0.1.1, mask 255.255.255.0 broadcast address 10.0.1.255
+[0m[0m[PDCP]   ENB pdcp will use tun interface
+[0m[0m[ENB_APP]   Creating ENB_APP eNB Task
+[0m[0m[TMR]   Created Posix thread TASK_ENB_APP
+[0m[0m[RRC]   Creating RRC eNB Task
+[0m[LIBCONFIG] eNBs.[0]: 1/1 parameters successfully set, (0 to default value)
+[0m[RRC]   Entering main loop of RRC message task
+[0m[0m[TMR]   Created Posix thread TASK_RRC_ENB
+[0m[0m[RRC]   [eNB 0] Received RRC_CONFIGURATION_REQ : 0x555aa40afc8c
+[0m[0m[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 0] Init...
+[0m[0m[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 0] Checking release 
+[0m[0m[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 0] Rel14 RRC detected, MBMS flag 0
+[0m[0m[RRC]   [eNB 0] Node type 0 
+ [0m[0m[RRC]   configuration->schedulingInfoSIB1_BR_r13[CC_id] 0
+[0m[0m[RRC]   Configuring MIB (N_RB_DL 25,phich_Resource 0,phich_Duration 0)
+[0m[0m[RRC]   [MIB] systemBandwidth 2, phich_duration 0, phich_resource 0, sfn 0
+[0m[0m[RRC]   [MIB] schedulingInfoSIB1 0
+[0m[0m[RRC]   [eNB 0] Configuration SIB2/3, eMBMS = 0
+[0m[0m[RRC]   do_SIB23, size 38 
+ [0m[0m[MAC]   Configuring MIB for instance 0, CCid 0 : (band 7,N_RB_DL 25,Nid_cell 0,p 1,DL freq 2680000000,phich_config.resource 0, phich_config.duration 0)
+[0m[0m[MAC]   config_mib() NFAPI_CONFIG_REQUEST(num_tlv:16) DL_BW:25 UL_BW:25 Ncp 0,p_eNB 1,earfcn 3350,band 7,phich_resource 0 phich_duration 0 phich_power_offset 6000 PSS 6000 SSS 6000 PCI 0 PBCH repetition 0
+[0m[0m[MAC]   [CONFIG]SIB2/3 Contents (partial)
+[0m[0m[MAC]   [CONFIG]pusch_config_common.n_SB = 1
+[0m[0m[MAC]   [CONFIG]pusch_config_common.hoppingMode = 0
+[0m[0m[MAC]   [CONFIG]pusch_config_common.pusch_HoppingOffset = 0
+[0m[0m[MAC]   [CONFIG]pusch_config_common.enable64QAM = 0
+[0m[0m[MAC]   [CONFIG]pusch_config_common.groupHoppingEnabled = 1
+[0m[0m[MAC]   [CONFIG]pusch_config_common.groupAssignmentPUSCH = 0
+[0m[0m[MAC]   [CONFIG]pusch_config_common.sequenceHoppingEnabled = 0
+[0m[0m[MAC]   [CONFIG]pusch_config_common.cyclicShift  = 1
+[0m[0m[PHY]   Configuring MIB for instance 0, CCid 0 : (band 7,N_RB_DL 25, N_RB_UL 25, Nid_cell 0,eNB_tx_antenna_ports 1,Ncp 0,DL freq 3350,phich_config.resource 0, phich_config.duration 0)
+[0m[0m[PHY]   Initializing frame parms for N_RB_DL 25, Ncp 0, osf 1
+[0m[0m[PHY]   lte_parms.c: Setting N_RB_DL to 25, ofdm_symbol_size 512
+[0m[LIBCONFIG] loader.coding: 2/2 parameters successfully set, (1 to default value)
+[LOADER] library libcoding.so successfully loaded
+[0m[PHY]   prach_config_common.rootSequenceIndex = 0
+[0m[0m[PHY]   prach_config_common.prach_ConfigInfo.prach_ConfigIndex = 0
+[0m[0m[PHY]   prach_config_common.prach_ConfigInfo.highSpeedFlag = 1
+[0m[0m[PHY]   prach_config_common.prach_ConfigInfo.zeroCorrelationZoneConfig = 14
+[0m[0m[PHY]   prach_config_common.prach_ConfigInfo.prach_FreqOffset = 2
+[0m[0m[PHY]   pusch_config_common.n_SB = 1
+[0m[0m[PHY]   pusch_config_common.hoppingMode = 0
+[0m[0m[PHY]   pusch_config_common.pusch_HoppingOffset = 0
+[0m[0m[PHY]   pusch_config_common.enable64QAM = 0
+[0m[0m[PHY]   pusch_config_common.ul_ReferenceSignalsPUSCH.groupHoppingEnabled = 1
+[0m[0m[PHY]   pusch_config_common.ul_ReferenceSignalsPUSCH.groupAssignmentPUSCH = 0
+[0m[0m[PHY]   pusch_config_common.ul_ReferenceSignalsPUSCH.sequenceHoppingEnabled = 0
+[0m[0m[PHY]   pusch_config_common.ul_ReferenceSignalsPUSCH.cyclicShift = 2
+[0m[0m[PHY]   eNB 0/0 configured
+[0m[0m[RRC]   [eNB] handover active state is 0 
+[0m[0m[RRC]   [eNB] eMBMS active state is 0 
+[0m[0m[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 0] ENB:OPENAIR RRC IN....
+[0m[0m[ENB_APP]   START MAIN THREADS
+[0mRC.nb_L1_inst:1
+Initializing eNB threads single_thread_flag:0 wait_for_sync:0
+[0m[PHY]   [lte-softmodem.c] eNB structure about to allocated RC.nb_L1_inst:1 RC.nb_L1_CC[0]:1
+[0m[0m[PHY]   [lte-softmodem.c] eNB structure RC.eNB allocated
+[0m[0m[PHY]   Initializing eNB 0 CC_id 0 single_thread_flag:0
+[0m[0m[PHY]   Initializing eNB 0 CC_id 0
+[0m[0m[PHY]   Registering with MAC interface module
+[0m[0m[PHY]   Setting indication lists
+[0m[0m[PHY]   [lte-softmodem.c] eNB structure allocated
+[0mwait_eNBs()
+Waiting for eNB L1 instances to all get configured ... sleeping 50ms (nb_L1_inst 1)
+RC.nb_L1_CC[0]:1
+eNB L1 are configured
+About to Init RU threads RC.nb_RU:1
+Initializing RU threads
+configuring RU from file
+[LIBCONFIG] RUs.[0]: 24/24 parameters successfully set, (14 to default value)
+Set RU mask to 1
+Creating RC.ru[0]:0x555aa40b0c30
+Setting function for RU 0 to eNodeB_3GPP
+[0m[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 8
+[0m[0m[1;31m[PHY]   DJP - delete code above this /home/oai/git-repositories/openairinterface5g/targets/RT/USER/lte-ru.c:2658
+[0m[0m[PHY]   Copying frame parms from eNB 0 to ru 0
+[0m[0m[PHY]   Initializing RRU descriptor 0 : (local RF,synch_to_ext_device,0)
+[0mconfiguring ru_id 0 (start_rf 0x555aa203f450)
+[0m[PHY]   Starting ru_thread 0, is_slave 0, send_dmrs 0
+[0m[0m[PHY]   Initializing RU proc 0 (eNodeB_3GPP,synch_to_ext_device),
+[0m[0m[PHY]   init_RU_proc() DJP - added creation of pthread_prach
+[0m[0m[HW]   [SCHED][eNB] ru_thread started on CPU 2, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[0mchannel 0, Setting tx_gain offset 0.000000, rx_gain offset 80.000000, tx_freq 2680000000.000000, rx_freq 2560000000.000000
+[0m[PHY]   Initializing frame parms for N_RB_DL 25, Ncp 0, osf 1
+[0m[0m[PHY]   lte_parms.c: Setting N_RB_DL to 25, ofdm_symbol_size 512
+[0m[0m[HW]   [SCHED][eNB] ru_thread_prach started on CPU 1, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[0m[0m[PHY]   Initializing RU signal buffers (if_south local RF) nb_tx 1
+[0m[0m[PHY]   thread ru created id=9761
+[0m[0m[PHY]   Starting RU 0 (e[0;32m[INFO] [UHD] [0;39mlinux; GNU C++ version 7.4.0; Boost_106501; UHD_3.14.1.1-release
+[0;32m[INFO] [X300] [0;39mX300 initialization sequence...
+[0;32m[INFO] [X300] [0;39mMaximum frame size: 1472 bytes.
+[0;32m[INFO] [X300] [0;39mRadio 1x clock: 184.32 MHz
+[0;32m[INFO] [0/DmaFIFO_0] [0;39mInitializing block control (NOC ID: 0xF1F0D00000000000)
+[0;32m[INFO] [0/DmaFIFO_0] [0;39mBIST passed (Throughput: 1314 MB/s)
+[0;32m[INFO] [0/DmaFIFO_0] [0;39mBIST passed (Throughput: 1316 MB/s)
+[0;32m[INFO] [0/Radio_0] [0;39mInitializing block control (NOC ID: 0x12AD100000000001)
+[0;32m[INFO] [0/Radio_1] [0;39mInitializing block control (NOC ID: 0x12AD100000000001)
+[0;32m[INFO] [0/DDC_0] [0;39mInitializing block control (NOC ID: 0xDDC0000000000000)
+[0;32m[INFO] [0/DDC_1] [0;39mInitializing block control (NOC ID: 0xDDC0000000000000)
+[0;32m[INFO] [0/DUC_0] [0;39mInitializing block control (NOC ID: 0xD0C0000000000000)
+[0;32m[INFO] [0/DUC_1] [0;39mInitializing block control (NOC ID: 0xD0C0000000000000)
+NodeB_3GPP,synch_to_ext_device),
+[0mwaiting for sync (ru_thread,-1/0x555aa2983248,0x555aa309aae0,0x555aa2f506e0)
+[0m[PHY]   ru_thread_prach() RU configured - RACH processing thread running
+[0m[0m[PHY]   [INIT] common.txdata[0] = 0x7fc00404f040 (307200 bytes)
+[0m[0m[PHY]   nb_tx 1
+[0m[0m[PHY]   rxdata_7_5kHz[0] 0x555aa4102f60 for RU 0
+[0m[0m[PHY]   [INIT] common.txdata_BF= 0x555aa4120fe0 (8 bytes)
+[0m[0m[PHY]   txdataF_BF[0] 0x555aa4121060 for RU 0
+[0m[0m[PHY]   rxdataF[0] 0x555aa4128160 for RU 0
+[0m[LIBCONFIG] loader.oai_device: 2/2 parameters successfully set, (1 to default value)
+[LOADER] library liboai_device.so successfully loaded
+[0m[PHY]   Checking for USRPs : UHD 3.14.1.1-release (3.14.1)
+[0m[0m[HW]   Found USRP x300
+[0mFound USRP x300
+Setting clock source to internal
+[0m[PHY]   device_init() sample_rate:7680000
+[0m[0m[PHY]   cal 0: freq 3500000000.000000, offset 77.000000, diff 940000000.000000
+[0m[0m[PHY]   cal 1: freq 2660000000.000000, offset 81.000000, diff 100000000.000000
+[0m[0m[PHY]   cal 2: freq 2300000000.000000, offset 81.000000, diff 260000000.000000
+[0m[0m[PHY]   cal 3: freq 1880000000.000000, offset 82.000000, diff 680000000.000000
+[0m[0m[PHY]   cal 4: freq 816000000.000000, offset 85.000000, diff 1744000000.000000
+[0m[0m[PHY]   RX Gain 0 80.000000 (81.000000) => -1.000000 (max 37.500000)
+[0m[0m[PHY]   USRP TX_GAIN:31.50 gain_range:31.50 tx_gain:0.00
+[0m[0m[PHY]   Actual master clock: 184.320000MHz...
+[0m[0m[PHY]   RF board max packet size 364, size for 100µs jitter 768 
+[0m[0m[PHY]   rx_max_num_samps 364
+[0m[0m[PHY]   RX Channel 0
+[0m[0m[PHY]     Actual RX sample rate: 7.680000MSps...
+[0m[0m[PHY]     Actual RX frequency: 2.560000GHz...
+[0m[0m[PHY]     Actual RX gain: 0.000000...
+[0m[0m[PHY]     Actual RX bandwidth: 5.000000M...
+[0m[0m[PHY]     Actual RX antenna: RX2...
+[0m[0m[PHY]   TX Channel 0
+[0m[0m[PHY]     Actual TX sample rate: 7.680000MSps...
+[0m[0m[PHY]     Actual TX frequency: 2.680000GHz...
+[0m[0m[PHY]     Actual TX gain: 31.500000...
+[0m[0m[PHY]     Actual TX bandwidth: 5.000000M...
+[0m[0m[PHY]     Actual TX antenna: TX/RX...
+[0m[0m[PHY]   Device timestamp: 3.012894...
+[0m[0m[HW]   [RAU] has loaded USRP X300 device.
+[0msetup_RU_buffers: frame_parms = 0x555aa40b0ce8
+[0m[HW]   [SCHED][eNB] fep_thread started on CPU 4, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[0m[0m[HW]   [SCHED][eNB] feptx_thread started on CPU 1, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[0m[0m[PHY]   Signaling main thread that RU 0 (is_slave 0,send_dmrs 0) is ready in state RU_RUN
+[0mwait RUs
+[0m[ENB_APP]   Waiting for RUs to be configured ... RC.ru_mask:00
+[0m[0m[PHY]   RUs configured
+[0m[0m[ENB_APP]   RC.nb_RU:1
+[0mALL RUs ready - init eNBs
+[0m[ENB_APP]   Not NFAPI mode - call init_eNB_afterRU()
+[0m[0m[PHY]   init_eNB_afterRU() RC.nb_inst:1
+[0m[0m[PHY]   RC.nb_CC[inst]:1
+[0m[0m[PHY]   RC.nb_CC[inst:0][CC_id:0]:0x7fc000ec1010
+[0m[0m[PHY]   [eNB 0] phy_init_lte_eNB() About to wait for eNB to be configured[0m[0m[PHY]   [eNB 0] Initializing DL_FRAME_PARMS : N_RB_DL 25, PHICH Resource 1, PHICH Duration 0 nb_antennas_tx:0 nb_antennas_rx:0 nb_antenna_ports_eNB:1 PRACH[rootSequenceIndex:0 prach_Config_enabled:1 configIndex:0 highSpeed:1 zeroCorrelationZoneConfig:14 freqOffset:2]
+[0m[0m[PHY]   [eNB 0] Initializing DL_FRAME_PARMS : N_RB_DL 25, PHICH Resource 1, PHICH Duration 0
+[0mpcfich_reg : 0,12,25,37
+[0m[PHY]   [INIT] NB_ANTENNA_PORTS_ENB:6 fp->nb_antenna_ports_eNB:1
+[0m[0m[PHY]   thread fep created id=9785
+[0m[0m[PHY]   thread feptx created id=9786
+[0m[0m[PHY]   [INIT] common_vars->txdataF[0] = 0x7fbffc1cb040 (286720 bytes)
+[0m[0m[PHY]   [INIT] common_vars->txdataF[5] = 0x7fbffc184040 (286720 bytes)
+[0m[0m[PHY]   Mapping RX ports from 1 RUs to eNB 0
+[0m[0m[PHY]   Overwriting eNB->prach_vars.rxsigF[0]:0x555aa4f35720
+[0m[0m[PHY]   Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[0m[0m[PHY]   Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[0m[0m[PHY]   Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[0m[0m[PHY]   Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[0m[0m[PHY]   eNB->num_RU:1
+[0m[0m[PHY]   Attaching RU 0 antenna 0 to eNB antenna 0
+[0m[0m[PHY]   init_eNB_afterRU() ************* DJP ***** eNB->frame_parms.nb_antennas_tx:0 - GOING TO HARD CODE TO 1[0m[0m[PHY]   inst 0, CC_id 0 : nb_antennas_rx 1
+[0m[0m[PHY]   Initialise transport
+[0m[0m[PHY]   init_eNB_proc(inst:0) RC.nb_CC[inst]:1 
+[0m[0m[PHY]   Initializing eNB processes instance:0 CC_id 0 
+[0m[0m[PHY]   Creating te_thread 0
+[0m[0m[PHY]   Creating te_thread 1
+[0m[0m[HW]   [SCHED][eNB] te_thread started on CPU 4, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[0m[0m[PHY]   Creating te_thread 2
+[0m[0m[HW]   [SCHED][eNB] te_thread started on CPU 1, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[0m[0m[PHY]   thread te created id=9787
+[0m[0m[PHY]   thread te created id=9788
+[0m[0m[HW]   [SCHED][eNB] te_thread started on CPU 4, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[0m[0m[PHY]   eNB->single_thread_flag:0
+[0m[0m[HW]   [SCHED][eNB] td_thread started on CPU 1, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[0m[0m[PHY]   thread te created id=9819
+[0m[0m[PHY]   thread td created id=9820
+[0m[0m[HW]   [SCHED][eNB] eNB_thread_prach started on CPU 4, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[0m[0m[ENB_APP]   ALL RUs ready - ALL eNBs ready
+[0m[0m[HW]   [SCHED][eNB] eNB_thread_prach_br started on CPU 1, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[0m[0m[ENB_APP]   Sending sync to all threads
+[0m[0m[ENB_APP]   TYPE <CTRL-C> TO TERMINATE
+[0mgot sync (ru_thread)
+[0m[PHY]   Time in secs now: 34245128 
+[0m[0m[PHY]   Time in secs last pps: 29196381 
+[0m[0m[PHY]   RU 0 rf device ready
+[0m[0m[1;31m[MAC]   SCHED_MODE = 0
+[0m[0m[PHY]   prach_I0 = 0.0 dB
+[0m[0m[PHY]   max_I0 17, min_I0 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 1010, subframe 1 Initiating RA procedure with preamble 58, energy 27.0 dB, delay 0
+[0m[0m[1;31m[PHY]   fill_ulsch UE_id 0 nb_rb = 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 1016, subframe 1 Initiating RA procedure with preamble 15, energy 27.0 dB, delay 0
+[0m[0m[1;31m[PHY]   fill_ulsch UE_id 0 nb_rb = 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 1022, subframe 1 Initiating RA procedure with preamble 16, energy 27.0 dB, delay 0
+[0m[0m[PHY]   prach_I0 = 0.0 dB
+[0m[0m[PHY]   max_I0 20, min_I0 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 4, subframe 1 Initiating RA procedure with preamble 18, energy 27.0 dB, delay 0
+[0m[0m[PHY]   prach_I0 = 0.0 dB
+[0m[0m[PHY]   max_I0 17, min_I0 0
+[0m[0m[PHY]   prach_I0 = 0.0 dB
+[0m[0m[PHY]   max_I0 18, min_I0 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 658, subframe 1 Initiating RA procedure with preamble 30, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 664, subframe 1 Initiating RA procedure with preamble 45, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 670, subframe 1 Initiating RA procedure with preamble 58, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 676, subframe 1 Initiating RA procedure with preamble 17, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 682, subframe 1 Initiating RA procedure with preamble 37, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 688, subframe 1 Initiating RA procedure with preamble 34, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 694, subframe 1 Initiating RA procedure with preamble 18, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 700, subframe 1 Initiating RA procedure with preamble 43, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 706, subframe 1 Initiating RA procedure with preamble 9, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 712, subframe 1 Initiating RA procedure with preamble 10, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 718, subframe 1 Initiating RA procedure with preamble 47, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 724, subframe 1 Initiating RA procedure with preamble 13, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 730, subframe 1 Initiating RA procedure with preamble 31, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 736, subframe 1 Initiating RA procedure with preamble 14, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 738, subframe 1 Initiating RA procedure with preamble 12, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 744, subframe 1 Initiating RA procedure with preamble 38, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 750, subframe 1 Initiating RA procedure with preamble 21, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 756, subframe 1 Initiating RA procedure with preamble 3, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 762, subframe 1 Initiating RA procedure with preamble 18, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 768, subframe 1 Initiating RA procedure with preamble 3, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 774, subframe 1 Initiating RA procedure with preamble 60, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 780, subframe 1 Initiating RA procedure with preamble 29, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 786, subframe 1 Initiating RA procedure with preamble 17, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 792, subframe 1 Initiating RA procedure with preamble 20, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 798, subframe 1 Initiating RA procedure with preamble 28, energy 27.0 dB, delay 0
+[0m[0m[PHY]   prach_I0 = 0.0 dB
+[0m[0m[PHY]   max_I0 17, min_I0 0
+[0m[0m[PHY]   prach_I0 = 0.0 dB
+[0m[0m[PHY]   max_I0 18, min_I0 0
+[0m[0m[PHY]   prach_I0 = 0.0 dB
+[0m[0m[PHY]   max_I0 19, min_I0 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 778, subframe 1 Initiating RA procedure with preamble 46, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 784, subframe 1 Initiating RA procedure with preamble 36, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 790, subframe 1 Initiating RA procedure with preamble 39, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 796, subframe 1 Initiating RA procedure with preamble 60, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 802, subframe 1 Initiating RA procedure with preamble 8, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 808, subframe 1 Initiating RA procedure with preamble 14, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 814, subframe 1 Initiating RA procedure with preamble 16, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 820, subframe 1 Initiating RA procedure with preamble 20, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 826, subframe 1 Initiating RA procedure with preamble 22, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 832, subframe 1 Initiating RA procedure with preamble 12, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 838, subframe 1 Initiating RA procedure with preamble 48, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 844, subframe 1 Initiating RA procedure with preamble 40, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 850, subframe 1 Initiating RA procedure with preamble 31, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 856, subframe 1 Initiating RA procedure with preamble 63, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 862, subframe 1 Initiating RA procedure with preamble 6, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 868, subframe 1 Initiating RA procedure with preamble 9, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 874, subframe 1 Initiating RA procedure with preamble 0, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 880, subframe 1 Initiating RA procedure with preamble 50, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 886, subframe 1 Initiating RA procedure with preamble 5, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 892, subframe 1 Initiating RA procedure with preamble 9, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 898, subframe 1 Initiating RA procedure with preamble 14, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 904, subframe 1 Initiating RA procedure with preamble 15, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 910, subframe 1 Initiating RA procedure with preamble 9, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 916, subframe 1 Initiating RA procedure with preamble 63, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 922, subframe 1 Initiating RA procedure with preamble 29, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 928, subframe 1 Initiating RA procedure with preamble 51, energy 24.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 934, subframe 1 Initiating RA procedure with preamble 35, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 940, subframe 1 Initiating RA procedure with preamble 58, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 946, subframe 1 Initiating RA procedure with preamble 6, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 952, subframe 1 Initiating RA procedure with preamble 1, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 958, subframe 1 Initiating RA procedure with preamble 14, energy 27.0 dB, delay 0
+[0m[0m[PHY]   [eNB 0/0][RAPROC] Frame 964, subframe 1 Initiating RA procedure with preamble 57, energy 27.0 dB, delay 0
+[0

@@ -1,0 +1,1651 @@
+
+When Running the old configuration file without the UE
+
+oai@oai-OptiPlex-9020:~/git-repositories/openairinterface5g/cmake_targets$ sudo -E ./lte_build_oai/build/lte-softmodem -O ~/Desktop/enb.band7.tm1.25PRB.usrpX300.conf --nokrnmod 1 --noS1 --eNBs.[0].rrc_inactivity_threshold 0 2>&1
+[CONFIG] get parameters from libconfig /home/oai/Desktop/enb.band7.tm1.25PRB.usrpX300.conf , debug flags: 0x00000000
+[CONFIG] function config_libconfig_init returned 0
+[CONFIG] config module libconfig loaded
+[LIBCONFIG] config: 1/1 parameters successfully set, (1 to default value)
+# /dev/cpu_dma_latency set to 0us
+[LIBCONFIG] log_config: 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] log_config: 42/42 parameters successfully set, (36 to default value)
+[LIBCONFIG] log_config: 42/42 parameters successfully set, (42 to default value)
+[LIBCONFIG] log_config: 15/15 parameters successfully set, (15 to default value)
+[LIBCONFIG] log_config: 15/15 parameters successfully set, (15 to default value)
+log init done
+Reading in command-line options
+[LIBCONFIG] (root): 22/22 parameters successfully set, (19 to default value)
+[LIBCONFIG] (root): 5/5 parameters successfully set, (4 to default value)
+Getting ENBSParams
+[LIBCONFIG] (root): 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
+Configuration: nb_rrc_inst 1, nb_L1_inst 1, nb_ru 1
+[LIBCONFIG] loader: 2/2 parameters successfully set, (2 to default value)
+[LIBCONFIG] loader.NB_IoT: 2/2 parameters successfully set, (1 to default value)
+[LOADER] library libNB_IoT.so is not loaded: libNB_IoT.so: cannot open shared object file: No such file or directory
+               nb_nbiot_rrc_inst 0, nb_nbiot_L1_inst 0, nb_nbiot_macrlc_inst 0
+[LIBCONFIG] TTracer: 4/4 parameters successfully set, (4 to default value)
+configuring for RAU/RRU
+CPU Freq is 3.392258 
+ITTI init, useMME: 0
+[TMR]   Starting itti queue: TASK_UNKNOWN as task 0
+[TMR]   Starting itti queue: TASK_TIMER as task 1
+[TMR]   Starting itti queue: TASK_L2L1 as task 2
+[TMR]   Starting itti queue: TASK_BM as task 3
+[TMR]   Starting itti queue: TASK_PHY_ENB as task 4
+[TMR]   Starting itti queue: TASK_MAC_ENB as task 5
+[TMR]   Starting itti queue: TASK_RLC_ENB as task 6
+[TMR]   Starting itti queue: TASK_RRC_ENB_NB_IoT as task 7
+[TMR]   Starting itti queue: TASK_PDCP_ENB as task 8
+[TMR]   Starting itti queue: TASK_DATA_FORWARDING as task 9
+[TMR]   Starting itti queue: TASK_END_MARKER as task 10
+[TMR]   Starting itti queue: TASK_RRC_ENB as task 11
+[TMR]   Starting itti queue: TASK_RAL_ENB as task 12
+[TMR]   Starting itti queue: TASK_S1AP as task 13
+[TMR]   Starting itti queue: TASK_X2AP as task 14
+[TMR]   Starting itti queue: TASK_SCTP as task 15
+[TMR]   Starting itti queue: TASK_ENB_APP as task 16
+[TMR]   Starting itti queue: TASK_FLEXRAN_AGENT as task 17
+[TMR]   Starting itti queue: TASK_PHY_UE as task 18
+[TMR]   Starting itti queue: TASK_MAC_UE as task 19
+[TMR]   Starting itti queue: TASK_RLC_UE as task 20
+[TMR]   Starting itti queue: TASK_PDCP_UE as task 21
+[TMR]   Starting itti queue: TASK_RRC_UE as task 22
+[TMR]   Starting itti queue: TASK_NAS_UE as task 23
+[TMR]   Starting itti queue: TASK_RAL_UE as task 24
+[TMR]   Starting itti queue: TASK_MSC as task 25
+[TMR]   Starting itti queue: TASK_GTPV1_U as task 26
+[TMR]   Starting itti queue: TASK_UDP as task 27
+[TMR]   Starting itti queue: TASK_CU_F1 as task 28
+[TMR]   Starting itti queue: TASK_DU_F1 as task 29
+[LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)
+[OPT]   OPT disabled
+reported resolution = 1 ns
+[HW]   Version: Branch: heads/v1.1.0 Abrev. Hash: 7af841272 Date: Thu Jul 25 21:04:14 2019 +0200
+Runtime table
+[PHY]   RC.eNB = 0x562995b4b0e0
+[LIBCONFIG] L1s.[0]: 24/24 parameters successfully set, (22 to default value)
+[PHY]   RC.eNB[0] = 0x562995b4b190
+[PHY]   RC.eNB[0][0] = 0x7f1d74389010
+[ENB_APP]   Initializing northbound interface for L1
+[PHY]   l1_north_init_eNB() RC.nb_L1_inst:1
+[PHY]   l1_north_init_eNB() RC.nb_L1_CC[0]:1
+[PHY]   l1_north_init_eNB() RC.eNB[0][0] installing callbacks
+[PHY]   read_config_and_init() RC.nb_L1_inst: 1
+[LIBCONFIG] MACRLCs.[0]: 21/21 parameters successfully set, (15 to default value)
+[LIBCONFIG] MACRLCs.[0]: 21/21 parameters successfully set, (15 to default value)
+[MAC]   [MAIN] Init function start:nb_macrlc_inst=1
+[PDCP]   PDCP layer has been initialized
+Configuring local RRC for MACRLC
+[ENB_APP]   sched mode = default 0 [default]
+[MAC]   read_config_and_init() RC.nb_macrlc_inst: 1
+[PHY]   l1_north_init_eNB() RC.nb_L1_inst:1
+[PHY]   l1_north_init_eNB() RC.nb_L1_CC[0]:1
+[PHY]   l1_north_init_eNB() RC.eNB[0][0] installing callbacks
+[LIBCONFIG] (root): 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] eNBs.[0]: 18/18 parameters successfully set, (8 to default value)
+[RRC]   Instance 0: Southbound Transport local_mac
+[RRC]   Setting node_type to ngran_eNB
+[LIBCONFIG] eNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)
+[RRC]   num component carriers 1 
+[RRC]   enb_config::RCconfig_RRC() parameter number: 0, total number of parameters: 78, ccspath: eNBs.[0].component_carriers.[0] 
+ 
+[LIBCONFIG] eNBs.[0].component_carriers.[0]: 78/78 parameters successfully set, (17 to default value)
+phich.resource 0 (ONESIXTH), phich.duration 0 (NORMAL)
+No eMBMS configuration, skipping it
+[LIBCONFIG] eNBs.[0].component_carriers.[0].emtc_parameters: 87/87 parameters successfully set, (87 to default value)
+No eMTC configuration, skipping it
+[LIBCONFIG] eNBs.[0].component_carriers.[0].SLparameters: 39/39 parameters successfully set, (39 to default value)
+No SL configuration skipping it
+[LIBCONFIG] eNBs.[0].srb1_parameters: 6/6 parameters successfully set, (0 to default value)
+[RRC]   Node type 0 
+ [LIBCONFIG] (root): 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] NETWORK_CONTROLLER: 6/6 parameters successfully set, (0 to default value)
+[FLEXRAN_AGENT]   FlexRAN Agent for eNB 0 is DISABLED
+[PDCP]   PDCP layer has been initialized
+[PDCP]   pdcp init, usenetlink
+[LIBCONFIG] nas.noS1: 3/3 parameters successfully set, (3 to default value)
+[NETLINK]Opened socket oaitun_enb1 with fd 66
+[OIP]   Interface oaitun_enb1 successfuly configured, ip address 10.0.1.1, mask 255.255.255.0 broadcast address 10.0.1.255
+[PDCP]   ENB pdcp will use tun interface
+[ENB_APP]   Creating ENB_APP eNB Task
+[TMR]   Created Posix thread TASK_ENB_APP
+[RRC]   Creating RRC eNB Task
+[LIBCONFIG] eNBs.[0]: 1/1 parameters successfully set, (0 to default value)
+[RRC]   Entering main loop of RRC message task
+[TMR]   Created Posix thread TASK_RRC_ENB
+[RRC]   [eNB 0] Received RRC_CONFIGURATION_REQ : 0x562995b7c08c
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 0] Init...
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 0] Checking release 
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 0] Rel14 RRC detected, MBMS flag 0
+[RRC]   [eNB 0] Node type 0 
+ [RRC]   configuration->schedulingInfoSIB1_BR_r13[CC_id] 0
+[RRC]   Configuring MIB (N_RB_DL 25,phich_Resource 0,phich_Duration 0)
+[RRC]   [MIB] systemBandwidth 2, phich_duration 0, phich_resource 0, sfn 0
+[RRC]   [MIB] schedulingInfoSIB1 0
+[RRC]   [eNB 0] Configuration SIB2/3, eMBMS = 0
+[RRC]   do_SIB23, size 38 
+ [MAC]   Configuring MIB for instance 0, CCid 0 : (band 7,N_RB_DL 25,Nid_cell 0,p 1,DL freq 2680000000,phich_config.resource 0, phich_config.duration 0)
+[MAC]   config_mib() NFAPI_CONFIG_REQUEST(num_tlv:16) DL_BW:25 UL_BW:25 Ncp 0,p_eNB 1,earfcn 3350,band 7,phich_resource 0 phich_duration 0 phich_power_offset 6000 PSS 6000 SSS 6000 PCI 0 PBCH repetition 0
+[MAC]   [CONFIG]SIB2/3 Contents (partial)
+[MAC]   [CONFIG]pusch_config_common.n_SB = 1
+[MAC]   [CONFIG]pusch_config_common.hoppingMode = 0
+[MAC]   [CONFIG]pusch_config_common.pusch_HoppingOffset = 0
+[MAC]   [CONFIG]pusch_config_common.enable64QAM = 0
+[MAC]   [CONFIG]pusch_config_common.groupHoppingEnabled = 1
+[MAC]   [CONFIG]pusch_config_common.groupAssignmentPUSCH = 0
+[MAC]   [CONFIG]pusch_config_common.sequenceHoppingEnabled = 0
+[MAC]   [CONFIG]pusch_config_common.cyclicShift  = 1
+[PHY]   Configuring MIB for instance 0, CCid 0 : (band 7,N_RB_DL 25, N_RB_UL 25, Nid_cell 0,eNB_tx_antenna_ports 1,Ncp 0,DL freq 3350,phich_config.resource 0, phich_config.duration 0)
+[PHY]   Initializing frame parms for N_RB_DL 25, Ncp 0, osf 1
+[PHY]   lte_parms.c: Setting N_RB_DL to 25, ofdm_symbol_size 512
+[LIBCONFIG] loader.coding: 2/2 parameters successfully set, (1 to default value)
+[LOADER] library libcoding.so successfully loaded
+[PHY]   prach_config_common.rootSequenceIndex = 0
+[PHY]   prach_config_common.prach_ConfigInfo.prach_ConfigIndex = 0
+[PHY]   prach_config_common.prach_ConfigInfo.highSpeedFlag = 1
+[PHY]   prach_config_common.prach_ConfigInfo.zeroCorrelationZoneConfig = 14
+[PHY]   prach_config_common.prach_ConfigInfo.prach_FreqOffset = 2
+[PHY]   pusch_config_common.n_SB = 1
+[PHY]   pusch_config_common.hoppingMode = 0
+[PHY]   pusch_config_common.pusch_HoppingOffset = 0
+[PHY]   pusch_config_common.enable64QAM = 0
+[PHY]   pusch_config_common.ul_ReferenceSignalsPUSCH.groupHoppingEnabled = 1
+[PHY]   pusch_config_common.ul_ReferenceSignalsPUSCH.groupAssignmentPUSCH = 0
+[PHY]   pusch_config_common.ul_ReferenceSignalsPUSCH.sequenceHoppingEnabled = 0
+[PHY]   pusch_config_common.ul_ReferenceSignalsPUSCH.cyclicShift = 2
+[PHY]   eNB 0/0 configured
+[RRC]   [eNB] handover active state is 0 
+[RRC]   [eNB] eMBMS active state is 0 
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 0] ENB:OPENAIR RRC IN....
+[ENB_APP]   START MAIN THREADS
+RC.nb_L1_inst:1
+Initializing eNB threads single_thread_flag:0 wait_for_sync:0
+[PHY]   [lte-softmodem.c] eNB structure about to allocated RC.nb_L1_inst:1 RC.nb_L1_CC[0]:1
+[PHY]   [lte-softmodem.c] eNB structure RC.eNB allocated
+[PHY]   Initializing eNB 0 CC_id 0 single_thread_flag:0
+[PHY]   Initializing eNB 0 CC_id 0
+[PHY]   Registering with MAC interface module
+[PHY]   Setting indication lists
+[PHY]   [lte-softmodem.c] eNB structure allocated
+wait_eNBs()
+Waiting for eNB L1 instances to all get configured ... sleeping 50ms (nb_L1_inst 1)
+RC.nb_L1_CC[0]:1
+eNB L1 are configured
+About to Init RU threads RC.nb_RU:1
+Initializing RU threads
+configuring RU from file
+[LIBCONFIG] RUs.[0]: 24/24 parameters successfully set, (14 to default value)
+Set RU mask to 1
+Creating RC.ru[0]:0x562995b7d030
+Setting function for RU 0 to eNodeB_3GPP
+[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 8
+[PHY]   DJP - delete code above this /home/oai/git-repositories/openairinterface5g/targets/RT/USER/lte-ru.c:2658
+[PHY]   Copying frame parms from eNB 0 to ru 0
+[PHY]   Initializing RRU descriptor 0 : (local RF,synch_to_ext_device,0)
+configuring ru_id 0 (start_rf 0x56299396f450)
+[PHY]   Starting ru_thread 0, is_slave 0, send_dmrs 0
+[PHY]   Initializing RU proc 0 (eNodeB_3GPP,synch_to_ext_device),
+[PHY]   init_RU_proc() DJP - added creation of pthread_prach
+[HW]   [SCHED][eNB] ru_thread started on CPU 5, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+channel 0, Setting tx_gain offset 0.000000, rx_gain offset 80.000000, tx_freq 2680000000.000000, rx_freq 2560000000.000000
+[PHY]   Initializing frame parms for N_RB_DL 25, Ncp 0, osf 1
+[PHY]   lte_parms.c: Setting N_RB_DL to 25, ofdm_symbol_size 512
+[HW]   [SCHED][eNB] ru_thread_prach started on CPU 1, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[PHY]   Initializing RU signal buffers (if_south local RF) nb_tx 1
+[PHY]   thread ru created id=12135
+[PHY]   Starting RU 0 (eNodeB_3GPP,synch_to_ext_device),
+waiting for sync (ru_thread,-1/0x5629942b3248,0x5629949caae0,0x5629948806e0)
+[PHY]   ru_thread_prach() RU configured - RACH processing thread running
+[PHY]   [INIT] common.txdata[0] = 0x7f1d77517040 (307200 bytes)
+[PHY]   nb_tx 1
+[PHY]   rxdata_7_5kHz[0] 0x562995bcf360 for RU 0
+[PHY]   [INIT] common.txdata_BF= 0x562995bed3e0 (8 bytes)
+[PHY]   txdataF_BF[0] 0x562995bed460 for RU 0
+[PHY]   rxdataF[0] 0x562995bf4560 for RU 0
+[LIBCONFIG] loader.oai_device: 2/2 parameters successfully set, (1 to default value)
+[LOADER] library liboai_device.so successfully loaded
+[PHY]   Checking for USRPs : UHD 3.14.1.1-release (3.14.1)
+[INFO] [UHD] linux; GNU C++ version 7.4.0; Boost_106501; UHD_3.14.1.1-release
+[HW]   Found USRP x300
+Found USRP x300
+[INFO] [X300] X300 initialization sequence...
+[INFO] [X300] Maximum frame size: 1472 bytes.
+[INFO] [X300] Radio 1x clock: 184.32 MHz
+[INFO] [GPS] No GPSDO found
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[INFO] [0/DmaFIFO_0] Initializing block control (NOC ID: 0xF1F0D00000000000)
+[INFO] [0/DmaFIFO_0] BIST passed (Throughput: 1299 MB/s)
+[INFO] [0/DmaFIFO_0] BIST passed (Throughput: 1307 MB/s)
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[INFO] [0/Radio_0] Initializing block control (NOC ID: 0x12AD100000000001)
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[INFO] [0/Radio_1] Initializing block control (NOC ID: 0x12AD100000000001)
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[INFO] [0/DDC_0] Initializing block control (NOC ID: 0xDDC0000000000000)
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[INFO] [0/DDC_1] Initializing block control (NOC ID: 0xDDC0000000000000)
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[INFO] [0/DUC_0] Initializing block control (NOC ID: 0xD0C0000000000000)
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[INFO] [0/DUC_1] Initializing block control (NOC ID: 0xD0C0000000000000)
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+Setting clock source to internal
+[PHY]   device_init() sample_rate:7680000
+[PHY]   cal 0: freq 3500000000.000000, offset 77.000000, diff 940000000.000000
+[PHY]   cal 1: freq 2660000000.000000, offset 81.000000, diff 100000000.000000
+[PHY]   cal 2: freq 2300000000.000000, offset 81.000000, diff 260000000.000000
+[PHY]   cal 3: freq 1880000000.000000, offset 82.000000, diff 680000000.000000
+[PHY]   cal 4: freq 816000000.000000, offset 85.000000, diff 1744000000.000000
+[PHY]   RX Gain 0 80.000000 (81.000000) => -1.000000 (max 37.500000)
+[PHY]   USRP TX_GAIN:31.50 gain_range:31.50 tx_gain:0.00
+[PHY]   Actual master clock: 184.320000MHz...
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[PHY]   RF board max packet size 364, size for 100µs jitter 768 
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[PHY]   rx_max_num_samps 364
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[PHY]   RX Channel 0
+[PHY]     Actual RX sample rate: 7.680000MSps...
+[PHY]     Actual RX frequency: 2.560000GHz...
+[PHY]     Actual RX gain: 0.000000...
+[PHY]     Actual RX bandwidth: 5.000000M...
+[PHY]     Actual RX antenna: RX2...
+[PHY]   TX Channel 0
+[PHY]     Actual TX sample rate: 7.680000MSps...
+[PHY]     Actual TX frequency: 2.680000GHz...
+[PHY]     Actual TX gain: 31.500000...
+[PHY]     Actual TX bandwidth: 5.000000M...
+[PHY]     Actual TX antenna: TX/RX...
+[PHY]   Device timestamp: 2.993844...
+[HW]   [RAU] has loaded USRP X300 device.
+setup_RU_buffers: frame_parms = 0x562995b7d0e8
+[HW]   [SCHED][eNB] fep_thread started on CPU 4, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[HW]   [SCHED][eNB] feptx_thread started on CPU 1, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[PHY]   thread fep created id=12191
+[PHY]   Signaling main thread that RU 0 (is_slave 0,send_dmrs 0) is ready in state RU_RUN
+wait RUs
+[ENB_APP]   Waiting for RUs to be configured ... RC.ru_mask:00
+[PHY]   RUs configured
+[ENB_APP]   RC.nb_RU:1
+ALL RUs ready - init eNBs
+[ENB_APP]   Not NFAPI mode - call init_eNB_afterRU()
+[PHY]   init_eNB_afterRU() RC.nb_inst:1
+[PHY]   RC.nb_CC[inst]:1
+[PHY]   RC.nb_CC[inst:0][CC_id:0]:0x7f1d74389010
+[PHY]   [eNB 0] phy_init_lte_eNB() About to wait for eNB to be configured[PHY]   [eNB 0] Initializing DL_FRAME_PARMS : N_RB_DL 25, PHICH Resource 1, PHICH Duration 0 nb_antennas_tx:0 nb_antennas_rx:0 nb_antenna_ports_eNB:1 PRACH[rootSequenceIndex:0 prach_Config_enabled:1 configIndex:0 highSpeed:1 zeroCorrelationZoneConfig:14 freqOffset:2]
+[PHY]   [eNB 0] Initializing DL_FRAME_PARMS : N_RB_DL 25, PHICH Resource 1, PHICH Duration 0
+pcfich_reg : 0,12,25,37
+[PHY]   [INIT] NB_ANTENNA_PORTS_ENB:6 fp->nb_antenna_ports_eNB:1
+[PHY]   thread feptx created id=12192
+[PHY]   [INIT] common_vars->txdataF[0] = 0x7f1d70016040 (286720 bytes)
+[PHY]   [INIT] common_vars->txdataF[5] = 0x7f1d68015040 (286720 bytes)
+[PHY]   Mapping RX ports from 1 RUs to eNB 0
+[PHY]   Overwriting eNB->prach_vars.rxsigF[0]:0x562996a031e0
+[PHY]   Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[PHY]   Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[PHY]   Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[PHY]   Overwriting eNB->prach_vars_br.rxsigF.rxsigF[0]:(nil)
+[PHY]   eNB->num_RU:1
+[PHY]   Attaching RU 0 antenna 0 to eNB antenna 0
+[PHY]   init_eNB_afterRU() ************* DJP ***** eNB->frame_parms.nb_antennas_tx:0 - GOING TO HARD CODE TO 1[PHY]   inst 0, CC_id 0 : nb_antennas_rx 1
+[PHY]   Initialise transport
+[PHY]   init_eNB_proc(inst:0) RC.nb_CC[inst]:1 
+[PHY]   Initializing eNB processes instance:0 CC_id 0 
+[PHY]   Creating te_thread 0
+[PHY]   Creating te_thread 1
+[HW]   [SCHED][eNB] te_thread started on CPU 4, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[PHY]   Creating te_thread 2
+[HW]   [SCHED][eNB] te_thread started on CPU 1, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[PHY]   thread te created id=12193
+[PHY]   thread te created id=12194
+[HW]   [SCHED][eNB] te_thread started on CPU 4, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[PHY]   eNB->single_thread_flag:0
+[HW]   [SCHED][eNB] td_thread started on CPU 1, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[PHY]   thread te created id=12195
+[HW]   [SCHED][eNB] eNB_thread_prach started on CPU 4, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[PHY]   thread td created id=12196
+[ENB_APP]   ALL RUs ready - ALL eNBs ready
+[HW]   [SCHED][eNB] eNB_thread_prach_br started on CPU 4, sched_policy = SCHED_FIFO , priority = 99, CPU Affinity= CPU_0 CPU_1 CPU_2 CPU_3 CPU_4 CPU_5 CPU_6 CPU_7 
+[ENB_APP]   Sending sync to all threads
+[ENB_APP]   TYPE <CTRL-C> TO TERMINATE
+got sync (ru_thread)
+[PHY]   Time in secs now: 33829869 
+[PHY]   Time in secs last pps: 30643818 
+[PHY]   RU 0 rf device ready
+[MAC]   SCHED_MODE = 0
+[PHY]   prach_I0 = 0.0 dB
+[PHY]   max_I0 20, min_I0 0
+[PHY]   prach_I0 = 0.0 dB
+[PHY]   max_I0 15, min_I0 0
+[PHY]   prach_I0 = 0.0 dB
+[PHY]   max_I0 17, min_I0 0
+[PHY]   prach_I0 = 0.0 dB
+[PHY]   max_I0 19, min_I0 0
+[PHY]   prach_I0 = 0.0 dB
+[PHY]   max_I0 18, min_I0 0
+[PHY]   prach_I0 = 0.0 dB
+[PHY]   max_I0 18, min_I0 0
+[PHY]   prach_I0 = 0.0 dB
+[PHY]   max_I0 17, min_I0 0
+[PHY]   [eNB 0/0][RAPROC] Frame 528, subframe 1 Initiating RA procedure with preamble 10, energy 13.8 dB, delay 0
+[PHY]   [eNB 0/0][RAPROC] Frame 530, subframe 1 Initiating RA procedure with preamble 50, energy 17.9 dB, delay 0
+[PHY]   fill_ulsch UE_id 0 nb_rb = 0
+[RRC]   [FRAME 00532][eNB][MOD 00][RNTI 7da6] Decoding UL CCCH 58.c9.2c.48.d0.46 (0x5629995119a7)
+[RRC]   [FRAME 00532][eNB][MOD 00][RNTI 7da6] Accept new connection from UE random UE identity (0x48dc4928c000000) MME code 0 TMSI 0 cause 3
+[MAC]   Added physicalConfigDedicated 0x7f1d48005170 for 0.0
+[RRC]   [FRAME 00532][eNB][MOD 00][RNTI 7da6]CALLING RLC CONFIG SRB1 (rbid 1)
+add new uid is 0 7da6
+
+[PDCP]   [FRAME 00532][eNB][MOD 00][RNTI 7da6][SRB 01]  Action ADD  LCID 1 (SRB id 1) configured with SN size 5 bits and RLC AM
+[RLC]   [FRAME 00532][eNB][MOD 00][RNTI 7da6] [SRB 1] rrc_rlc_add_rlc  SRB
+[RLC]   [FRAME 00532][eNB][MOD 00][RNTI 7da6][SRB AM 01][CONFIGURE] max_retx_threshold 4 poll_pdu 4 poll_byte 65535 t_poll_retransmit 80 t_reordering 35 t_status_prohibit 0
+[MAC]   generate_Msg4 ra->Msg4_frame SFN/SF: 532.4,  frameP SFN/SF: 532.4 FOR eNB_Mod: 0 
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 532, subframeP 4: Generating Msg4 with RRC Piggyback (RNTI 7da6)
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 533, subframeP 2: Msg4 not acknowledged, adding ue specific dci (rnti 7da6) for RA (Msg4 Retransmission round 1 in 534.0)
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 534.4 ULSCH in error in round 0, ul_cqi 144, UE_id 0, RNTI 7da6
+[PHY]   fill_ulsch UE_id 0 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 534.8 ULSCH in error in round 0, ul_cqi 146, UE_id 0, RNTI 7da6
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 7da6] [RAPROC] Logical Channel UL-DCCH, processing LTE_RRCConnectionSetupComplete from UE (SRB1 Active)
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 7da6] Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[RRC]   calling rrc_data_req :securityModeCommand
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 7da6] UE State = RRC_CONNECTED 
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 7da6][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 1 current_sdu_index=0 next_sdu_index=1 conf 0 mui 0 vtA 0 vtS 0
+[PHY]   fill_ulsch UE_id 0 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 537.8 ULSCH in error in round 0, ul_cqi 160, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 538.6 ULSCH in error in round 1, ul_cqi 160, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 539.4 ULSCH in error in round 2, ul_cqi 134, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 540.2 ULSCH in error in round 3, ul_cqi 136, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 541.0 ULSCH in error in round 0, ul_cqi 131, UE_id 0, RNTI 7da6
+[PHY]   fill_ulsch UE_id 0 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 544.5 ULSCH in error in round 0, ul_cqi 145, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 545.3 ULSCH in error in round 1, ul_cqi 136, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 546.1 ULSCH in error in round 2, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 546.8 ULSCH in error in round 0, ul_cqi 160, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 546.9 ULSCH in error in round 3, ul_cqi 134, UE_id 0, RNTI 7da6
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 7da6] RLC RB 01 --- RLC_DATA_IND 2 bytes (securityModeFailure) ---> RRC_eNB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 7da6] Logical Channel DL-DCCH, Generate UECapabilityEnquiry (bytes 3)
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 7da6][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 2 current_sdu_index=1 next_sdu_index=2 conf 0 mui 1 vtA 0 vtS 2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 549.8 ULSCH in error in round 0, ul_cqi 146, UE_id 0, RNTI 7da6
+[PHY]   fill_ulsch UE_id 0 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 551.5 ULSCH in error in round 0, ul_cqi 140, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 551.7 ULSCH in error in round 0, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 552.3 ULSCH in error in round 1, ul_cqi 151, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 552.5 ULSCH in error in round 1, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 553.1 ULSCH in error in round 2, ul_cqi 176, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 553.3 ULSCH in error in round 2, ul_cqi 152, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 553.9 ULSCH in error in round 3, ul_cqi 176, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 554.1 ULSCH in error in round 3, ul_cqi 104, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 554.7 ULSCH in error in round 0, ul_cqi 158, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 554.9 ULSCH in error in round 0, ul_cqi 134, UE_id 0, RNTI 7da6
+[PHY]   fill_ulsch UE_id 0 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 555.8 ULSCH in error in round 0, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 556.6 ULSCH in error in round 1, ul_cqi 142, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 557.4 ULSCH in error in round 2, ul_cqi 142, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 557.8 ULSCH in error in round 0, ul_cqi 166, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 558.2 ULSCH in error in round 3, ul_cqi 167, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 558.6 ULSCH in error in round 1, ul_cqi 142, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 559.4 ULSCH in error in round 2, ul_cqi 155, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 560.2 ULSCH in error in round 3, ul_cqi 142, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 560.8 ULSCH in error in round 0, ul_cqi 134, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 561.6 ULSCH in error in round 1, ul_cqi 142, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 562.4 ULSCH in error in round 2, ul_cqi 142, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 562.8 ULSCH in error in round 0, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 563.2 ULSCH in error in round 3, ul_cqi 134, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 563.6 ULSCH in error in round 1, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 563.8 ULSCH in error in round 0, ul_cqi 160, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 564.4 ULSCH in error in round 2, ul_cqi 104, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 564.6 ULSCH in error in round 1, ul_cqi 142, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 565.2 ULSCH in error in round 3, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 565.4 ULSCH in error in round 2, ul_cqi 141, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 566.2 ULSCH in error in round 3, ul_cqi 137, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 567.0 ULSCH in error in round 0, ul_cqi 161, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 567.8 ULSCH in error in round 1, ul_cqi 164, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 568.6 ULSCH in error in round 2, ul_cqi 140, UE_id 0, RNTI 7da6
+[PHY]   fill_ulsch UE_id 0 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 572.1 ULSCH in error in round 0, ul_cqi 122, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 572.9 ULSCH in error in round 1, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 573.7 ULSCH in error in round 2, ul_cqi 104, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 574.5 ULSCH in error in round 3, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 575.3 ULSCH in error in round 0, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 576.1 ULSCH in error in round 1, ul_cqi 122, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 576.9 ULSCH in error in round 2, ul_cqi 122, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 577.7 ULSCH in error in round 3, ul_cqi 104, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 578.5 ULSCH in error in round 0, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 579.3 ULSCH in error in round 1, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 580.1 ULSCH in error in round 2, ul_cqi 122, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 580.9 ULSCH in error in round 3, ul_cqi 122, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 581.7 ULSCH in error in round 0, ul_cqi 122, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 582.5 ULSCH in error in round 1, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 583.3 ULSCH in error in round 2, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 584.1 ULSCH in error in round 3, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 584.9 ULSCH in error in round 0, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 585.7 ULSCH in error in round 1, ul_cqi 104, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 586.5 ULSCH in error in round 2, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 587.3 ULSCH in error in round 3, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 588.1 ULSCH in error in round 0, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 588.9 ULSCH in error in round 1, ul_cqi 122, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 589.7 ULSCH in error in round 2, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 590.5 ULSCH in error in round 3, ul_cqi 122, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 591.3 ULSCH in error in round 0, ul_cqi 104, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 592.1 ULSCH in error in round 1, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 592.9 ULSCH in error in round 2, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 593.7 ULSCH in error in round 3, ul_cqi 104, UE_id 0, RNTI 7da6
+[PHY]   [eNB 0/0][RAPROC] Frame 594, subframe 1 Initiating RA procedure with preamble 40, energy 10.4 dB, delay 0
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 594.5 ULSCH in error in round 0, ul_cqi 104, UE_id 0, RNTI 7da6
+[PHY]   fill_ulsch UE_id 1 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 595.3 ULSCH in error in round 1, ul_cqi 122, UE_id 0, RNTI 7da6
+[RRC]   [FRAME 00596][eNB][MOD 00][RNTI 8d6d] Decoding UL CCCH 58.23.e.84.d7.46 (0x562997125247)
+[RRC]   [FRAME 00596][eNB][MOD 00][RNTI 8d6d] Accept new connection from UE random UE identity (0x744de83082000000) MME code 0 TMSI 0 cause 3
+[MAC]   Added physicalConfigDedicated 0x7f1d480226f0 for 0.1
+[RRC]   [FRAME 00596][eNB][MOD 00][RNTI 8d6d]CALLING RLC CONFIG SRB1 (rbid 1)
+add new uid is 1 8d6d
+
+[PDCP]   [FRAME 00596][eNB][MOD 00][RNTI 8d6d][SRB 01]  Action ADD  LCID 1 (SRB id 1) configured with SN size 5 bits and RLC AM
+[RLC]   [FRAME 00596][eNB][MOD 00][RNTI 8d6d] [SRB 1] rrc_rlc_add_rlc  SRB
+[RLC]   [FRAME 00596][eNB][MOD 00][RNTI 8d6d][SRB AM 01][CONFIGURE] max_retx_threshold 4 poll_pdu 4 poll_byte 65535 t_poll_retransmit 80 t_reordering 35 t_status_prohibit 0
+[MAC]   generate_Msg4 ra->Msg4_frame SFN/SF: 596.4,  frameP SFN/SF: 596.4 FOR eNB_Mod: 0 
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 596, subframeP 4: Generating Msg4 with RRC Piggyback (RNTI 8d6d)
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 596.1 ULSCH in error in round 2, ul_cqi 116, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 597, subframeP 2: Msg4 not acknowledged, adding ue specific dci (rnti 8d6d) for RA (Msg4 Retransmission round 1 in 598.0)
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 596.9 ULSCH in error in round 3, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 597.7 ULSCH in error in round 0, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 598.4 ULSCH in error in round 0, ul_cqi 171, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 598.5 ULSCH in error in round 1, ul_cqi 128, UE_id 0, RNTI 7da6
+[PHY]   fill_ulsch UE_id 1 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 598.9 ULSCH in error in round 0, ul_cqi 137, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 599.3 ULSCH in error in round 2, ul_cqi 146, UE_id 0, RNTI 7da6
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 8d6d] [RAPROC] Logical Channel UL-DCCH, processing LTE_RRCConnectionSetupComplete from UE (SRB1 Active)
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 8d6d] Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[RRC]   calling rrc_data_req :securityModeCommand
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 8d6d] UE State = RRC_CONNECTED 
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 8d6d][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 1 current_sdu_index=0 next_sdu_index=1 conf 0 mui 2 vtA 0 vtS 0
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 600.1 ULSCH in error in round 3, ul_cqi 146, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 600.9 ULSCH in error in round 0, ul_cqi 122, UE_id 0, RNTI 7da6
+[PHY]   fill_ulsch UE_id 1 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 601.7 ULSCH in error in round 1, ul_cqi 104, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 601.9 ULSCH in error in round 0, ul_cqi 98, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 602.5 ULSCH in error in round 2, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 602.7 ULSCH in error in round 1, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 602.9 ULSCH in error in round 0, ul_cqi 171, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 603.3 ULSCH in error in round 3, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 603.5 ULSCH in error in round 2, ul_cqi 146, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 603.7 ULSCH in error in round 1, ul_cqi 171, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 604.1 ULSCH in error in round 0, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 604.3 ULSCH in error in round 3, ul_cqi 104, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 604.5 ULSCH in error in round 2, ul_cqi 160, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 604.9 ULSCH in error in round 1, ul_cqi 122, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 605.3 ULSCH in error in round 3, ul_cqi 161, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 605.7 ULSCH in error in round 2, ul_cqi 104, UE_id 0, RNTI 7da6
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 606.1 ULSCH in error in round 0, ul_cqi 147, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 606.5 ULSCH in error in round 3, ul_cqi 128, UE_id 0, RNTI 7da6
+[MAC]   UE 0 rnti 7da6: UL Failure timer 1 
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 609.6 ULSCH in error in round 0, ul_cqi 104, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 609.9 ULSCH in error in round 0, ul_cqi 137, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 610.4 ULSCH in error in round 1, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 610.7 ULSCH in error in round 1, ul_cqi 140, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 611.2 ULSCH in error in round 2, ul_cqi 146, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 611.5 ULSCH in error in round 2, ul_cqi 162, UE_id 1, RNTI 8d6d
+[PHY]   fill_ulsch UE_id 0 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 611.9 ULSCH in error in round 0, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 612.0 ULSCH in error in round 3, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 612.3 ULSCH in error in round 3, ul_cqi 171, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 612.7 ULSCH in error in round 1, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 612.9 ULSCH in error in round 0, ul_cqi 161, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 613.5 ULSCH in error in round 2, ul_cqi 128, UE_id 1, RNTI 8d6d
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 8d6d] RLC RB 01 --- RLC_DATA_IND 2 bytes (securityModeFailure) ---> RRC_eNB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 8d6d] Logical Channel DL-DCCH, Generate UECapabilityEnquiry (bytes 3)
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 8d6d][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 2 current_sdu_index=1 next_sdu_index=2 conf 0 mui 3 vtA 0 vtS 2
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 614.3 ULSCH in error in round 3, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 615.9 ULSCH in error in round 0, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 616.7 ULSCH in error in round 1, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 616.9 ULSCH in error in round 0, ul_cqi 172, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 617.5 ULSCH in error in round 2, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 617.7 ULSCH in error in round 1, ul_cqi 147, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 618.3 ULSCH in error in round 3, ul_cqi 104, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 618.5 ULSCH in error in round 2, ul_cqi 136, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 619.3 ULSCH in error in round 3, ul_cqi 137, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 620.1 ULSCH in error in round 0, ul_cqi 172, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 623.6 ULSCH in error in round 0, ul_cqi 138, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 624.4 ULSCH in error in round 1, ul_cqi 170, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 624.9 ULSCH in error in round 0, ul_cqi 147, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 625.2 ULSCH in error in round 2, ul_cqi 137, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 626.0 ULSCH in error in round 3, ul_cqi 137, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 628.4 ULSCH in error in round 0, ul_cqi 171, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 628.9 ULSCH in error in round 0, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 629.2 ULSCH in error in round 1, ul_cqi 137, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 629.7 ULSCH in error in round 1, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 630.0 ULSCH in error in round 2, ul_cqi 161, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 630.5 ULSCH in error in round 2, ul_cqi 146, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 630.8 ULSCH in error in round 3, ul_cqi 170, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 631.3 ULSCH in error in round 3, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 631.9 ULSCH in error in round 0, ul_cqi 147, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 633.9 ULSCH in error in round 0, ul_cqi 168, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 634.7 ULSCH in error in round 1, ul_cqi 142, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 635.5 ULSCH in error in round 2, ul_cqi 165, UE_id 1, RNTI 8d6d
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 8d6d] received ueCapabilityInformation on UL-DCCH 1 from UE
+[RRC]   got UE capabilities for UE 8d6d
+[RRC]   [do_DrxConfig] featureGroupIndicators->buf[0]: ff
+[MAC]   drx_Configuration parameter is NULL, cannot configure local UE parameters
+[RRC]   [eNB 0] frame 0: requesting A2, A3, A4, and A5 event reporting
+[RRC]   RRCConnectionReconfiguration Encoded 734 bits (92 bytes)
+[RRC]   [eNB 0] Frame 0, Logical Channel DL-DCCH, Generate LTE_RRCConnectionReconfiguration (bytes 92, UE id 8d6d)
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 8d6d][SRB AM 01] RLC_AM_DATA_REQ size 97 Bytes,  NB SDU 3 current_sdu_index=2 next_sdu_index=3 conf 0 mui 4 vtA 3 vtS 3
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 637.9 ULSCH in error in round 0, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 638.7 ULSCH in error in round 1, ul_cqi 146, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 639.5 ULSCH in error in round 2, ul_cqi 104, UE_id 1, RNTI 8d6d
+[MAC]   UE  rnti 7da6 : in synch, PHR -18 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 27
+[MAC]   UE  rnti 8d6d : in synch, PHR -19 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 15
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 640.3 ULSCH in error in round 3, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 641.1 ULSCH in error in round 0, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 641.9 ULSCH in error in round 1, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 642.7 ULSCH in error in round 2, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 643.5 ULSCH in error in round 3, ul_cqi 104, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 644.3 ULSCH in error in round 0, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 645.1 ULSCH in error in round 1, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 645.9 ULSCH in error in round 2, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 646.7 ULSCH in error in round 3, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 647.5 ULSCH in error in round 0, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 648.3 ULSCH in error in round 1, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 649.1 ULSCH in error in round 2, ul_cqi 104, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 649.9 ULSCH in error in round 3, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 650.7 ULSCH in error in round 0, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 651.5 ULSCH in error in round 1, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 652.3 ULSCH in error in round 2, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 653.1 ULSCH in error in round 3, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 653.9 ULSCH in error in round 0, ul_cqi 128, UE_id 1, RNTI 8d6d
+[PHY]   [eNB 0/0][RAPROC] Frame 654, subframe 1 Initiating RA procedure with preamble 40, energy 15.5 dB, delay 0
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 654.7 ULSCH in error in round 1, ul_cqi 146, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 655.5 ULSCH in error in round 2, ul_cqi 146, UE_id 1, RNTI 8d6d
+[RRC]   [FRAME 00656][eNB][MOD 00][RNTI 4b2e] Decoding UL CCCH 51.ca.52.1b.cc.6 (0x562997125247)
+[RRC]   [FRAME 00656][eNB][MOD 00][RNTI 4b2e] Accept new connection from UE random UE identity (0xc0bc21a51c000000) MME code 0 TMSI 0 cause 3
+[MAC]   Added physicalConfigDedicated 0x7f1d48023c20 for 0.2
+[RRC]   [FRAME 00656][eNB][MOD 00][RNTI 4b2e]CALLING RLC CONFIG SRB1 (rbid 1)
+add new uid is 2 4b2e
+
+[PDCP]   [FRAME 00656][eNB][MOD 00][RNTI 4b2e][SRB 01]  Action ADD  LCID 1 (SRB id 1) configured with SN size 5 bits and RLC AM
+[RLC]   [FRAME 00656][eNB][MOD 00][RNTI 4b2e] [SRB 1] rrc_rlc_add_rlc  SRB
+[RLC]   [FRAME 00656][eNB][MOD 00][RNTI 4b2e][SRB AM 01][CONFIGURE] max_retx_threshold 4 poll_pdu 4 poll_byte 65535 t_poll_retransmit 80 t_reordering 35 t_status_prohibit 0
+[MAC]   generate_Msg4 ra->Msg4_frame SFN/SF: 656.4,  frameP SFN/SF: 656.4 FOR eNB_Mod: 0 
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 656, subframeP 4: Generating Msg4 with RRC Piggyback (RNTI 4b2e)
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 656.3 ULSCH in error in round 3, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 657, subframeP 2: Msg4 not acknowledged, adding ue specific dci (rnti 4b2e) for RA (Msg4 Retransmission round 1 in 658.0)
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 657.1 ULSCH in error in round 0, ul_cqi 104, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 657.9 ULSCH in error in round 1, ul_cqi 104, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 658.4 ULSCH in error in round 0, ul_cqi 131, UE_id 2, RNTI 4b2e
+[PHY]   fill_ulsch UE_id 1 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 658.7 ULSCH in error in round 2, ul_cqi 146, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 659.0 ULSCH in error in round 0, ul_cqi 143, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 659.2 ULSCH in error in round 1, ul_cqi 143, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 659.5 ULSCH in error in round 3, ul_cqi 146, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 659.8 ULSCH in error in round 1, ul_cqi 131, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 660.0 ULSCH in error in round 2, ul_cqi 142, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 660.3 ULSCH in error in round 0, ul_cqi 104, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 660.6 ULSCH in error in round 2, ul_cqi 142, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 661.1 ULSCH in error in round 1, ul_cqi 116, UE_id 1, RNTI 8d6d
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 4b2e] [RAPROC] Logical Channel UL-DCCH, processing LTE_RRCConnectionSetupComplete from UE (SRB1 Active)
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 4b2e] Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[RRC]   calling rrc_data_req :securityModeCommand
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 4b2e] UE State = RRC_CONNECTED 
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 4b2e][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 1 current_sdu_index=0 next_sdu_index=1 conf 0 mui 5 vtA 0 vtS 0
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 661.9 ULSCH in error in round 2, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 662.7 ULSCH in error in round 3, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 663.5 ULSCH in error in round 0, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 664.0 ULSCH in error in round 0, ul_cqi 158, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 664.3 ULSCH in error in round 1, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 664.8 ULSCH in error in round 1, ul_cqi 142, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 665.1 ULSCH in error in round 2, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 665.6 ULSCH in error in round 2, ul_cqi 142, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 665.9 ULSCH in error in round 3, ul_cqi 104, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 666.4 ULSCH in error in round 3, ul_cqi 142, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 666.7 ULSCH in error in round 0, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 667.2 ULSCH in error in round 0, ul_cqi 160, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 667.5 ULSCH in error in round 1, ul_cqi 122, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 668.0 ULSCH in error in round 1, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 668.3 ULSCH in error in round 2, ul_cqi 104, UE_id 1, RNTI 8d6d
+[PHY]   fill_ulsch UE_id 1 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 668.8 ULSCH in error in round 2, ul_cqi 128, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 669.0 ULSCH in error in round 0, ul_cqi 165, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 669.1 ULSCH in error in round 3, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 669.6 ULSCH in error in round 3, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 669.8 ULSCH in error in round 1, ul_cqi 161, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 669.9 ULSCH in error in round 0, ul_cqi 146, UE_id 1, RNTI 8d6d
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 670.6 ULSCH in error in round 2, ul_cqi 164, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 670.7 ULSCH in error in round 1, ul_cqi 122, UE_id 1, RNTI 8d6d
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 4b2e] RLC RB 01 --- RLC_DATA_IND 2 bytes (securityModeFailure) ---> RRC_eNB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 4b2e] Logical Channel DL-DCCH, Generate UECapabilityEnquiry (bytes 3)
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 671.5 ULSCH in error in round 2, ul_cqi 128, UE_id 1, RNTI 8d6d
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 4b2e][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 2 current_sdu_index=1 next_sdu_index=2 conf 0 mui 6 vtA 0 vtS 2
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 672.0 ULSCH in error in round 0, ul_cqi 162, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 672.3 ULSCH in error in round 3, ul_cqi 128, UE_id 1, RNTI 8d6d
+[MAC]   UE 1 rnti 8d6d: UL Failure timer 1 
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 672.8 ULSCH in error in round 1, ul_cqi 140, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 673.0 ULSCH in error in round 0, ul_cqi 164, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 673.6 ULSCH in error in round 2, ul_cqi 140, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 673.8 ULSCH in error in round 1, ul_cqi 162, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 674.4 ULSCH in error in round 3, ul_cqi 162, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 674.6 ULSCH in error in round 2, ul_cqi 140, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 675.4 ULSCH in error in round 3, ul_cqi 138, UE_id 2, RNTI 4b2e
+[RLC]   [FRAME 00676][eNB][MOD 00][RNTI 8d6d][SRB AM 01][RLC AM MAX RETX=5] SN 0003
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 676.2 ULSCH in error in round 0, ul_cqi 138, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 677.0 ULSCH in error in round 1, ul_cqi 141, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 677.8 ULSCH in error in round 2, ul_cqi 142, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 678.6 ULSCH in error in round 3, ul_cqi 142, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 679.4 ULSCH in error in round 0, ul_cqi 165, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 680.2 ULSCH in error in round 1, ul_cqi 136, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 681.0 ULSCH in error in round 2, ul_cqi 134, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 682.0 ULSCH in error in round 0, ul_cqi 134, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 682.8 ULSCH in error in round 1, ul_cqi 158, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 686.0 ULSCH in error in round 0, ul_cqi 167, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 686.8 ULSCH in error in round 1, ul_cqi 128, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 687.6 ULSCH in error in round 2, ul_cqi 128, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 688.4 ULSCH in error in round 3, ul_cqi 128, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 689.2 ULSCH in error in round 0, ul_cqi 155, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 690.0 ULSCH in error in round 1, ul_cqi 134, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 690.8 ULSCH in error in round 2, ul_cqi 155, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 691.6 ULSCH in error in round 3, ul_cqi 158, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 692.4 ULSCH in error in round 0, ul_cqi 167, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 693.2 ULSCH in error in round 1, ul_cqi 166, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 696.7 ULSCH in error in round 0, ul_cqi 166, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 697.5 ULSCH in error in round 1, ul_cqi 142, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 698.0 ULSCH in error in round 0, ul_cqi 142, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 698.3 ULSCH in error in round 2, ul_cqi 142, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 698.8 ULSCH in error in round 1, ul_cqi 166, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 699.1 ULSCH in error in round 3, ul_cqi 137, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 699.6 ULSCH in error in round 2, ul_cqi 166, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 702.0 ULSCH in error in round 0, ul_cqi 141, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 702.8 ULSCH in error in round 1, ul_cqi 138, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 703.6 ULSCH in error in round 2, ul_cqi 136, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 704.4 ULSCH in error in round 3, ul_cqi 160, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 705.0 ULSCH in error in round 0, ul_cqi 136, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 705.8 ULSCH in error in round 1, ul_cqi 160, UE_id 2, RNTI 4b2e
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 4b2e] received ueCapabilityInformation on UL-DCCH 1 from UE
+[RRC]   got UE capabilities for UE 4b2e
+[RRC]   [do_DrxConfig] featureGroupIndicators->buf[0]: ff
+[MAC]   drx_Configuration parameter is NULL, cannot configure local UE parameters
+[RRC]   [eNB 0] frame 0: requesting A2, A3, A4, and A5 event reporting
+[RRC]   RRCConnectionReconfiguration Encoded 734 bits (92 bytes)
+[RRC]   [eNB 0] Frame 0, Logical Channel DL-DCCH, Generate LTE_RRCConnectionReconfiguration (bytes 92, UE id 4b2e)
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 4b2e][SRB AM 01] RLC_AM_DATA_REQ size 97 Bytes,  NB SDU 3 current_sdu_index=2 next_sdu_index=3 conf 0 mui 7 vtA 3 vtS 3
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 709.3 ULSCH in error in round 0, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 710.1 ULSCH in error in round 1, ul_cqi 146, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 710.9 ULSCH in error in round 2, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 711.7 ULSCH in error in round 3, ul_cqi 146, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 712.5 ULSCH in error in round 0, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 713.3 ULSCH in error in round 1, ul_cqi 128, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 714.1 ULSCH in error in round 2, ul_cqi 116, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 714.9 ULSCH in error in round 3, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 715.7 ULSCH in error in round 0, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 716.5 ULSCH in error in round 1, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 717.3 ULSCH in error in round 2, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 718.1 ULSCH in error in round 3, ul_cqi 146, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 718.9 ULSCH in error in round 0, ul_cqi 128, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 719.7 ULSCH in error in round 1, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 720.5 ULSCH in error in round 2, ul_cqi 128, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 721.3 ULSCH in error in round 3, ul_cqi 128, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 722.1 ULSCH in error in round 0, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 722.9 ULSCH in error in round 1, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 723.7 ULSCH in error in round 2, ul_cqi 128, UE_id 2, RNTI 4b2e
+[PHY]   [eNB 0/0][RAPROC] Frame 724, subframe 1 Initiating RA procedure with preamble 25, energy 10.4 dB, delay 0
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 724.5 ULSCH in error in round 3, ul_cqi 146, UE_id 2, RNTI 4b2e
+[PHY]   fill_ulsch UE_id 1 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 725.0 ULSCH in error in round 0, ul_cqi 128, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 725.8 ULSCH in error in round 1, ul_cqi 122, UE_id 2, RNTI 4b2e
+[RRC]   [FRAME 00726][eNB][MOD 00][RNTI 65d2] Decoding UL CCCH 56.c2.c4.0.17.36 (0x56299712bb47)
+[RRC]   [FRAME 00726][eNB][MOD 00][RNTI 65d2] Accept new connection from UE random UE identity (0x7301402c6c000000) MME code 0 TMSI 0 cause 3
+[MAC]   Added physicalConfigDedicated 0x7f1d48068d00 for 0.3
+[RRC]   [FRAME 00726][eNB][MOD 00][RNTI 65d2]CALLING RLC CONFIG SRB1 (rbid 1)
+add new uid is 3 65d2
+
+[PDCP]   [FRAME 00726][eNB][MOD 00][RNTI 65d2][SRB 01]  Action ADD  LCID 1 (SRB id 1) configured with SN size 5 bits and RLC AM
+[RLC]   [FRAME 00726][eNB][MOD 00][RNTI 65d2] [SRB 1] rrc_rlc_add_rlc  SRB
+[RLC]   [FRAME 00726][eNB][MOD 00][RNTI 65d2][SRB AM 01][CONFIGURE] max_retx_threshold 4 poll_pdu 4 poll_byte 65535 t_poll_retransmit 80 t_reordering 35 t_status_prohibit 0
+[MAC]   generate_Msg4 ra->Msg4_frame SFN/SF: 726.4,  frameP SFN/SF: 726.4 FOR eNB_Mod: 0 
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 726, subframeP 4: Generating Msg4 with RRC Piggyback (RNTI 65d2)
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 726.6 ULSCH in error in round 2, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 727, subframeP 2: Msg4 not acknowledged, adding ue specific dci (rnti 65d2) for RA (Msg4 Retransmission round 1 in 728.0)
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 727.4 ULSCH in error in round 3, ul_cqi 128, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 728.2 ULSCH in error in round 0, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 728.4 ULSCH in error in round 0, ul_cqi 144, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 729.0 ULSCH in error in round 1, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 729.2 ULSCH in error in round 1, ul_cqi 142, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 729.8 ULSCH in error in round 2, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 730.6 ULSCH in error in round 3, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 730.8 ULSCH in error in round 0, ul_cqi 104, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 731.4 ULSCH in error in round 0, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 731.6 ULSCH in error in round 1, ul_cqi 152, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 732.2 ULSCH in error in round 1, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 732.4 ULSCH in error in round 2, ul_cqi 128, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 733.0 ULSCH in error in round 2, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 733.2 ULSCH in error in round 3, ul_cqi 104, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 733.8 ULSCH in error in round 3, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 734.0 ULSCH in error in round 0, ul_cqi 172, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 734.6 ULSCH in error in round 0, ul_cqi 128, UE_id 2, RNTI 4b2e
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 65d2] [RAPROC] Logical Channel UL-DCCH, processing LTE_RRCConnectionSetupComplete from UE (SRB1 Active)
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 65d2] Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[RRC]   calling rrc_data_req :securityModeCommand
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 65d2] UE State = RRC_CONNECTED 
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 65d2][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 1 current_sdu_index=0 next_sdu_index=1 conf 0 mui 8 vtA 0 vtS 0
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 735.4 ULSCH in error in round 1, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 736.2 ULSCH in error in round 2, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 737.0 ULSCH in error in round 3, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 737.1 ULSCH in error in round 0, ul_cqi 145, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 737.8 ULSCH in error in round 0, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 737.9 ULSCH in error in round 1, ul_cqi 161, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 738.6 ULSCH in error in round 1, ul_cqi 128, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 738.7 ULSCH in error in round 2, ul_cqi 138, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 739.4 ULSCH in error in round 2, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 739.5 ULSCH in error in round 3, ul_cqi 170, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 740.2 ULSCH in error in round 3, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 740.3 ULSCH in error in round 0, ul_cqi 170, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 741.0 ULSCH in error in round 0, ul_cqi 122, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 741.8 ULSCH in error in round 1, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 742.6 ULSCH in error in round 2, ul_cqi 146, UE_id 2, RNTI 4b2e
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 743.4 ULSCH in error in round 3, ul_cqi 104, UE_id 2, RNTI 4b2e
+[MAC]   UE 2 rnti 4b2e: UL Failure timer 1 
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 743.8 ULSCH in error in round 0, ul_cqi 170, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 744.1 ULSCH in error in round 0, ul_cqi 145, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 744.6 ULSCH in error in round 1, ul_cqi 161, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 744.9 ULSCH in error in round 1, ul_cqi 137, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 745.4 ULSCH in error in round 2, ul_cqi 169, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 745.7 ULSCH in error in round 2, ul_cqi 137, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 746.1 ULSCH in error in round 0, ul_cqi 136, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 746.2 ULSCH in error in round 3, ul_cqi 136, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 746.5 ULSCH in error in round 3, ul_cqi 146, UE_id 3, RNTI 65d2
+[RLC]   [FRAME 00747][eNB][MOD 00][RNTI 4b2e][SRB AM 01][RLC AM MAX RETX=5] SN 0003
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 65d2] RLC RB 01 --- RLC_DATA_IND 2 bytes (securityModeFailure) ---> RRC_eNB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 65d2] Logical Channel DL-DCCH, Generate UECapabilityEnquiry (bytes 3)
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 65d2][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 2 current_sdu_index=1 next_sdu_index=2 conf 0 mui 9 vtA 0 vtS 2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 749.1 ULSCH in error in round 0, ul_cqi 144, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 750.7 ULSCH in error in round 0, ul_cqi 104, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 750.8 ULSCH in error in round 0, ul_cqi 148, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 751.5 ULSCH in error in round 1, ul_cqi 128, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 751.6 ULSCH in error in round 1, ul_cqi 147, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 752.3 ULSCH in error in round 2, ul_cqi 152, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 752.4 ULSCH in error in round 2, ul_cqi 149, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 753.1 ULSCH in error in round 3, ul_cqi 128, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 753.2 ULSCH in error in round 3, ul_cqi 144, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 753.9 ULSCH in error in round 0, ul_cqi 152, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 754.7 ULSCH in error in round 1, ul_cqi 128, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 755.5 ULSCH in error in round 2, ul_cqi 152, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 756.3 ULSCH in error in round 3, ul_cqi 128, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 757.1 ULSCH in error in round 0, ul_cqi 158, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 757.9 ULSCH in error in round 1, ul_cqi 173, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 758.7 ULSCH in error in round 2, ul_cqi 134, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 759.5 ULSCH in error in round 3, ul_cqi 172, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 763.0 ULSCH in error in round 0, ul_cqi 152, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 763.8 ULSCH in error in round 1, ul_cqi 152, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 764.6 ULSCH in error in round 2, ul_cqi 128, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 765.4 ULSCH in error in round 3, ul_cqi 128, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 766.2 ULSCH in error in round 0, ul_cqi 152, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 767.0 ULSCH in error in round 1, ul_cqi 143, UE_id 3, RNTI 65d2
+[MAC]   UE  rnti 7da6 : in synch, PHR -18 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 27
+[MAC]   UE  rnti 8d6d : in synch, PHR -19 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 13
+[MAC]   UE  rnti 4b2e : in synch, PHR -18 dB DL CQI 4 PUSCH SNR 1 PUCCH SNR 20
+[MAC]   UE  rnti 65d2 : in synch, PHR -14 dB DL CQI 4 PUSCH SNR 4 PUCCH SNR 20
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 767.8 ULSCH in error in round 2, ul_cqi 167, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 768.6 ULSCH in error in round 3, ul_cqi 128, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 769.4 ULSCH in error in round 0, ul_cqi 142, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 770.2 ULSCH in error in round 1, ul_cqi 152, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 771.0 ULSCH in error in round 2, ul_cqi 128, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 771.8 ULSCH in error in round 3, ul_cqi 142, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 772.1 ULSCH in error in round 0, ul_cqi 128, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 772.9 ULSCH in error in round 1, ul_cqi 141, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 773.7 ULSCH in error in round 2, ul_cqi 131, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 774.5 ULSCH in error in round 3, ul_cqi 155, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 775.3 ULSCH in error in round 0, ul_cqi 140, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 776.1 ULSCH in error in round 1, ul_cqi 134, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 776.9 ULSCH in error in round 2, ul_cqi 136, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 777.7 ULSCH in error in round 3, ul_cqi 142, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 778.5 ULSCH in error in round 0, ul_cqi 134, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 779.3 ULSCH in error in round 1, ul_cqi 104, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 780.1 ULSCH in error in round 2, ul_cqi 104, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 780.9 ULSCH in error in round 3, ul_cqi 122, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 781.1 ULSCH in error in round 0, ul_cqi 158, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 781.9 ULSCH in error in round 1, ul_cqi 164, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 782.7 ULSCH in error in round 2, ul_cqi 134, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 783.5 ULSCH in error in round 3, ul_cqi 166, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 784.3 ULSCH in error in round 0, ul_cqi 166, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 785.1 ULSCH in error in round 1, ul_cqi 131, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 785.9 ULSCH in error in round 2, ul_cqi 152, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 786.7 ULSCH in error in round 3, ul_cqi 155, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 787.5 ULSCH in error in round 0, ul_cqi 143, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 788.3 ULSCH in error in round 1, ul_cqi 141, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 789.1 ULSCH in error in round 2, ul_cqi 152, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 789.9 ULSCH in error in round 3, ul_cqi 131, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 790.1 ULSCH in error in round 0, ul_cqi 131, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 790.9 ULSCH in error in round 1, ul_cqi 134, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 791.7 ULSCH in error in round 2, ul_cqi 134, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 792.5 ULSCH in error in round 3, ul_cqi 140, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 793.3 ULSCH in error in round 0, ul_cqi 158, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 794.1 ULSCH in error in round 1, ul_cqi 140, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 794.9 ULSCH in error in round 2, ul_cqi 137, UE_id 3, RNTI 65d2
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 795.7 ULSCH in error in round 3, ul_cqi 162, UE_id 3, RNTI 65d2
+[MAC]   UE 3 rnti 65d2: UL Failure timer 1 
+[PHY]   [eNB 0/0][RAPROC] Frame 822, subframe 1 Initiating RA procedure with preamble 32, energy 12.0 dB, delay 0
+[RRC]   [FRAME 00824][eNB][MOD 00][RNTI 6a7] Decoding UL CCCH 54.dc.e8.73.ce.96 (0x5629995119a7)
+[RRC]   [FRAME 00824][eNB][MOD 00][RNTI 6a7] Accept new connection from UE random UE identity (0xe93c87ce4d000000) MME code 0 TMSI 0 cause 3
+[MAC]   Added physicalConfigDedicated 0x7f1d4808b680 for 0.4
+[RRC]   [FRAME 00824][eNB][MOD 00][RNTI 6a7]CALLING RLC CONFIG SRB1 (rbid 1)
+add new uid is 4 6a7
+
+[PDCP]   [FRAME 00824][eNB][MOD 00][RNTI 6a7][SRB 01]  Action ADD  LCID 1 (SRB id 1) configured with SN size 5 bits and RLC AM
+[RLC]   [FRAME 00824][eNB][MOD 00][RNTI 6a7] [SRB 1] rrc_rlc_add_rlc  SRB
+[RLC]   [FRAME 00824][eNB][MOD 00][RNTI 6a7][SRB AM 01][CONFIGURE] max_retx_threshold 4 poll_pdu 4 poll_byte 65535 t_poll_retransmit 80 t_reordering 35 t_status_prohibit 0
+[MAC]   generate_Msg4 ra->Msg4_frame SFN/SF: 824.4,  frameP SFN/SF: 824.4 FOR eNB_Mod: 0 
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 824, subframeP 4: Generating Msg4 with RRC Piggyback (RNTI 6a7)
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 825, subframeP 2: Msg4 not acknowledged, adding ue specific dci (rnti 6a7) for RA (Msg4 Retransmission round 1 in 826.0)
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 826.4 ULSCH in error in round 0, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 827.2 ULSCH in error in round 1, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 828.0 ULSCH in error in round 2, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 828.2 ULSCH in error in round 0, ul_cqi 144, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 828.8 ULSCH in error in round 3, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 829.0 ULSCH in error in round 1, ul_cqi 164, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 830.6 ULSCH in error in round 0, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 831.4 ULSCH in error in round 1, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 832.2 ULSCH in error in round 2, ul_cqi 152, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 833.0 ULSCH in error in round 3, ul_cqi 152, UE_id 4, RNTI 6a7
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 6a7] [RAPROC] Logical Channel UL-DCCH, processing LTE_RRCConnectionSetupComplete from UE (SRB1 Active)
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 6a7] Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[RRC]   calling rrc_data_req :securityModeCommand
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 6a7] UE State = RRC_CONNECTED 
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 6a7][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 1 current_sdu_index=0 next_sdu_index=1 conf 0 mui 10 vtA 0 vtS 0
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 836.2 ULSCH in error in round 0, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 837.0 ULSCH in error in round 1, ul_cqi 116, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 837.2 ULSCH in error in round 0, ul_cqi 140, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 837.8 ULSCH in error in round 2, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 838.0 ULSCH in error in round 1, ul_cqi 170, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 838.6 ULSCH in error in round 3, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 838.8 ULSCH in error in round 2, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 839.6 ULSCH in error in round 3, ul_cqi 160, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 840.4 ULSCH in error in round 0, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 843.2 ULSCH in error in round 0, ul_cqi 170, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 844.0 ULSCH in error in round 1, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 846.2 ULSCH in error in round 0, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 847.0 ULSCH in error in round 1, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 847.2 ULSCH in error in round 0, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 847.8 ULSCH in error in round 2, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 848.0 ULSCH in error in round 1, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 848.2 ULSCH in error in round 0, ul_cqi 167, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 848.6 ULSCH in error in round 3, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 848.8 ULSCH in error in round 2, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 849.0 ULSCH in error in round 1, ul_cqi 142, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 849.6 ULSCH in error in round 3, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 849.8 ULSCH in error in round 2, ul_cqi 167, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 850.6 ULSCH in error in round 3, ul_cqi 142, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 851.4 ULSCH in error in round 0, ul_cqi 165, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 852.2 ULSCH in error in round 1, ul_cqi 142, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 855.7 ULSCH in error in round 0, ul_cqi 142, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 856.5 ULSCH in error in round 1, ul_cqi 141, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 857.2 ULSCH in error in round 0, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 857.3 ULSCH in error in round 2, ul_cqi 141, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 858.0 ULSCH in error in round 1, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 858.1 ULSCH in error in round 3, ul_cqi 141, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 858.2 ULSCH in error in round 0, ul_cqi 138, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 858.8 ULSCH in error in round 2, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 859.0 ULSCH in error in round 1, ul_cqi 164, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 859.6 ULSCH in error in round 3, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 859.8 ULSCH in error in round 2, ul_cqi 140, UE_id 4, RNTI 6a7
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 6a7] RLC RB 01 --- RLC_DATA_IND 2 bytes (securityModeFailure) ---> RRC_eNB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 6a7] Logical Channel DL-DCCH, Generate UECapabilityEnquiry (bytes 3)
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 6a7][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 2 current_sdu_index=1 next_sdu_index=2 conf 0 mui 11 vtA 2 vtS 2
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 862.2 ULSCH in error in round 0, ul_cqi 142, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 863.0 ULSCH in error in round 1, ul_cqi 136, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 863.8 ULSCH in error in round 2, ul_cqi 138, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 864.6 ULSCH in error in round 3, ul_cqi 162, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 865.4 ULSCH in error in round 0, ul_cqi 137, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 866.2 ULSCH in error in round 1, ul_cqi 136, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 867.0 ULSCH in error in round 2, ul_cqi 136, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 870.5 ULSCH in error in round 0, ul_cqi 166, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 871.3 ULSCH in error in round 1, ul_cqi 152, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 872.1 ULSCH in error in round 2, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 872.2 ULSCH in error in round 0, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 872.9 ULSCH in error in round 3, ul_cqi 142, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 873.0 ULSCH in error in round 1, ul_cqi 142, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 873.8 ULSCH in error in round 2, ul_cqi 152, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 874.6 ULSCH in error in round 3, ul_cqi 142, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 875.4 ULSCH in error in round 0, ul_cqi 142, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 876.2 ULSCH in error in round 1, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 877.0 ULSCH in error in round 2, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 877.2 ULSCH in error in round 0, ul_cqi 142, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 877.8 ULSCH in error in round 3, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 878.0 ULSCH in error in round 1, ul_cqi 166, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 878.2 ULSCH in error in round 0, ul_cqi 158, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 878.8 ULSCH in error in round 2, ul_cqi 165, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 879.0 ULSCH in error in round 1, ul_cqi 134, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 879.6 ULSCH in error in round 3, ul_cqi 141, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 879.8 ULSCH in error in round 2, ul_cqi 165, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 880.6 ULSCH in error in round 3, ul_cqi 140, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 881.4 ULSCH in error in round 0, ul_cqi 164, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 882.2 ULSCH in error in round 1, ul_cqi 137, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 883.0 ULSCH in error in round 2, ul_cqi 162, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 886.2 ULSCH in error in round 0, ul_cqi 161, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 887.0 ULSCH in error in round 1, ul_cqi 137, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 887.8 ULSCH in error in round 2, ul_cqi 161, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 888.6 ULSCH in error in round 3, ul_cqi 138, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 889.4 ULSCH in error in round 0, ul_cqi 137, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 890.2 ULSCH in error in round 1, ul_cqi 160, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 891.0 ULSCH in error in round 2, ul_cqi 161, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 891.8 ULSCH in error in round 3, ul_cqi 160, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 892.6 ULSCH in error in round 0, ul_cqi 136, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 893.4 ULSCH in error in round 1, ul_cqi 166, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 894.2 ULSCH in error in round 2, ul_cqi 166, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 895.0 ULSCH in error in round 3, ul_cqi 136, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 895.2 ULSCH in error in round 0, ul_cqi 136, UE_id 4, RNTI 6a7
+[MAC]   UE  rnti 7da6 : in synch, PHR -18 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 27
+[MAC]   UE  rnti 8d6d : in synch, PHR -19 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 13
+[MAC]   UE  rnti 4b2e : in synch, PHR -18 dB DL CQI 4 PUSCH SNR 1 PUCCH SNR 20
+[MAC]   UE  rnti 65d2 : in synch, PHR -14 dB DL CQI 4 PUSCH SNR 4 PUCCH SNR 20
+[MAC]   UE  rnti 6a7 : in synch, PHR -18 dB DL CQI 4 PUSCH SNR 17 PUCCH SNR 15
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 896.0 ULSCH in error in round 1, ul_cqi 166, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 896.8 ULSCH in error in round 2, ul_cqi 160, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 897.6 ULSCH in error in round 3, ul_cqi 158, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 898.4 ULSCH in error in round 0, ul_cqi 134, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 899.2 ULSCH in error in round 1, ul_cqi 142, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 900.0 ULSCH in error in round 2, ul_cqi 142, UE_id 4, RNTI 6a7
+[RLC]   [FRAME 00901][eNB][MOD 00][RNTI 6a7][SRB AM 01][RLC AM MAX RETX=5] SN 0002
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 903.5 ULSCH in error in round 0, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 904.3 ULSCH in error in round 1, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 905.1 ULSCH in error in round 2, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 905.9 ULSCH in error in round 3, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 906.7 ULSCH in error in round 0, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 907.5 ULSCH in error in round 1, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 908.3 ULSCH in error in round 2, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 909.1 ULSCH in error in round 3, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 909.9 ULSCH in error in round 0, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 910.7 ULSCH in error in round 1, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 911.5 ULSCH in error in round 2, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 912.3 ULSCH in error in round 3, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 913.1 ULSCH in error in round 0, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 913.9 ULSCH in error in round 1, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 914.7 ULSCH in error in round 2, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 915.5 ULSCH in error in round 3, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 916.3 ULSCH in error in round 0, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 917.1 ULSCH in error in round 1, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 917.9 ULSCH in error in round 2, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 918.7 ULSCH in error in round 3, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 919.5 ULSCH in error in round 0, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 920.3 ULSCH in error in round 1, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 921.1 ULSCH in error in round 2, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 921.9 ULSCH in error in round 3, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 922.7 ULSCH in error in round 0, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 923.5 ULSCH in error in round 1, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 924.3 ULSCH in error in round 2, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 925.1 ULSCH in error in round 3, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 925.9 ULSCH in error in round 0, ul_cqi 104, UE_id 4, RNTI 6a7
+[PHY]   [eNB 0/0][RAPROC] Frame 926, subframe 1 Initiating RA procedure with preamble 39, energy 10.4 dB, delay 0
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 926.7 ULSCH in error in round 1, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 927.5 ULSCH in error in round 2, ul_cqi 122, UE_id 4, RNTI 6a7
+[RRC]   [FRAME 00928][eNB][MOD 00][RNTI 389c] Decoding UL CCCH 52.3e.b4.98.8.96 (0x562997125247)
+[RRC]   [FRAME 00928][eNB][MOD 00][RNTI 389c] Accept new connection from UE random UE identity (0x898049eb23000000) MME code 0 TMSI 0 cause 3
+[MAC]   Added physicalConfigDedicated 0x7f1d480ab9c0 for 0.5
+[RRC]   [FRAME 00928][eNB][MOD 00][RNTI 389c]CALLING RLC CONFIG SRB1 (rbid 1)
+add new uid is 5 389c
+
+[PDCP]   [FRAME 00928][eNB][MOD 00][RNTI 389c][SRB 01]  Action ADD  LCID 1 (SRB id 1) configured with SN size 5 bits and RLC AM
+[RLC]   [FRAME 00928][eNB][MOD 00][RNTI 389c] [SRB 1] rrc_rlc_add_rlc  SRB
+[RLC]   [FRAME 00928][eNB][MOD 00][RNTI 389c][SRB AM 01][CONFIGURE] max_retx_threshold 4 poll_pdu 4 poll_byte 65535 t_poll_retransmit 80 t_reordering 35 t_status_prohibit 0
+[MAC]   generate_Msg4 ra->Msg4_frame SFN/SF: 928.4,  frameP SFN/SF: 928.4 FOR eNB_Mod: 0 
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 928, subframeP 4: Generating Msg4 with RRC Piggyback (RNTI 389c)
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 928.3 ULSCH in error in round 3, ul_cqi 104, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 929.1 ULSCH in error in round 0, ul_cqi 116, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 929.8 ULSCH in error in round 0, ul_cqi 146, UE_id 5, RNTI 389c
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 929.9 ULSCH in error in round 1, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 930.6 ULSCH in error in round 1, ul_cqi 146, UE_id 5, RNTI 389c
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 930.7 ULSCH in error in round 2, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 931.4 ULSCH in error in round 2, ul_cqi 128, UE_id 5, RNTI 389c
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 931.5 ULSCH in error in round 3, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 932.2 ULSCH in error in round 3, ul_cqi 146, UE_id 5, RNTI 389c
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 932.3 ULSCH in error in round 0, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 933.0 ULSCH in error in round 0, ul_cqi 104, UE_id 5, RNTI 389c
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 933.1 ULSCH in error in round 1, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 933.8 ULSCH in error in round 1, ul_cqi 122, UE_id 5, RNTI 389c
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 933.9 ULSCH in error in round 2, ul_cqi 128, UE_id 4, RNTI 6a7
+[PHY]   [eNB 0/0][RAPROC] Frame 934, subframe 1 Initiating RA procedure with preamble 52, energy 14.9 dB, delay 0
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 934.6 ULSCH in error in round 2, ul_cqi 146, UE_id 5, RNTI 389c
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 934.7 ULSCH in error in round 3, ul_cqi 104, UE_id 4, RNTI 6a7
+[PHY]   fill_ulsch UE_id 2 nb_rb = 0
+[RRC]   [FRAME 00935][eNB][MOD 00][RNTI c779] Decoding UL CCCH 52.3e.b4.98.8.96 (0x5629995119a7)
+[RRC]   new UE rnti c779 (coming with random value) is already there as UE 389c, removing 389c from MAC/PHY
+[RRC]   [FRAME 00935][eNB][MOD 00][RNTI c779] Accept new connection from UE random UE identity (0x898049eb23000000) MME code 0 TMSI 0 cause 3
+[MAC]   Added physicalConfigDedicated 0x7f1d480cbcc0 for 0.6
+[RRC]   [FRAME 00935][eNB][MOD 00][RNTI c779]CALLING RLC CONFIG SRB1 (rbid 1)
+add new uid is 6 c779
+
+[PDCP]   [FRAME 00935][eNB][MOD 00][RNTI c779][SRB 01]  Action ADD  LCID 1 (SRB id 1) configured with SN size 5 bits and RLC AM
+[RLC]   [FRAME 00935][eNB][MOD 00][RNTI c779] [SRB 1] rrc_rlc_add_rlc  SRB
+[RLC]   [FRAME 00935][eNB][MOD 00][RNTI c779][SRB AM 01][CONFIGURE] max_retx_threshold 4 poll_pdu 4 poll_byte 65535 t_poll_retransmit 80 t_reordering 35 t_status_prohibit 0
+[MAC]   generate_Msg4 ra->Msg4_frame SFN/SF: 935.6,  frameP SFN/SF: 935.6 FOR eNB_Mod: 0 
+[RRC]   Removing UE 389c instance, because of uplink failure timer timeout
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 935, subframeP 6: Generating Msg4 with RRC Piggyback (RNTI c779)
+[RRC]   [eNB 0] Removing UE RNTI 389c
+[RRC]   Put UE 389c into freeList
+[RRC]   clean_eNb_ulsch ulsch[1] UE 389c
+[MAC]   clean eNb uci_vars[1] UE 389c 
+[MAC]   Removing UE 5 from Primary CC_id 0 (rnti 389c)
+[PDCP]   remove uid is 5/5 389c
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 389c] Removed UE context
+[RRC]   [release_UE_in_freeList] remove UE 389c from freeList
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 935.5 ULSCH in error in round 0, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 936, subframeP 4: Msg4 not acknowledged, adding ue specific dci (rnti c779) for RA (Msg4 Retransmission round 1 in 937.2)
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 936.3 ULSCH in error in round 1, ul_cqi 122, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 937.1 ULSCH in error in round 2, ul_cqi 128, UE_id 4, RNTI 6a7
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 937.6 ULSCH in error in round 0, ul_cqi 143, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 937.9 ULSCH in error in round 3, ul_cqi 146, UE_id 4, RNTI 6a7
+[MAC]   UE 4 rnti 6a7: UL Failure timer 1 
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 938.4 ULSCH in error in round 1, ul_cqi 165, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 939.2 ULSCH in error in round 2, ul_cqi 164, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 940.8 ULSCH in error in round 0, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 940.9 ULSCH in error in round 0, ul_cqi 152, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 941.6 ULSCH in error in round 1, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 941.7 ULSCH in error in round 1, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 942.4 ULSCH in error in round 2, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 942.5 ULSCH in error in round 2, ul_cqi 152, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 943.2 ULSCH in error in round 3, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 943.3 ULSCH in error in round 3, ul_cqi 152, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 944.0 ULSCH in error in round 0, ul_cqi 149, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 944.1 ULSCH in error in round 0, ul_cqi 148, UE_id 6, RNTI c779
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI c779] [RAPROC] Logical Channel UL-DCCH, processing LTE_RRCConnectionSetupComplete from UE (SRB1 Active)
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI c779] Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[RRC]   calling rrc_data_req :securityModeCommand
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI c779] UE State = RRC_CONNECTED 
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI c779][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 1 current_sdu_index=0 next_sdu_index=1 conf 0 mui 12 vtA 0 vtS 0
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 947.4 ULSCH in error in round 0, ul_cqi 165, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 948.2 ULSCH in error in round 1, ul_cqi 141, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 949.0 ULSCH in error in round 2, ul_cqi 138, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 949.8 ULSCH in error in round 3, ul_cqi 140, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 950.6 ULSCH in error in round 0, ul_cqi 161, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 951.4 ULSCH in error in round 1, ul_cqi 136, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 952.2 ULSCH in error in round 2, ul_cqi 136, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 953.0 ULSCH in error in round 3, ul_cqi 143, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 953.8 ULSCH in error in round 0, ul_cqi 145, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 954.4 ULSCH in error in round 0, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 954.6 ULSCH in error in round 1, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 955.2 ULSCH in error in round 1, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 955.4 ULSCH in error in round 2, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 956.0 ULSCH in error in round 2, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 956.2 ULSCH in error in round 3, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 956.4 ULSCH in error in round 0, ul_cqi 145, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 956.8 ULSCH in error in round 3, ul_cqi 128, UE_id 6, RNTI c779
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI c779] RLC RB 01 --- RLC_DATA_IND 2 bytes (securityModeFailure) ---> RRC_eNB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI c779] Logical Channel DL-DCCH, Generate UECapabilityEnquiry (bytes 3)
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI c779][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 2 current_sdu_index=1 next_sdu_index=2 conf 0 mui 13 vtA 2 vtS 2
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 959.4 ULSCH in error in round 0, ul_cqi 168, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 960.2 ULSCH in error in round 1, ul_cqi 131, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 961.0 ULSCH in error in round 2, ul_cqi 165, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 961.8 ULSCH in error in round 3, ul_cqi 152, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 962.6 ULSCH in error in round 0, ul_cqi 166, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 963.4 ULSCH in error in round 1, ul_cqi 141, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 964.2 ULSCH in error in round 2, ul_cqi 165, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 965.0 ULSCH in error in round 3, ul_cqi 165, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 965.8 ULSCH in error in round 0, ul_cqi 166, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 966.6 ULSCH in error in round 1, ul_cqi 146, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 967.4 ULSCH in error in round 2, ul_cqi 165, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 968.2 ULSCH in error in round 3, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 969.0 ULSCH in error in round 0, ul_cqi 166, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 969.8 ULSCH in error in round 1, ul_cqi 146, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 970.6 ULSCH in error in round 2, ul_cqi 152, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 971.4 ULSCH in error in round 3, ul_cqi 152, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 972.2 ULSCH in error in round 0, ul_cqi 146, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 973.0 ULSCH in error in round 1, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 973.8 ULSCH in error in round 2, ul_cqi 166, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 974.4 ULSCH in error in round 0, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 974.6 ULSCH in error in round 3, ul_cqi 152, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 975.2 ULSCH in error in round 1, ul_cqi 166, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 976.0 ULSCH in error in round 2, ul_cqi 146, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 976.8 ULSCH in error in round 3, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 977.6 ULSCH in error in round 0, ul_cqi 141, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 978.4 ULSCH in error in round 1, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 979.2 ULSCH in error in round 2, ul_cqi 166, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 980.0 ULSCH in error in round 3, ul_cqi 152, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 980.8 ULSCH in error in round 0, ul_cqi 141, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 981.6 ULSCH in error in round 1, ul_cqi 142, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 982.4 ULSCH in error in round 2, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 983.2 ULSCH in error in round 3, ul_cqi 142, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 983.4 ULSCH in error in round 0, ul_cqi 141, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 984.2 ULSCH in error in round 1, ul_cqi 142, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 985.0 ULSCH in error in round 2, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 985.8 ULSCH in error in round 3, ul_cqi 142, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 986.6 ULSCH in error in round 0, ul_cqi 140, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 987.4 ULSCH in error in round 1, ul_cqi 131, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 988.2 ULSCH in error in round 2, ul_cqi 134, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 989.0 ULSCH in error in round 3, ul_cqi 158, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 989.8 ULSCH in error in round 0, ul_cqi 140, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 990.4 ULSCH in error in round 0, ul_cqi 160, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 990.6 ULSCH in error in round 1, ul_cqi 136, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 991.2 ULSCH in error in round 1, ul_cqi 161, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 991.4 ULSCH in error in round 2, ul_cqi 160, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 992.0 ULSCH in error in round 2, ul_cqi 160, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 992.2 ULSCH in error in round 3, ul_cqi 161, UE_id 6, RNTI c779
+[MAC]   UE 6 rnti c779: UL Failure timer 1 
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 992.4 ULSCH in error in round 0, ul_cqi 161, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 992.8 ULSCH in error in round 3, ul_cqi 161, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 993.2 ULSCH in error in round 1, ul_cqi 137, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 994.0 ULSCH in error in round 2, ul_cqi 137, UE_id 6, RNTI c779
+[RLC]   [FRAME 00997][eNB][MOD 00][RNTI c779][SRB AM 01][RLC AM MAX RETX=5] SN 0002
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 997.5 ULSCH in error in round 0, ul_cqi 142, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 998.3 ULSCH in error in round 1, ul_cqi 131, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 999.1 ULSCH in error in round 2, ul_cqi 140, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 999.9 ULSCH in error in round 3, ul_cqi 136, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 1000.7 ULSCH in error in round 0, ul_cqi 161, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 1001.5 ULSCH in error in round 1, ul_cqi 162, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 1005.0 ULSCH in error in round 0, ul_cqi 140, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 1005.8 ULSCH in error in round 1, ul_cqi 142, UE_id 6, RNTI c779
+[MAC]   UE 0 rnti 7da6: UL Failure after repeated PDCCH orders: Triggering RRC 
+[RRC]   Frame 1006, Subframe 8: UE 7da6 UL failure, activating timer
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 1006.6 ULSCH in error in round 2, ul_cqi 152, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 1007.4 ULSCH in error in round 3, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 1008.2 ULSCH in error in round 0, ul_cqi 166, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 1009.0 ULSCH in error in round 1, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1009.4 ULSCH in error in round 0, ul_cqi 142, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 1009.8 ULSCH in error in round 2, ul_cqi 166, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1010.2 ULSCH in error in round 1, ul_cqi 152, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 2] CC_id 0 1010.6 ULSCH in error in round 3, ul_cqi 141, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1011.0 ULSCH in error in round 2, ul_cqi 166, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1011.8 ULSCH in error in round 3, ul_cqi 165, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1012.6 ULSCH in error in round 0, ul_cqi 164, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1013.4 ULSCH in error in round 1, ul_cqi 162, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1014.2 ULSCH in error in round 2, ul_cqi 160, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1015.0 ULSCH in error in round 3, ul_cqi 161, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1015.8 ULSCH in error in round 0, ul_cqi 164, UE_id 6, RNTI c779
+[PHY]   [eNB 0/0][RAPROC] Frame 1016, subframe 1 Initiating RA procedure with preamble 25, energy 16.1 dB, delay 0
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1016.6 ULSCH in error in round 1, ul_cqi 137, UE_id 6, RNTI c779
+[PHY]   fill_ulsch UE_id 1 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1017.4 ULSCH in error in round 2, ul_cqi 158, UE_id 6, RNTI c779
+[RRC]   [eNB 0] Received C-RNTI ,but UE c779 status(3) not RRC_RECONFIGURED
+[MAC]   [eNB 0][PUSCH 6] CC_id 0 1018.2 ULSCH in error in round 3, ul_cqi 164, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 1018.4 ULSCH in error in round 0, ul_cqi 162, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 1019.2 ULSCH in error in round 1, ul_cqi 158, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 0] CC_id 0 1020.0 ULSCH in error in round 2, ul_cqi 158, UE_id 6, RNTI c779
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI c779] received ueCapabilityInformation on UL-DCCH 1 from UE
+[RRC]   got UE capabilities for UE c779
+[RRC]   [do_DrxConfig] featureGroupIndicators->buf[0]: ff
+[MAC]   drx_Configuration parameter is NULL, cannot configure local UE parameters
+[RRC]   [eNB 0] frame 0: requesting A2, A3, A4, and A5 event reporting
+[RRC]   RRCConnectionReconfiguration Encoded 734 bits (92 bytes)
+[RRC]   [eNB 0] Frame 0, Logical Channel DL-DCCH, Generate LTE_RRCConnectionReconfiguration (bytes 92, UE id c779)
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI c779][SRB AM 01] RLC_AM_DATA_REQ size 97 Bytes,  NB SDU 3 current_sdu_index=2 next_sdu_index=3 conf 0 mui 14 vtA 2 vtS 3
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 1023.5 ULSCH in error in round 0, ul_cqi 146, UE_id 6, RNTI c779
+[MAC]   UE  rnti 7da6 : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 27
+[MAC]   UE  rnti 8d6d : in synch, PHR -19 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 13
+[MAC]   UE  rnti 4b2e : in synch, PHR -18 dB DL CQI 4 PUSCH SNR 1 PUCCH SNR 20
+[MAC]   UE  rnti 65d2 : in synch, PHR -14 dB DL CQI 4 PUSCH SNR 4 PUCCH SNR 20
+[MAC]   UE  rnti 6a7 : in synch, PHR -17 dB DL CQI 4 PUSCH SNR 3 PUCCH SNR 16
+[MAC]   UE  rnti c779 : in synch, PHR -18 dB DL CQI 13 PUSCH SNR 4 PUCCH SNR 27
+[RRC]   UE rnti 6a7 failure timer 0/8
+[RRC]   UE rnti 4b2e failure timer 0/8
+[RRC]   UE rnti 65d2 failure timer 0/8
+[RRC]   UE rnti 7da6 failure timer 173/8
+[RRC]   UE rnti 8d6d failure timer 0/8
+[RRC]   UE rnti c779 failure timer 0/8
+[PHY]   prach_I0 = 0.0 dB
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 0.3 ULSCH in error in round 1, ul_cqi 122, UE_id 6, RNTI c779
+[PHY]   max_I0 15, min_I0 0
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 1.1 ULSCH in error in round 2, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 1.9 ULSCH in error in round 3, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 2.7 ULSCH in error in round 0, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 3.5 ULSCH in error in round 1, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 4.3 ULSCH in error in round 2, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 5.1 ULSCH in error in round 3, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 5.9 ULSCH in error in round 0, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 6.7 ULSCH in error in round 1, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 7.5 ULSCH in error in round 2, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 8.3 ULSCH in error in round 3, ul_cqi 146, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 9.1 ULSCH in error in round 0, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 9.9 ULSCH in error in round 1, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 10.7 ULSCH in error in round 2, ul_cqi 146, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 11.5 ULSCH in error in round 3, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 12.3 ULSCH in error in round 0, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 13.1 ULSCH in error in round 1, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 13.9 ULSCH in error in round 2, ul_cqi 146, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 14.7 ULSCH in error in round 3, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 15.5 ULSCH in error in round 0, ul_cqi 146, UE_id 6, RNTI c779
+[PHY]   [eNB 0/0][RAPROC] Frame 16, subframe 1 Initiating RA procedure with preamble 2, energy 10.4 dB, delay 0
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 16.3 ULSCH in error in round 1, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 17.1 ULSCH in error in round 2, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 17.9 ULSCH in error in round 3, ul_cqi 122, UE_id 6, RNTI c779
+[RRC]   [FRAME 00018][eNB][MOD 00][RNTI 6295] Decoding UL CCCH 50.2b.38.93.8e.d6 (0x56299712bb47)
+[RRC]   [FRAME 00018][eNB][MOD 00][RNTI 6295] Accept new connection from UE random UE identity (0xed3889b302000000) MME code 0 TMSI 0 cause 3
+[MAC]   Added physicalConfigDedicated 0x7f1d480a8840 for 0.5
+[RRC]   [FRAME 00018][eNB][MOD 00][RNTI 6295]CALLING RLC CONFIG SRB1 (rbid 1)
+add new uid is 5 6295
+
+[PDCP]   [FRAME 00018][eNB][MOD 00][RNTI 6295][SRB 01]  Action ADD  LCID 1 (SRB id 1) configured with SN size 5 bits and RLC AM
+[RLC]   [FRAME 00018][eNB][MOD 00][RNTI 6295] [SRB 1] rrc_rlc_add_rlc  SRB
+[RLC]   [FRAME 00018][eNB][MOD 00][RNTI 6295][SRB AM 01][CONFIGURE] max_retx_threshold 4 poll_pdu 4 poll_byte 65535 t_poll_retransmit 80 t_reordering 35 t_status_prohibit 0
+[MAC]   generate_Msg4 ra->Msg4_frame SFN/SF: 18.4,  frameP SFN/SF: 18.4 FOR eNB_Mod: 0 
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 18, subframeP 4: Generating Msg4 with RRC Piggyback (RNTI 6295)
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 18.7 ULSCH in error in round 0, ul_cqi 146, UE_id 6, RNTI c779
+[MAC]   [eNB 0][RAPROC] CC_id 0 Frame 19, subframeP 2: Msg4 not acknowledged, adding ue specific dci (rnti 6295) for RA (Msg4 Retransmission round 1 in 20.0)
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 19.5 ULSCH in error in round 1, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 20.3 ULSCH in error in round 2, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 20.4 ULSCH in error in round 0, ul_cqi 140, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 21.1 ULSCH in error in round 3, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 21.2 ULSCH in error in round 1, ul_cqi 143, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 21.9 ULSCH in error in round 0, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 4] CC_id 0 22.0 ULSCH in error in round 2, ul_cqi 140, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 22.7 ULSCH in error in round 1, ul_cqi 104, UE_id 6, RNTI c779
+[PHY]   fill_ulsch UE_id 1 nb_rb = 0
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 23.5 ULSCH in error in round 2, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 23.7 ULSCH in error in round 0, ul_cqi 152, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 24.3 ULSCH in error in round 3, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 24.5 ULSCH in error in round 1, ul_cqi 128, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 25.1 ULSCH in error in round 0, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 25.3 ULSCH in error in round 2, ul_cqi 104, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 25.9 ULSCH in error in round 1, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 26.1 ULSCH in error in round 3, ul_cqi 152, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 26.7 ULSCH in error in round 2, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 26.9 ULSCH in error in round 0, ul_cqi 128, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 27.5 ULSCH in error in round 3, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 27.7 ULSCH in error in round 1, ul_cqi 128, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 28.3 ULSCH in error in round 0, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 28.5 ULSCH in error in round 2, ul_cqi 128, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 29.1 ULSCH in error in round 1, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 29.3 ULSCH in error in round 3, ul_cqi 104, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 29.9 ULSCH in error in round 2, ul_cqi 122, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 30.1 ULSCH in error in round 0, ul_cqi 128, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 30.7 ULSCH in error in round 3, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 30.9 ULSCH in error in round 1, ul_cqi 128, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 31.5 ULSCH in error in round 0, ul_cqi 122, UE_id 6, RNTI c779
+[RLC]   [FRAME 00032][eNB][MOD 00][RNTI c779][SRB AM 01][RLC AM MAX RETX=5] SN 0003
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 31.7 ULSCH in error in round 2, ul_cqi 104, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 32.3 ULSCH in error in round 1, ul_cqi 128, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 32.5 ULSCH in error in round 3, ul_cqi 128, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 33.1 ULSCH in error in round 2, ul_cqi 146, UE_id 6, RNTI c779
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 33.3 ULSCH in error in round 0, ul_cqi 172, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 33.9 ULSCH in error in round 3, ul_cqi 104, UE_id 6, RNTI c779
+[MAC]   UE 6 rnti c779: UL Failure timer 1 
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 6295] [RAPROC] Logical Channel UL-DCCH, processing LTE_RRCConnectionSetupComplete from UE (SRB1 Active)
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 6295] Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[RRC]   calling rrc_data_req :securityModeCommand
+[RRC]   sent RRC_DCCH_DATA_REQ to TASK_PDCP_ENB
+[RRC]   [FRAME 00000][eNB][MOD 00][RNTI 6295] UE State = RRC_CONNECTED 
+[RLC]   [FRAME 00000][eNB][MOD 00][RNTI 6295][SRB AM 01] RLC_AM_DATA_REQ size 8 Bytes,  NB SDU 1 current_sdu_index=0 next_sdu_index=1 conf 0 mui 15 vtA 0 vtS 0
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 36.3 ULSCH in error in round 0, ul_cqi 140, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 37.1 ULSCH in error in round 1, ul_cqi 141, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 37.9 ULSCH in error in round 2, ul_cqi 169, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 38.7 ULSCH in error in round 3, ul_cqi 138, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 39.5 ULSCH in error in round 0, ul_cqi 134, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 40.3 ULSCH in error in round 1, ul_cqi 142, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 41.1 ULSCH in error in round 2, ul_cqi 155, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 41.9 ULSCH in error in round 3, ul_cqi 131, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 42.7 ULSCH in error in round 0, ul_cqi 142, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 43.3 ULSCH in error in round 0, ul_cqi 131, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 43.5 ULSCH in error in round 1, ul_cqi 128, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 44.1 ULSCH in error in round 1, ul_cqi 166, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 44.3 ULSCH in error in round 2, ul_cqi 155, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 44.9 ULSCH in error in round 2, ul_cqi 122, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 3] CC_id 0 45.1 ULSCH in error in round 3, ul_cqi 152, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 45.3 ULSCH in error in round 0, ul_cqi 166, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 45.7 ULSCH in error in round 3, ul_cqi 165, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 46.1 ULSCH in error in round 1, ul_cqi 122, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 46.9 ULSCH in error in round 2, ul_cqi 166, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 47.7 ULSCH in error in round 3, ul_cqi 152, UE_id 5, RNTI 6295
+[MAC]   UE 1 rnti 8d6d: UL Failure after repeated PDCCH orders: Triggering RRC 
+[RRC]   Frame 48, Subframe 6: UE 8d6d UL failure, activating timer
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 48.5 ULSCH in error in round 0, ul_cqi 166, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 49.3 ULSCH in error in round 1, ul_cqi 152, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 50.1 ULSCH in error in round 2, ul_cqi 128, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 5] CC_id 0 50.9 ULSCH in error in round 3, ul_cqi 141, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 51.3 ULSCH in error in round 0, ul_cqi 165, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 52.1 ULSCH in error in round 1, ul_cqi 134, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 52.9 ULSCH in error in round 2, ul_cqi 166, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 53.7 ULSCH in error in round 3, ul_cqi 142, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 54.3 ULSCH in error in round 0, ul_cqi 142, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 55.1 ULSCH in error in round 1, ul_cqi 166, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 55.9 ULSCH in error in round 2, ul_cqi 152, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 56.7 ULSCH in error in round 3, ul_cqi 142, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 57.5 ULSCH in error in round 0, ul_cqi 142, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 58.3 ULSCH in error in round 1, ul_cqi 155, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 59.1 ULSCH in error in round 2, ul_cqi 152, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 59.3 ULSCH in error in round 0, ul_cqi 166, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 7] CC_id 0 59.9 ULSCH in error in round 3, ul_cqi 128, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 60.1 ULSCH in error in round 1, ul_cqi 142, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 60.9 ULSCH in error in round 2, ul_cqi 166, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 61.7 ULSCH in error in round 3, ul_cqi 152, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 62.5 ULSCH in error in round 0, ul_cqi 166, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 63.3 ULSCH in error in round 1, ul_cqi 142, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 64.1 ULSCH in error in round 2, ul_cqi 142, UE_id 5, RNTI 6295
+[MAC]   [eNB 0][PUSCH 1] CC_id 0 64.9 ULSCH in error in round 3, ul_cqi 168, UE_id 5, RNTI 6295
+[MAC]   UE 5 rnti 6295: UL Failure timer 1 
+[RLC]   [FRAME 00074][eNB][MOD 00][RNTI 6295][SRB AM 01][RLC AM MAX RETX=5] SN 0001
+[PHY]   [eNB 0/0][RAPROC] Frame 80, subframe 1 Initiating RA procedure with preamble 17, energy 14.6 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 88, subframe 1 Initiating RA procedure with preamble 3, energy 12.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 96, subframe 1 Initiating RA procedure with preamble 60, energy 12.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 104, subframe 1 Initiating RA procedure with preamble 58, energy 14.4 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 112, subframe 1 Initiating RA procedure with preamble 35, energy 15.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[MAC]   UE 2 rnti 4b2e: UL Failure after repeated PDCCH orders: Triggering RRC 
+[RRC]   Frame 119, Subframe 7: UE 4b2e UL failure, activating timer
+[PHY]   [eNB 0/0][RAPROC] Frame 120, subframe 1 Initiating RA procedure with preamble 34, energy 12.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[MAC]   UE  rnti 7da6 : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 27
+[MAC]   UE  rnti 8d6d : out of sync, PHR -19 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 13
+[MAC]   UE  rnti 4b2e : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 1 PUCCH SNR 20
+[MAC]   UE  rnti 65d2 : in synch, PHR -14 dB DL CQI 4 PUSCH SNR 4 PUCCH SNR 20
+[MAC]   UE  rnti 6a7 : in synch, PHR -17 dB DL CQI 4 PUSCH SNR 3 PUCCH SNR 16
+[MAC]   UE  rnti 6295 : in synch, PHR -13 dB DL CQI 4 PUSCH SNR 10 PUCCH SNR 28
+[MAC]   UE  rnti c779 : in synch, PHR -18 dB DL CQI 13 PUSCH SNR 4 PUCCH SNR 4
+[PHY]   [eNB 0/0][RAPROC] Frame 128, subframe 1 Initiating RA procedure with preamble 22, energy 16.4 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 136, subframe 1 Initiating RA procedure with preamble 1, energy 15.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 144, subframe 1 Initiating RA procedure with preamble 30, energy 13.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 152, subframe 1 Initiating RA procedure with preamble 14, energy 16.1 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 160, subframe 1 Initiating RA procedure with preamble 6, energy 16.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 168, subframe 1 Initiating RA procedure with preamble 49, energy 16.4 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[MAC]   UE 3 rnti 65d2: UL Failure after repeated PDCCH orders: Triggering RRC 
+[RRC]   Frame 172, Subframe 0: UE 65d2 UL failure, activating timer
+[PHY]   [eNB 0/0][RAPROC] Frame 176, subframe 1 Initiating RA procedure with preamble 47, energy 15.5 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 184, subframe 1 Initiating RA procedure with preamble 13, energy 13.4 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 192, subframe 1 Initiating RA procedure with preamble 26, energy 13.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 200, subframe 1 Initiating RA procedure with preamble 9, energy 16.5 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 208, subframe 1 Initiating RA procedure with preamble 24, energy 14.6 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 216, subframe 1 Initiating RA procedure with preamble 11, energy 16.2 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 224, subframe 1 Initiating RA procedure with preamble 31, energy 16.4 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 232, subframe 1 Initiating RA procedure with preamble 32, energy 14.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 240, subframe 1 Initiating RA procedure with preamble 34, energy 13.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 248, subframe 1 Initiating RA procedure with preamble 20, energy 13.8 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[MAC]   UE  rnti 7da6 : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 27
+[MAC]   UE  rnti 8d6d : out of sync, PHR -19 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 13
+[MAC]   UE  rnti 4b2e : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 1 PUCCH SNR 20
+[MAC]   UE  rnti 65d2 : out of sync, PHR -14 dB DL CQI 4 PUSCH SNR 4 PUCCH SNR 20
+[MAC]   UE  rnti 6a7 : in synch, PHR -17 dB DL CQI 4 PUSCH SNR 3 PUCCH SNR 16
+[MAC]   UE  rnti 6295 : in synch, PHR -13 dB DL CQI 4 PUSCH SNR 10 PUCCH SNR 28
+[MAC]   UE  rnti c779 : in synch, PHR -18 dB DL CQI 13 PUSCH SNR 4 PUCCH SNR 4
+[PHY]   [eNB 0/0][RAPROC] Frame 256, subframe 1 Initiating RA procedure with preamble 23, energy 14.6 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 264, subframe 1 Initiating RA procedure with preamble 28, energy 15.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 272, subframe 1 Initiating RA procedure with preamble 54, energy 12.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 280, subframe 1 Initiating RA procedure with preamble 0, energy 16.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 288, subframe 1 Initiating RA procedure with preamble 46, energy 16.6 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 296, subframe 1 Initiating RA procedure with preamble 22, energy 13.2 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 304, subframe 1 Initiating RA procedure with preamble 40, energy 13.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 312, subframe 1 Initiating RA procedure with preamble 48, energy 16.6 dB, delay 0
+[MAC]   UE 4 rnti 6a7: UL Failure after repeated PDCCH orders: Triggering RRC 
+[RRC]   Frame 314, Subframe 2: UE 6a7 UL failure, activating timer
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 320, subframe 1 Initiating RA procedure with preamble 23, energy 15.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 328, subframe 1 Initiating RA procedure with preamble 40, energy 12.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 336, subframe 1 Initiating RA procedure with preamble 35, energy 16.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 344, subframe 1 Initiating RA procedure with preamble 56, energy 12.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 352, subframe 1 Initiating RA procedure with preamble 23, energy 12.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 360, subframe 1 Initiating RA procedure with preamble 6, energy 14.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 368, subframe 1 Initiating RA procedure with preamble 5, energy 14.6 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 376, subframe 1 Initiating RA procedure with preamble 40, energy 16.4 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[MAC]   UE  rnti 7da6 : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 27
+[MAC]   UE  rnti 8d6d : out of sync, PHR -19 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 13
+[MAC]   UE  rnti 4b2e : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 1 PUCCH SNR 20
+[MAC]   UE  rnti 65d2 : out of sync, PHR -14 dB DL CQI 4 PUSCH SNR 4 PUCCH SNR 20
+[MAC]   UE  rnti 6a7 : out of sync, PHR -17 dB DL CQI 4 PUSCH SNR 3 PUCCH SNR 16
+[MAC]   UE  rnti 6295 : in synch, PHR -13 dB DL CQI 4 PUSCH SNR 10 PUCCH SNR 28
+[MAC]   UE  rnti c779 : in synch, PHR -18 dB DL CQI 13 PUSCH SNR 4 PUCCH SNR 4
+[PHY]   [eNB 0/0][RAPROC] Frame 384, subframe 1 Initiating RA procedure with preamble 40, energy 15.5 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 392, subframe 1 Initiating RA procedure with preamble 49, energy 12.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 400, subframe 1 Initiating RA procedure with preamble 20, energy 14.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 408, subframe 1 Initiating RA procedure with preamble 61, energy 16.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 416, subframe 1 Initiating RA procedure with preamble 6, energy 14.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 424, subframe 1 Initiating RA procedure with preamble 9, energy 16.4 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 432, subframe 1 Initiating RA procedure with preamble 10, energy 13.0 dB, delay 0
+[MAC]   UE 6 rnti c779: UL Failure after repeated PDCCH orders: Triggering RRC 
+[RRC]   Frame 434, Subframe 2: UE c779 UL failure, activating timer
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 440, subframe 1 Initiating RA procedure with preamble 53, energy 13.8 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 448, subframe 1 Initiating RA procedure with preamble 24, energy 15.5 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 456, subframe 1 Initiating RA procedure with preamble 9, energy 13.8 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 464, subframe 1 Initiating RA procedure with preamble 57, energy 13.8 dB, delay 0
+[MAC]   UE 5 rnti 6295: UL Failure after repeated PDCCH orders: Triggering RRC 
+[RRC]   Frame 465, Subframe 2: UE 6295 UL failure, activating timer
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 472, subframe 1 Initiating RA procedure with preamble 57, energy 16.2 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 480, subframe 1 Initiating RA procedure with preamble 16, energy 12.5 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 488, subframe 1 Initiating RA procedure with preamble 29, energy 14.1 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 496, subframe 1 Initiating RA procedure with preamble 48, energy 13.2 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 504, subframe 1 Initiating RA procedure with preamble 40, energy 15.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[MAC]   UE  rnti 7da6 : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 27
+[MAC]   UE  rnti 8d6d : out of sync, PHR -19 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 13
+[MAC]   UE  rnti 4b2e : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 1 PUCCH SNR 20
+[MAC]   UE  rnti 65d2 : out of sync, PHR -14 dB DL CQI 4 PUSCH SNR 4 PUCCH SNR 20
+[MAC]   UE  rnti 6a7 : out of sync, PHR -17 dB DL CQI 4 PUSCH SNR 3 PUCCH SNR 16
+[MAC]   UE  rnti 6295 : out of sync, PHR -13 dB DL CQI 4 PUSCH SNR 10 PUCCH SNR 28
+[MAC]   UE  rnti c779 : out of sync, PHR -18 dB DL CQI 13 PUSCH SNR 4 PUCCH SNR 4
+[PHY]   [eNB 0/0][RAPROC] Frame 512, subframe 1 Initiating RA procedure with preamble 55, energy 12.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 520, subframe 1 Initiating RA procedure with preamble 44, energy 12.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 528, subframe 1 Initiating RA procedure with preamble 46, energy 13.2 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 536, subframe 1 Initiating RA procedure with preamble 61, energy 12.5 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 544, subframe 1 Initiating RA procedure with preamble 17, energy 12.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 552, subframe 1 Initiating RA procedure with preamble 27, energy 15.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 560, subframe 1 Initiating RA procedure with preamble 40, energy 12.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 568, subframe 1 Initiating RA procedure with preamble 41, energy 15.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 576, subframe 1 Initiating RA procedure with preamble 35, energy 15.9 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 584, subframe 1 Initiating RA procedure with preamble 26, energy 16.1 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 592, subframe 1 Initiating RA procedure with preamble 19, energy 12.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 600, subframe 1 Initiating RA procedure with preamble 27, energy 13.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 608, subframe 1 Initiating RA procedure with preamble 58, energy 13.6 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 616, subframe 1 Initiating RA procedure with preamble 23, energy 16.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 624, subframe 1 Initiating RA procedure with preamble 20, energy 16.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 632, subframe 1 Initiating RA procedure with preamble 25, energy 14.1 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[MAC]   UE  rnti 7da6 : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 27
+[MAC]   UE  rnti 8d6d : out of sync, PHR -19 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 13
+[MAC]   UE  rnti 4b2e : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 1 PUCCH SNR 20
+[MAC]   UE  rnti 65d2 : out of sync, PHR -14 dB DL CQI 4 PUSCH SNR 4 PUCCH SNR 20
+[MAC]   UE  rnti 6a7 : out of sync, PHR -17 dB DL CQI 4 PUSCH SNR 3 PUCCH SNR 16
+[MAC]   UE  rnti 6295 : out of sync, PHR -13 dB DL CQI 4 PUSCH SNR 10 PUCCH SNR 28
+[MAC]   UE  rnti c779 : out of sync, PHR -18 dB DL CQI 13 PUSCH SNR 4 PUCCH SNR 4
+[PHY]   [eNB 0/0][RAPROC] Frame 640, subframe 1 Initiating RA procedure with preamble 8, energy 12.5 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 648, subframe 1 Initiating RA procedure with preamble 40, energy 12.5 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 656, subframe 1 Initiating RA procedure with preamble 32, energy 16.9 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 664, subframe 1 Initiating RA procedure with preamble 31, energy 13.9 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 672, subframe 1 Initiating RA procedure with preamble 60, energy 16.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 680, subframe 1 Initiating RA procedure with preamble 26, energy 12.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 688, subframe 1 Initiating RA procedure with preamble 18, energy 12.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 696, subframe 1 Initiating RA procedure with preamble 10, energy 16.2 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 704, subframe 1 Initiating RA procedure with preamble 48, energy 11.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 712, subframe 1 Initiating RA procedure with preamble 55, energy 14.6 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 720, subframe 1 Initiating RA procedure with preamble 58, energy 15.4 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 728, subframe 1 Initiating RA procedure with preamble 13, energy 15.7 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 736, subframe 1 Initiating RA procedure with preamble 20, energy 16.1 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 744, subframe 1 Initiating RA procedure with preamble 44, energy 16.1 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 752, subframe 1 Initiating RA procedure with preamble 13, energy 13.9 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 760, subframe 1 Initiating RA procedure with preamble 59, energy 14.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[MAC]   UE  rnti 7da6 : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 27
+[MAC]   UE  rnti 8d6d : out of sync, PHR -19 dB DL CQI 4 PUSCH SNR 6 PUCCH SNR 13
+[MAC]   UE  rnti 4b2e : out of sync, PHR -18 dB DL CQI 4 PUSCH SNR 1 PUCCH SNR 20
+[MAC]   UE  rnti 65d2 : out of sync, PHR -14 dB DL CQI 4 PUSCH SNR 4 PUCCH SNR 20
+[MAC]   UE  rnti 6a7 : out of sync, PHR -17 dB DL CQI 4 PUSCH SNR 3 PUCCH SNR 16
+[MAC]   UE  rnti 6295 : out of sync, PHR -13 dB DL CQI 4 PUSCH SNR 10 PUCCH SNR 28
+[MAC]   UE  rnti c779 : out of sync, PHR -18 dB DL CQI 13 PUSCH SNR 4 PUCCH SNR 4
+[PHY]   [eNB 0/0][RAPROC] Frame 768, subframe 1 Initiating RA procedure with preamble 56, energy 13.2 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 776, subframe 1 Initiating RA procedure with preamble 33, energy 14.4 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 784, subframe 1 Initiating RA procedure with preamble 53, energy 16.0 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 792, subframe 1 Initiating RA procedure with preamble 5, energy 12.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 800, subframe 1 Initiating RA procedure with preamble 51, energy 15.3 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 808, subframe 1 Initiating RA procedure with preamble 9, energy 16.1 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+[PHY]   [eNB 0/0][RAPROC] Frame 816, subframe 1 Initiating RA procedure with preamble 7, energy 15.6 dB, delay 0
+[RRC]   [eNB 0] Received C-RNTI ,but UE 6295 status(3) not RRC_RECONFIGURED
+Linux signal Interrupt...
+/home/oai/git-repositories/openairinterface5g/targets/RT/USER/lte-softmodem.c:253 signal_handler() Exiting OAI softmodem: softmodem starting exit procedure
+
+^C[PHY]   [recv] received 5111 samples out of 7680
+[PHY]   rx_rf: Asked for 7680 samples, got 5111 from SDR
+[PHY]   problem receiving samplesExiting ru_thread 
+[PHY]   RU 0 rf device stopped
